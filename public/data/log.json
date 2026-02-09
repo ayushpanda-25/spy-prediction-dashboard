@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "time": "2026-02-09 14:50:03",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 12/22 signals captured",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 14:49:58",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 12/22 signals captured",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 14:49:54",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 12/22 signals captured",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 14:49:50",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 12/22 signals captured",
+      "duration": ""
+    },
+    {
       "time": "2026-02-09 12:24:52",
       "type": "eod",
       "status": "ok",
@@ -155,5 +183,5 @@
       "duration": ""
     }
   ],
-  "exportedAt": "2026-02-09T12:58:56.764744"
+  "exportedAt": "2026-02-09T14:59:54.678888"
 }

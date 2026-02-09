@@ -1,6 +1,74 @@
 {
-  "count": 1,
+  "count": 5,
   "data": [
+    {
+      "date": "2026-02-03",
+      "composite": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 0.0,
+      "spyPrice": 686.19,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.0,
+        "microstructure": 0.0,
+        "flows": 0.0,
+        "technical": 0.0,
+        "sentiment": 0.0
+      }
+    },
+    {
+      "date": "2026-02-04",
+      "composite": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 0.0,
+      "spyPrice": 677.62,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.0,
+        "microstructure": 0.0,
+        "flows": 0.0,
+        "technical": 0.0,
+        "sentiment": 0.0
+      }
+    },
+    {
+      "date": "2026-02-05",
+      "composite": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 0.0,
+      "spyPrice": 690.62,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.0,
+        "microstructure": 0.0,
+        "flows": 0.0,
+        "technical": 0.0,
+        "sentiment": 0.0
+      }
+    },
+    {
+      "date": "2026-02-06",
+      "composite": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 0.0,
+      "spyPrice": 694.0,
+      "spyChange": 3.38,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.0,
+        "microstructure": 0.0,
+        "flows": 0.0,
+        "technical": 0.0,
+        "sentiment": 0.0
+      }
+    },
     {
       "date": "2026-02-09",
       "composite": 0.0,
@@ -19,5 +87,5 @@
       }
     }
   ],
-  "exportedAt": "2026-02-09T12:58:56.764604"
+  "exportedAt": "2026-02-09T14:59:54.678800"
 }
