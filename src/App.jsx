@@ -174,6 +174,38 @@ export default function App() {
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(true);
   const [exportedAt, setExportedAt] = useState(null);
+  const [liveData, setLiveData] = useState(null);
+  const [liveError, setLiveError] = useState(false);
+
+  // Fetch live market data from serverless function
+  const fetchLive = useCallback(async () => {
+    try {
+      const res = await fetch("/api/live");
+      if (res.ok) {
+        const live = await res.json();
+        setLiveData(live);
+        setLiveError(false);
+      }
+    } catch {
+      setLiveError(true);
+    }
+  }, []);
+
+  // Poll live data every 60 seconds during market hours
+  useEffect(() => {
+    fetchLive(); // initial fetch
+    const interval = setInterval(() => {
+      const now = new Date();
+      const et = new Date(now.toLocaleString("en-US", { timeZone: "America/New_York" }));
+      const hour = et.getHours();
+      const day = et.getDay();
+      // Poll during extended hours (8am-6pm ET, Mon-Fri)
+      if (day >= 1 && day <= 5 && hour >= 8 && hour <= 18) {
+        fetchLive();
+      }
+    }, 60 * 1000);
+    return () => clearInterval(interval);
+  }, [fetchLive]);
 
   // Fetch data from static JSON files
   const fetchData = useCallback(async () => {
@@ -216,10 +248,11 @@ export default function App() {
     fetchData();
   }, [fetchData]);
 
-  // Derived display values
-  const displayPrice = data?.spyPrice;
-  const displayChange = data?.spyChange;
-  const displayChangePct = data?.spyChangePct;
+  // Derived display values — live overrides EOD when available
+  const displayPrice = liveData?.spy_price || data?.spyPrice;
+  const displayChange = liveData?.spy_change || data?.spyChange;
+  const displayChangePct = liveData?.spy_change_pct || data?.spyChangePct;
+  const isLive = liveData?.marketOpen && liveData?.spy_price;
   const composite = data?.composite || 0;
   const compositeColor = getScoreColor(composite);
   const signalLabel = data?.signal ? data.signal.replace(/_/g, " ") : getSignalLabel(composite);
@@ -288,13 +321,25 @@ export default function App() {
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 12 }}>
+          {isLive && (
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <div style={{
+                width: 6, height: 6, borderRadius: "50%", background: T.green,
+                animation: "pulse 2s infinite",
+              }} />
+              <span style={{ color: T.green, fontWeight: 700, fontSize: 10, letterSpacing: "0.05em" }}>LIVE</span>
+            </div>
+          )}
           <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
             <div style={{
-              width: 6, height: 6, borderRadius: "50%", background: T.green,
-              animation: "pulse 2s infinite",
+              width: 6, height: 6, borderRadius: "50%",
+              background: isLive ? T.green : liveData ? T.amber : T.textDim,
+              animation: isLive ? "pulse 2s infinite" : "none",
             }} />
             <span style={{ color: T.textDim }}>UPDATED</span>
-            <span style={{ color: T.text, fontSize: 11 }}>{dataAsOf}</span>
+            <span style={{ color: T.text, fontSize: 11 }}>
+              {isLive ? new Date(liveData.last_tick).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit" }) : dataAsOf}
+            </span>
           </div>
         </div>
       </div>
@@ -394,6 +439,33 @@ export default function App() {
                     </Bar>
                   </BarChart>
                 </ResponsiveContainer>
+              </div>
+            </Panel>
+          )}
+
+          {/* Live Market Data */}
+          {liveData && liveData.spy_price && (
+            <Panel title="Live Market" tag={isLive ? "LIVE" : "DELAYED"}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 12 }}>
+                {[
+                  ["SPY", liveData.spy_price, liveData.spy_change_pct],
+                  ["QQQ", liveData.qqq, liveData.qqq_change],
+                  ["HYG", liveData.hyg, liveData.hyg_change],
+                  ["TLT", liveData.tlt, liveData.tlt_change],
+                  ["GLD", liveData.gld, liveData.gld_change],
+                ].map(([label, price, change]) => (
+                  <div key={label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ color: T.textDim }}>{label}</span>
+                    <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+                      <span style={{ color: T.text }}>{price != null ? `$${Number(price).toFixed(2)}` : "---"}</span>
+                      {change != null && (
+                        <span style={{ color: change >= 0 ? T.green : T.red, fontSize: 10 }}>
+                          {change >= 0 ? "+" : ""}{Number(change).toFixed(2)}%
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
             </Panel>
           )}
