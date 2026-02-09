@@ -1,0 +1,159 @@
+{
+  "entries": [
+    {
+      "time": "2026-02-09 12:24:52",
+      "type": "eod",
+      "status": "ok",
+      "message": "Manual collection completed",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:24:51",
+      "type": "eod",
+      "status": "ok",
+      "message": "Manual collection triggered",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:24:40",
+      "type": "eod",
+      "status": "ok",
+      "message": "Manual collection completed",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:24:40",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 12/22 signals captured",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:24:30",
+      "type": "eod",
+      "status": "ok",
+      "message": "Manual collection triggered",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:48",
+      "type": "system",
+      "status": "ok",
+      "message": "LSEG live stream connected",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:47",
+      "type": "system",
+      "status": "ok",
+      "message": "Server starting...",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:35",
+      "type": "system",
+      "status": "ok",
+      "message": "Server stopped",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:35",
+      "type": "system",
+      "status": "ok",
+      "message": "Server stopped",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:35",
+      "type": "system",
+      "status": "ok",
+      "message": "Server stopped",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:05",
+      "type": "system",
+      "status": "ok",
+      "message": "Server stopped",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:05",
+      "type": "system",
+      "status": "ok",
+      "message": "LSEG live stream connected",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:23:04",
+      "type": "system",
+      "status": "ok",
+      "message": "Server starting...",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:21:11",
+      "type": "system",
+      "status": "ok",
+      "message": "LSEG live stream connected",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:21:09",
+      "type": "system",
+      "status": "ok",
+      "message": "Server starting...",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:20:33",
+      "type": "system",
+      "status": "ok",
+      "message": "LSEG live stream connected",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:20:31",
+      "type": "system",
+      "status": "ok",
+      "message": "Server starting...",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:20:18",
+      "type": "system",
+      "status": "ok",
+      "message": "Server stopped",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:20:18",
+      "type": "system",
+      "status": "ok",
+      "message": "LSEG live stream connected",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:20:17",
+      "type": "system",
+      "status": "ok",
+      "message": "Server starting...",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:19:50",
+      "type": "system",
+      "status": "warn",
+      "message": "LSEG stream unavailable: open_pricing_stream() got an unexpected keyword argument 'on_update'. Did you mean 'on_data'?",
+      "duration": ""
+    },
+    {
+      "time": "2026-02-09 12:19:48",
+      "type": "system",
+      "status": "ok",
+      "message": "Server starting...",
+      "duration": ""
+    }
+  ],
+  "exportedAt": "2026-02-09T12:58:56.764744"
+}

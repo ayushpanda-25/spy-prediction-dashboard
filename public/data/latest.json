@@ -1,0 +1,200 @@
+{
+  "date": "2026-02-09",
+  "composite": 0.0,
+  "signal": "NEUTRAL",
+  "confidence": 0.0,
+  "spyPrice": 694.87,
+  "spyChange": 4.25,
+  "spyChangePct": 0.0,
+  "factors": {
+    "options": {
+      "score": 0.0,
+      "weight": 0.25,
+      "weighted": 0.0,
+      "label": "Options Flow",
+      "signals": [
+        {
+          "name": "Gex",
+          "value": null,
+          "zScore": 0,
+          "interpretation": "Neutral"
+        },
+        {
+          "name": "Iv Term Structure",
+          "value": null,
+          "zScore": 0,
+          "interpretation": ""
+        },
+        {
+          "name": "Put Skew 25D",
+          "value": null,
+          "zScore": 0,
+          "interpretation": ""
+        },
+        {
+          "name": "Zero Dte Share",
+          "value": null,
+          "zScore": 0,
+          "interpretation": "Normal"
+        }
+      ]
+    },
+    "macro": {
+      "score": 0.0,
+      "weight": 0.2,
+      "weighted": 0.0,
+      "label": "Macro",
+      "signals": [
+        {
+          "name": "Hy Credit Spread",
+          "value": -0.3821,
+          "zScore": 0,
+          "interpretation": "Widening (risk-off)"
+        },
+        {
+          "name": "Macro Surprise",
+          "value": null,
+          "zScore": 0,
+          "interpretation": ""
+        },
+        {
+          "name": "Vix Vix3M Ratio",
+          "value": 0.8512,
+          "zScore": 0,
+          "interpretation": "Contango (calm)"
+        },
+        {
+          "name": "Yield Curve 2S10S",
+          "value": -1.6602,
+          "zScore": 0,
+          "interpretation": "Inverted (recession signal)"
+        }
+      ]
+    },
+    "microstructure": {
+      "score": 0.0,
+      "weight": 0.2,
+      "weighted": 0.0,
+      "label": "Microstructure",
+      "signals": [
+        {
+          "name": "Block Trade Imbalance",
+          "value": null,
+          "zScore": 0,
+          "interpretation": ""
+        },
+        {
+          "name": "Dark Pool Pct",
+          "value": null,
+          "zScore": 0,
+          "interpretation": ""
+        },
+        {
+          "name": "Short Volume Ratio",
+          "value": null,
+          "zScore": 0,
+          "interpretation": "Below average"
+        }
+      ]
+    },
+    "flows": {
+      "score": 0.0,
+      "weight": 0.15,
+      "weighted": 0.0,
+      "label": "Systematic Flows",
+      "signals": [
+        {
+          "name": "Cftc Net Spec",
+          "value": 933226.0,
+          "zScore": 0,
+          "interpretation": "Net long"
+        },
+        {
+          "name": "Cta Momentum",
+          "value": null,
+          "zScore": 0,
+          "interpretation": "Trend down"
+        },
+        {
+          "name": "Month End Rebal",
+          "value": 0.0,
+          "zScore": 0,
+          "interpretation": "No effect"
+        },
+        {
+          "name": "Vol Target Alloc",
+          "value": null,
+          "zScore": 0,
+          "interpretation": "Low alloc \u2192 room to add"
+        }
+      ]
+    },
+    "technical": {
+      "score": 0.0,
+      "weight": 0.1,
+      "weighted": 0.0,
+      "label": "Technical",
+      "signals": [
+        {
+          "name": "Price Vs 20Dma",
+          "value": 0.0357,
+          "zScore": 0,
+          "interpretation": "Above 20D (bullish)"
+        },
+        {
+          "name": "Price Vs 50Dma",
+          "value": 0.5954,
+          "zScore": 0,
+          "interpretation": "Above 50D (bullish)"
+        },
+        {
+          "name": "Rsi 14",
+          "value": 49.25,
+          "zScore": 0,
+          "interpretation": "Mid-range (neutral)"
+        },
+        {
+          "name": "Volume Ratio",
+          "value": 1.0614,
+          "zScore": 0,
+          "interpretation": "Below avg volume"
+        }
+      ]
+    },
+    "sentiment": {
+      "score": 0.0,
+      "weight": 0.1,
+      "weighted": 0.0,
+      "label": "Sentiment",
+      "signals": [
+        {
+          "name": "Aaii Bull Bear",
+          "value": 10.67,
+          "zScore": 0,
+          "interpretation": "Bullish spread"
+        },
+        {
+          "name": "Naaim Exposure",
+          "value": 84.93,
+          "zScore": 0,
+          "interpretation": "High exposure (contrarian bear)"
+        },
+        {
+          "name": "News Sentiment",
+          "value": 0.146,
+          "zScore": 0,
+          "interpretation": "Slightly positive"
+        }
+      ]
+    }
+  },
+  "alerts": [
+    {
+      "type": "info",
+      "severity": "low",
+      "text": "Check economic calendar for upcoming data releases"
+    }
+  ],
+  "lastUpdate": "2026-02-09 18:24:40",
+  "exportedAt": "2026-02-09T12:58:56.764353"
+}
