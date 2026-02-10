@@ -1,0 +1,33 @@
+{
+  "events": [
+    {
+      "event": "CPI",
+      "date": "2026-02-11",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Retail Sales",
+      "date": "2026-02-17",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "FOMC Minutes",
+      "date": "2026-02-18",
+      "time": "2:00 PM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    }
+  ],
+  "source": "hardcoded",
+  "exportedAt": "2026-02-10T08:34:02.705601"
+}
