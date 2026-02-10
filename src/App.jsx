@@ -483,6 +483,7 @@ export default function App() {
                       <ResponsiveContainer width="100%" height="100%">
                         <AreaChart
                           data={spyChartData}
+                          margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
                           onMouseMove={(e) => {
                             if (e && e.activePayload && e.activePayload.length > 0) {
                               setHoveredSpy(e.activePayload[0].payload);
@@ -498,8 +499,8 @@ export default function App() {
                           </defs>
                           <XAxis dataKey="date" hide />
                           <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
-                          <Tooltip content={() => null} cursor={{ stroke: T.textDim, strokeWidth: 1 }} />
-                          <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: T.amber }} />
+                          <Tooltip wrapperStyle={{ visibility: 'hidden' }} cursor={{ stroke: T.textDim, strokeWidth: 1 }} />
+                          <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: T.amber }} isAnimationActive={false} />
                         </AreaChart>
                       </ResponsiveContainer>
                     )}
