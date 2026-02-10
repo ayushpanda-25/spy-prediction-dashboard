@@ -27,21 +27,15 @@ const T = {
 const getScoreColor = (score) => {
   if (score >= 0.5) return T.green;
   if (score >= 0.2) return T.greenDim;
-  if (score >= 0.05) return T.textDim;
-  if (score >= -0.05) return T.textDim;
-  if (score >= -0.2) return "#ff6b6b";
-  if (score >= -0.5) return T.red;
-  return T.red;
+  if (score >= 0.09) return T.amber;
+  return T.textDim;
 };
 
 const getSignalLabel = (score) => {
   if (score >= 0.5) return "STRONG BUY";
   if (score >= 0.2) return "BUY";
-  if (score >= 0.05) return "LEAN LONG";
-  if (score >= -0.05) return "NEUTRAL";
-  if (score >= -0.2) return "LEAN SHORT";
-  if (score >= -0.5) return "SELL";
-  return "STRONG SELL";
+  if (score >= 0.09) return "LEAN LONG";
+  return "NEUTRAL";
 };
 
 const getSeverityColor = (severity) => {
@@ -719,31 +713,10 @@ export default function App() {
                     );
                   })}
                 </div>
-                {/* Long vs Short breakdown */}
+                {/* Model info */}
                 <div style={{ borderTop: `1px solid ${T.border}`, paddingTop: 8 }}>
-                  <div style={{ display: "flex", gap: 12 }}>
-                    {["long", "short"].map((dir) => {
-                      const d = backtest.hitRate[`1d_${dir}`];
-                      if (!d) return null;
-                      const color = dir === "long" ? T.green : T.red;
-                      return (
-                        <div key={dir} style={{ flex: 1 }}>
-                          <div style={{ fontSize: 10, color, fontWeight: 600, marginBottom: 4, textTransform: "uppercase" }}>
-                            {dir} signals
-                          </div>
-                          {["1d", "3d", "5d"].map((h) => {
-                            const hd = backtest.hitRate[`${h}_${dir}`];
-                            if (!hd) return null;
-                            return (
-                              <div key={h} style={{ display: "flex", justifyContent: "space-between", fontSize: 11, padding: "2px 0", color: T.text }}>
-                                <span style={{ color: T.textDim }}>{h}</span>
-                                <span style={{ fontWeight: 500 }}>{hd.hitRate.toFixed(0)}% <span style={{ color: T.textDim, fontSize: 9 }}>({hd.avgReturn >= 0 ? "+" : ""}{hd.avgReturn.toFixed(2)}%)</span></span>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      );
-                    })}
+                  <div style={{ fontSize: 10, color: T.textDim, fontStyle: "italic" }}>
+                    Long-only model ({backtest.totalSignals} signals) &middot; Risk-off regimes gated
                   </div>
                 </div>
                 {/* Recent signals */}
@@ -752,8 +725,7 @@ export default function App() {
                     <div style={{ fontSize: 10, color: T.textDim, marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.05em" }}>Recent Signals</div>
                     <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
                       {backtest.records.slice(-8).reverse().map((r, i) => {
-                        const isLong = r.composite > 0;
-                        const sigColor = isLong ? T.green : T.red;
+                        const sigColor = T.green;
                         const hit1d = r.hit_1d;
                         return (
                           <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 10, padding: "3px 4px", background: i === 0 ? "rgba(255,149,0,0.05)" : "transparent", borderRadius: 2 }}>
@@ -761,7 +733,7 @@ export default function App() {
                               {r.regime && <div style={{ width: 4, height: 4, borderRadius: "50%", background: getRegimeColor(r.regime), flexShrink: 0 }} />}
                               {r.date.slice(5)}
                             </span>
-                            <span style={{ color: sigColor, fontWeight: 600, width: 45, textAlign: "center" }}>{isLong ? "LONG" : "SHORT"}</span>
+                            <span style={{ color: sigColor, fontWeight: 600, width: 45, textAlign: "center" }}>LONG</span>
                             <span style={{ color: T.text, width: 40, textAlign: "right" }}>{r.composite >= 0 ? "+" : ""}{r.composite.toFixed(2)}</span>
                             <span style={{ width: 45, textAlign: "right", color: r.return_1d != null ? (r.return_1d >= 0 ? T.green : T.red) : T.textDim }}>
                               {r.return_1d != null ? `${r.return_1d >= 0 ? "+" : ""}${r.return_1d.toFixed(1)}%` : "..."}

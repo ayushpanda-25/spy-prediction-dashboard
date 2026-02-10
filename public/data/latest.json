@@ -1,16 +1,16 @@
 {
   "date": "2026-02-09",
-  "composite": 0.13274937157670713,
-  "signal": "LEAN_LONG",
-  "confidence": 0.26549874315341426,
+  "composite": 0.20143684209722254,
+  "signal": "BUY",
+  "confidence": 0.4028736841944451,
   "spyPrice": 693.95,
   "spyChange": 3.33,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
-      "score": 0.19332650743862126,
-      "weight": 0.25,
-      "weighted": 0.0483,
+      "score": 0.3866530148772425,
+      "weight": 0.3,
+      "weighted": 0.116,
       "label": "Options Flow",
       "signals": [
         {
@@ -131,8 +131,8 @@
     },
     "technical": {
       "score": 0.020463858339960048,
-      "weight": 0.1,
-      "weighted": 0.002,
+      "weight": 0.15,
+      "weighted": 0.0031,
       "label": "Technical",
       "signals": [
         {
@@ -162,9 +162,9 @@
       ]
     },
     "sentiment": {
-      "score": 0.0,
-      "weight": 0.1,
-      "weighted": 0.0,
+      "score": -0.2928526394812647,
+      "weight": 0.0,
+      "weighted": -0.0,
       "label": "Sentiment",
       "signals": [
         {
@@ -196,5 +196,5 @@
     }
   ],
   "lastUpdate": "2026-02-10 01:15:47",
-  "exportedAt": "2026-02-09T21:15:35.755953"
+  "exportedAt": "2026-02-09T21:46:01.926116"
 }
