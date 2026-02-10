@@ -496,8 +496,9 @@ export default function App() {
                               <stop offset="100%" stopColor={T.amber} stopOpacity={0} />
                             </linearGradient>
                           </defs>
+                          <XAxis dataKey="date" hide />
                           <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
-                          <Tooltip content={() => null} />
+                          <Tooltip content={() => null} cursor={{ stroke: T.textDim, strokeWidth: 1 }} />
                           <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: T.amber }} />
                         </AreaChart>
                       </ResponsiveContainer>
