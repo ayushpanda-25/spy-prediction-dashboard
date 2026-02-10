@@ -29,7 +29,7 @@ const getScoreColor = (score) => {
   if (score >= 0.2) return T.greenDim;
   if (score >= 0.09) return T.amber;
   if (score > -0.09) return T.textDim;
-  if (score > -0.2) return T.amber;
+  if (score > -0.2) return "#cc5544";  // dim red for LEAN_SHORT
   if (score > -0.5) return T.red;
   return T.red;
 };
