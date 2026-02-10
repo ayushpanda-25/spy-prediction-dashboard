@@ -520,9 +520,11 @@ export default function App() {
               }}>
                 {signalLabel}
               </div>
-              <div style={{ fontSize: 9, color: T.textDim, marginTop: 6, letterSpacing: "0.04em" }}>
-                NEXT-DAY OUTLOOK · Based on {data?.lastUpdate || "EOD"} close
-              </div>
+              {data?.date && (
+                <div style={{ fontSize: 9, color: T.textDim, marginTop: 6, letterSpacing: "0.04em" }}>
+                  NEXT-DAY OUTLOOK · Using {new Date(data.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" })} close
+                </div>
+              )}
               <div style={{ marginTop: 14, display: "flex", justifyContent: "center", gap: 24 }}>
                 <div>
                   <div style={{ fontSize: 10, color: T.textDim }}>CONFIDENCE</div>
