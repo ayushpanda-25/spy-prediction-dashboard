@@ -1,8 +1,8 @@
 {
   "date": "2026-02-09",
-  "composite": 0.0011793852444795731,
+  "composite": 0.01772389181484501,
   "signal": "NEUTRAL",
-  "confidence": 0.0023587704889591462,
+  "confidence": 0.03544778362969002,
   "spyPrice": 693.95,
   "spyChange": 3.33,
   "spyChangePct": 0.0,
@@ -40,9 +40,9 @@
       ]
     },
     "macro": {
-      "score": 0.0,
+      "score": 0.10901285837630388,
       "weight": 0.2,
-      "weighted": 0.0,
+      "weighted": 0.0218,
       "label": "Macro",
       "signals": [
         {
@@ -98,9 +98,9 @@
       ]
     },
     "flows": {
-      "score": 0.007862568296530488,
+      "score": -0.040833771296078486,
       "weight": 0.15,
-      "weighted": 0.0012,
+      "weighted": -0.0061,
       "label": "Systematic Flows",
       "signals": [
         {
@@ -130,9 +130,9 @@
       ]
     },
     "technical": {
-      "score": 0.0,
+      "score": 0.020463858339960048,
       "weight": 0.1,
-      "weighted": 0.0,
+      "weighted": 0.002,
       "label": "Technical",
       "signals": [
         {
@@ -196,5 +196,5 @@
     }
   ],
   "lastUpdate": "2026-02-10 01:15:47",
-  "exportedAt": "2026-02-09T19:16:06.250490"
+  "exportedAt": "2026-02-09T19:25:24.244440"
 }

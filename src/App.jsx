@@ -377,7 +377,7 @@ export default function App() {
         {/* ── Left: Score + SPY ── */}
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           {/* Composite Score Card */}
-          <Panel title="Composite Signal" tag={composite === 0 && Object.values(factors).every((f) => f.score === 0) ? "WARMING UP" : undefined}>
+          <Panel title="Composite Signal" tag={Object.values(factors).some((f) => f.score === 0) ? `${Object.values(factors).filter((f) => f.score !== 0).length}/${Object.keys(factors).length} ACTIVE` : undefined}>
             <div style={{ textAlign: "center" }}>
               <div style={{ fontSize: 56, fontWeight: 700, color: compositeColor, lineHeight: 1, marginBottom: 6 }}>
                 {composite >= 0 ? "+" : ""}{composite.toFixed(2)}
@@ -594,16 +594,34 @@ export default function App() {
 
           {/* Factor Breakdown */}
           <Panel title="Factor Breakdown" tag={`${Object.keys(factors).length} FACTORS`} style={{ flex: 1 }} contentStyle={{ padding: "8px" }}>
-            {/* Z-score warmup notice */}
-            {composite === 0 && Object.values(factors).every((f) => f.score === 0) && (
-              <div style={{
-                margin: "4px 8px 12px", padding: "10px 12px", borderRadius: T.radius,
-                background: "rgba(255,149,0,0.06)", border: `1px solid rgba(255,149,0,0.15)`,
-                fontSize: 11, color: T.amber, lineHeight: 1.5,
-              }}>
-                <span style={{ fontWeight: 700 }}>WARMING UP</span> — Z-score normalization requires 60 days of history. Raw signal values are collecting below. Scores will activate as data accumulates.
-              </div>
-            )}
+            {/* Model info notice */}
+            {(() => {
+              const zeroFactors = Object.entries(factors).filter(([, f]) => f.score === 0);
+              const activeFactors = Object.entries(factors).filter(([, f]) => f.score !== 0);
+              if (zeroFactors.length > 0 && zeroFactors.length < Object.keys(factors).length) {
+                return (
+                  <div style={{
+                    margin: "4px 8px 12px", padding: "10px 12px", borderRadius: T.radius,
+                    background: "rgba(255,149,0,0.06)", border: `1px solid rgba(255,149,0,0.15)`,
+                    fontSize: 11, color: T.amber, lineHeight: 1.5,
+                  }}>
+                    <span style={{ fontWeight: 700 }}>{activeFactors.length}/{Object.keys(factors).length} FACTORS ACTIVE</span> — {zeroFactors.map(([, f]) => f.label).join(", ")} need more daily data for z-score normalization. Live signals are collecting; scores activate after ~60 days.
+                  </div>
+                );
+              }
+              if (zeroFactors.length === Object.keys(factors).length) {
+                return (
+                  <div style={{
+                    margin: "4px 8px 12px", padding: "10px 12px", borderRadius: T.radius,
+                    background: "rgba(255,149,0,0.06)", border: `1px solid rgba(255,149,0,0.15)`,
+                    fontSize: 11, color: T.amber, lineHeight: 1.5,
+                  }}>
+                    <span style={{ fontWeight: 700 }}>WARMING UP</span> — Z-score normalization requires ~60 days of history. Raw signal values are collecting below.
+                  </div>
+                );
+              }
+              return null;
+            })()}
             {Object.entries(factors).map(([key, factor]) => (
               <FactorBar
                 key={key}
