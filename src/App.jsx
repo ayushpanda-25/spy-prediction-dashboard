@@ -90,10 +90,19 @@ const ChartTooltip = ({ active, payload, label }) => {
 };
 
 // ── Factor Bar Component ──
-const FactorBar = ({ factor, isExpanded, onToggle }) => {
+const FactorBar = ({ factor, isExpanded, onToggle, allZero }) => {
   const barWidth = Math.abs(factor.score) * 100;
-  const barColor = factor.score >= 0 ? T.green : T.red;
-  const weightedColor = factor.weighted >= 0 ? T.green : T.red;
+  const barColor = factor.score !== 0 ? (factor.score >= 0 ? T.green : T.red) : T.textDim;
+  const weightedColor = factor.weighted !== 0 ? (factor.weighted >= 0 ? T.green : T.red) : T.textDim;
+
+  // Count signals with real values (non-null)
+  const signalsWithValues = factor.signals ? factor.signals.filter((s) => s.value != null).length : 0;
+  const totalSignals = factor.signals ? factor.signals.length : 0;
+
+  // Get a preview snippet of key signal values
+  const previewSignals = factor.signals
+    ? factor.signals.filter((s) => s.value != null && s.interpretation).slice(0, 2)
+    : [];
 
   return (
     <div style={{ marginBottom: 2 }}>
@@ -110,7 +119,9 @@ const FactorBar = ({ factor, isExpanded, onToggle }) => {
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{ width: 130, textAlign: "left" }}>
             <div style={{ fontSize: 13, color: T.text, fontWeight: 500 }}>{factor.label}</div>
-            <div style={{ fontSize: 10, color: T.textDim, marginTop: 1 }}>{(factor.weight * 100).toFixed(0)}% weight</div>
+            <div style={{ fontSize: 10, color: T.textDim, marginTop: 1 }}>
+              {(factor.weight * 100).toFixed(0)}% weight · {signalsWithValues}/{totalSignals} signals
+            </div>
           </div>
           <div style={{ flex: 1, height: 6, background: T.panelHeader, borderRadius: 3, position: "relative", overflow: "hidden" }}>
             <div style={{
@@ -129,6 +140,16 @@ const FactorBar = ({ factor, isExpanded, onToggle }) => {
           </div>
           <div style={{ color: T.textDim, fontSize: 10, transition: "transform 0.2s", transform: isExpanded ? "rotate(180deg)" : "none" }}>▾</div>
         </div>
+        {/* Show preview of raw values when collapsed and scores are zero */}
+        {!isExpanded && allZero && previewSignals.length > 0 && (
+          <div style={{ display: "flex", gap: 8, paddingTop: 6, paddingLeft: 130 + 12, flexWrap: "wrap" }}>
+            {previewSignals.map((s, i) => (
+              <span key={i} style={{ fontSize: 10, color: T.textDim, background: "rgba(255,255,255,0.03)", padding: "2px 6px", borderRadius: 2 }}>
+                {s.name}: <span style={{ color: T.text }}>{typeof s.value === "number" ? (Math.abs(s.value) > 100 ? s.value.toLocaleString() : s.value.toFixed(2)) : s.value}</span>
+              </span>
+            ))}
+          </div>
+        )}
       </button>
       {isExpanded && factor.signals && (
         <div style={{ padding: "8px 12px 12px", background: T.inset, borderTop: `1px solid ${T.border}`, margin: "0 8px 8px", borderRadius: T.radius }}>
@@ -136,7 +157,7 @@ const FactorBar = ({ factor, isExpanded, onToggle }) => {
             <thead>
               <tr style={{ color: T.textDim, textAlign: "left" }}>
                 <th style={{ padding: "4px 8px", fontWeight: 500 }}>Signal</th>
-                <th style={{ padding: "4px 8px", fontWeight: 500, textAlign: "right" }}>Value</th>
+                <th style={{ padding: "4px 8px", fontWeight: 500, textAlign: "right" }}>Raw Value</th>
                 <th style={{ padding: "4px 8px", fontWeight: 500, textAlign: "right" }}>Z-Score</th>
                 <th style={{ padding: "4px 8px", fontWeight: 500 }}>Interpretation</th>
               </tr>
@@ -145,13 +166,13 @@ const FactorBar = ({ factor, isExpanded, onToggle }) => {
               {factor.signals.map((s, i) => (
                 <tr key={i} style={{ borderTop: `1px solid ${T.border}` }}>
                   <td style={{ padding: "5px 8px", color: T.text }}>{s.name}</td>
-                  <td style={{ padding: "5px 8px", textAlign: "right", color: T.text }}>
-                    {s.value != null ? (typeof s.value === "number" ? s.value.toFixed(4) : s.value) : "—"}
+                  <td style={{ padding: "5px 8px", textAlign: "right", color: s.value != null ? T.text : T.textDim, fontWeight: s.value != null ? 500 : 400 }}>
+                    {s.value != null ? (typeof s.value === "number" ? (Math.abs(s.value) > 100 ? s.value.toLocaleString(undefined, { maximumFractionDigits: 2 }) : s.value.toFixed(4)) : s.value) : "—"}
                   </td>
                   <td style={{ padding: "5px 8px", textAlign: "right", color: s.zScore > 0.5 ? T.green : s.zScore < -0.5 ? T.red : T.textDim }}>
                     {s.zScore ? s.zScore.toFixed(2) : "—"}
                   </td>
-                  <td style={{ padding: "5px 8px", color: T.textDim }}>{s.interpretation || "—"}</td>
+                  <td style={{ padding: "5px 8px", color: s.interpretation ? T.text : T.textDim, fontSize: 10 }}>{s.interpretation || "—"}</td>
                 </tr>
               ))}
             </tbody>
@@ -168,7 +189,8 @@ export default function App() {
   const [history, setHistory] = useState([]);
   const [activityLog, setActivityLog] = useState([]);
   const [expandedFactor, setExpandedFactor] = useState(null);
-  const [chartView, setChartView] = useState("composite");
+  // Default to SPY price view when composite scores are all zero (insufficient history for z-scores)
+  const [chartView, setChartView] = useState("spy");
   const [timeRange, setTimeRange] = useState("1M");
   const [logFilter, setLogFilter] = useState("all");
   const [status, setStatus] = useState(null);
@@ -247,6 +269,13 @@ export default function App() {
   useEffect(() => {
     fetchData();
   }, [fetchData]);
+
+  // Auto-switch to composite view once real scores exist
+  useEffect(() => {
+    if (history.length > 0 && history.some((d) => d.composite !== 0)) {
+      setChartView("composite");
+    }
+  }, [history]);
 
   // Derived display values — live overrides EOD when available
   const displayPrice = liveData?.spy_price || data?.spyPrice;
@@ -348,7 +377,7 @@ export default function App() {
         {/* ── Left: Score + SPY ── */}
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           {/* Composite Score Card */}
-          <Panel title="Composite Signal">
+          <Panel title="Composite Signal" tag={composite === 0 && Object.values(factors).every((f) => f.score === 0) ? "WARMING UP" : undefined}>
             <div style={{ textAlign: "center" }}>
               <div style={{ fontSize: 56, fontWeight: 700, color: compositeColor, lineHeight: 1, marginBottom: 6 }}>
                 {composite >= 0 ? "+" : ""}{composite.toFixed(2)}
@@ -415,6 +444,7 @@ export default function App() {
                         <stop offset="100%" stopColor={T.amber} stopOpacity={0} />
                       </linearGradient>
                     </defs>
+                    <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
                     <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} />
                   </AreaChart>
                 </ResponsiveContainer>
@@ -445,7 +475,7 @@ export default function App() {
 
           {/* Live Market Data */}
           {liveData && liveData.spy_price && (
-            <Panel title="Live Market" tag={isLive ? "LIVE" : "DELAYED"}>
+            <Panel title="Live Market" tag={isLive ? "LIVE" : "CLOSED"}>
               <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 12 }}>
                 {[
                   ["SPY", liveData.spy_price, liveData.spy_change_pct],
@@ -564,12 +594,23 @@ export default function App() {
 
           {/* Factor Breakdown */}
           <Panel title="Factor Breakdown" tag={`${Object.keys(factors).length} FACTORS`} style={{ flex: 1 }} contentStyle={{ padding: "8px" }}>
+            {/* Z-score warmup notice */}
+            {composite === 0 && Object.values(factors).every((f) => f.score === 0) && (
+              <div style={{
+                margin: "4px 8px 12px", padding: "10px 12px", borderRadius: T.radius,
+                background: "rgba(255,149,0,0.06)", border: `1px solid rgba(255,149,0,0.15)`,
+                fontSize: 11, color: T.amber, lineHeight: 1.5,
+              }}>
+                <span style={{ fontWeight: 700 }}>WARMING UP</span> — Z-score normalization requires 60 days of history. Raw signal values are collecting below. Scores will activate as data accumulates.
+              </div>
+            )}
             {Object.entries(factors).map(([key, factor]) => (
               <FactorBar
                 key={key}
                 factor={factor}
                 isExpanded={expandedFactor === key}
                 onToggle={() => setExpandedFactor(expandedFactor === key ? null : key)}
+                allZero={Object.values(factors).every((f) => f.score === 0)}
               />
             ))}
           </Panel>
