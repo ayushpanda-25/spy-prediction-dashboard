@@ -157,10 +157,10 @@ export default function App() {
   const fetchData = useCallback(async () => {
     try {
       const [latestRes, histRes, logRes, statusRes] = await Promise.all([
-        fetch("/api/latest"),
-        fetch("/api/history?days=90"),
-        fetch("/api/log?limit=30"),
-        fetch("/api/status"),
+        fetch("/data/latest.json"),
+        fetch("/data/history.json"),
+        fetch("/data/log.json"),
+        fetch("/data/status.json"),
       ]);
       const latest = await latestRes.json();
       const hist = await histRes.json();
@@ -192,19 +192,22 @@ export default function App() {
   useEffect(() => {
     fetchData();
 
-    // Connect to SSE stream for live data
-    const evtSource = new EventSource("/api/stream");
-    evtSource.onmessage = (event) => {
-      try {
-        const tick = JSON.parse(event.data);
-        setLiveData(tick);
-      } catch (e) {
-        // ignore parse errors
-      }
-    };
-    evtSource.onerror = () => {
-      console.log("SSE reconnecting...");
-    };
+    // SSE live stream — only connect if running locally (not static deploy)
+    let evtSource = null;
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      evtSource = new EventSource("/api/stream");
+      evtSource.onmessage = (event) => {
+        try {
+          const tick = JSON.parse(event.data);
+          setLiveData(tick);
+        } catch (e) {
+          // ignore parse errors
+        }
+      };
+      evtSource.onerror = () => {
+        console.log("SSE reconnecting...");
+      };
+    }
 
     // Auto-refresh every 5 minutes during market hours
     const interval = setInterval(() => {
@@ -216,7 +219,7 @@ export default function App() {
     }, 5 * 60 * 1000);
 
     return () => {
-      evtSource.close();
+      if (evtSource) evtSource.close();
       clearInterval(interval);
     };
   }, [fetchData]);
