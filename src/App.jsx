@@ -293,6 +293,7 @@ export default function App() {
   const [backtest, setBacktest] = useState(null);
   const [calendarEvents, setCalendarEvents] = useState([]);
   const [logExpanded, setLogExpanded] = useState(false);
+  const [calendarExpanded, setCalendarExpanded] = useState(false);
   const [newsHeadlines, setNewsHeadlines] = useState([]);
 
   // Fetch live market data from serverless function
@@ -853,86 +854,114 @@ export default function App() {
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           {/* Economic Calendar + Alerts */}
           <Panel title="Events & Alerts" tag={calendarEvents.length > 0 ? `${calendarEvents.length} UPCOMING` : undefined}>
-            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-              {/* Economic Calendar Events */}
-              {calendarEvents.length > 0 ? calendarEvents.map((evt, i) => {
-                const isHigh = evt.impact === "high" || evt.impact === "High";
-                const impactColor = isHigh ? T.red : T.amber;
-                const impactBg = isHigh ? "rgba(255, 59, 59, 0.08)" : "rgba(255, 149, 0, 0.06)";
-                const evtDate = evt.date ? new Date(evt.date + "T12:00:00") : null;
-                const isToday = evtDate && new Date().toDateString() === evtDate.toDateString();
-                const isTomorrow = evtDate && new Date(Date.now() + 86400000).toDateString() === evtDate.toDateString();
-                const dayLabel = isToday ? "TODAY" : isTomorrow ? "TOMORROW" : evtDate
-                  ? evtDate.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }).toUpperCase()
-                  : "";
-                return (
-                  <div
-                    key={i}
-                    style={{
-                      padding: "8px 10px", borderRadius: T.radius, fontSize: 12,
-                      background: isToday ? "rgba(255, 59, 59, 0.12)" : impactBg,
-                      borderLeft: `3px solid ${impactColor}`,
-                    }}
-                  >
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 3 }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                        <span style={{
-                          fontSize: 8, fontWeight: 700, letterSpacing: "0.06em",
-                          padding: "1px 4px", borderRadius: 2,
-                          background: isHigh ? "rgba(255,59,59,0.2)" : "rgba(255,149,0,0.15)",
-                          color: impactColor,
-                        }}>
-                          {isHigh ? "HIGH" : "MED"}
-                        </span>
-                        <span style={{ color: isToday ? T.red : T.amber, fontSize: 10, fontWeight: 600 }}>{dayLabel}</span>
-                      </div>
-                      {evt.time && (
-                        <span style={{ fontSize: 10, color: T.textDim }}>{evt.time}</span>
-                      )}
-                    </div>
-                    <div style={{ color: T.text, fontWeight: 600, fontSize: 13 }}>{evt.event}</div>
-                    {(evt.previous != null || evt.estimate != null || evt.actual != null) && (
-                      <div style={{ display: "flex", gap: 12, marginTop: 4, fontSize: 10, color: T.textDim }}>
-                        {evt.previous != null && <span>Prev: <span style={{ color: T.text }}>{evt.previous}{evt.unit || ""}</span></span>}
-                        {evt.estimate != null && <span>Est: <span style={{ color: T.amber }}>{evt.estimate}{evt.unit || ""}</span></span>}
-                        {evt.actual != null && <span>Act: <span style={{ color: T.green, fontWeight: 700 }}>{evt.actual}{evt.unit || ""}</span></span>}
-                      </div>
-                    )}
-                  </div>
-                );
-              }) : (
-                <div style={{ color: T.textDim, fontSize: 12 }}>No upcoming events</div>
-              )}
+            {(() => {
+              // Use ET date for accurate TODAY/TOMORROW labels
+              const nowET = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+              const todayStr = `${nowET.getFullYear()}-${String(nowET.getMonth() + 1).padStart(2, "0")}-${String(nowET.getDate()).padStart(2, "0")}`;
+              const tmrw = new Date(nowET); tmrw.setDate(tmrw.getDate() + 1);
+              const tmrwStr = `${tmrw.getFullYear()}-${String(tmrw.getMonth() + 1).padStart(2, "0")}-${String(tmrw.getDate()).padStart(2, "0")}`;
 
-              {/* Signal & Market Alerts (non-calendar) */}
-              {alerts.filter(a => a.type !== "calendar" && a.type !== "info").length > 0 && (
-                <>
-                  <div style={{ borderTop: `1px solid ${T.border}`, margin: "4px 0" }} />
-                  {alerts.filter(a => a.type !== "calendar" && a.type !== "info").map((alert, i) => (
-                    <div
-                      key={`alert-${i}`}
-                      style={{
-                        padding: "8px 10px", borderRadius: T.radius, fontSize: 12,
-                        background: getSeverityBg(alert.severity),
-                        borderLeft: `3px solid ${getSeverityColor(alert.severity)}`,
-                      }}
-                    >
-                      <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
-                        <span style={{
-                          fontSize: 8, textTransform: "uppercase", fontWeight: 700, letterSpacing: "0.05em",
-                          padding: "1px 4px", borderRadius: 2,
-                          background: alert.severity === "high" ? "rgba(255,59,59,0.2)" : "rgba(255,149,0,0.15)",
-                          color: getSeverityColor(alert.severity),
-                        }}>
-                          {alert.severity === "high" ? "ALERT" : "WARN"}
-                        </span>
+              const visibleEvents = calendarExpanded ? calendarEvents : calendarEvents.slice(0, 5);
+              const hasMore = calendarEvents.length > 5;
+              const nonCalendarAlerts = alerts.filter(a => a.type !== "calendar" && a.type !== "info");
+
+              return (
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  {visibleEvents.length > 0 ? visibleEvents.map((evt, i) => {
+                    const isHigh = evt.impact === "high" || evt.impact === "High";
+                    const impactColor = isHigh ? T.red : T.amber;
+                    const impactBg = isHigh ? "rgba(255, 59, 59, 0.08)" : "rgba(255, 149, 0, 0.06)";
+                    const isToday = evt.date === todayStr;
+                    const isTomorrow = evt.date === tmrwStr;
+                    const evtDate = evt.date ? new Date(evt.date + "T12:00:00") : null;
+                    const dayLabel = isToday ? "TODAY" : isTomorrow ? "TOMORROW" : evtDate
+                      ? evtDate.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }).toUpperCase()
+                      : "";
+                    return (
+                      <div
+                        key={i}
+                        style={{
+                          padding: "8px 10px", borderRadius: T.radius, fontSize: 12,
+                          background: isToday ? "rgba(255, 59, 59, 0.12)" : impactBg,
+                          borderLeft: `3px solid ${impactColor}`,
+                        }}
+                      >
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 3 }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                            <span style={{
+                              fontSize: 8, fontWeight: 700, letterSpacing: "0.06em",
+                              padding: "1px 4px", borderRadius: 2,
+                              background: isHigh ? "rgba(255,59,59,0.2)" : "rgba(255,149,0,0.15)",
+                              color: impactColor,
+                            }}>
+                              {isHigh ? "HIGH" : "MED"}
+                            </span>
+                            <span style={{ color: isToday ? T.red : isTomorrow ? T.amber : T.textDim, fontSize: 10, fontWeight: 600 }}>{dayLabel}</span>
+                          </div>
+                          {evt.time && (
+                            <span style={{ fontSize: 10, color: T.textDim }}>{evt.time}</span>
+                          )}
+                        </div>
+                        <div style={{ color: T.text, fontWeight: 600, fontSize: 13 }}>{evt.event}</div>
+                        {(evt.previous != null || evt.estimate != null || evt.actual != null) && (
+                          <div style={{ display: "flex", gap: 12, marginTop: 4, fontSize: 10, color: T.textDim }}>
+                            {evt.previous != null && <span>Prev: <span style={{ color: T.text }}>{evt.previous}{evt.unit || ""}</span></span>}
+                            {evt.estimate != null && <span>Est: <span style={{ color: T.amber }}>{evt.estimate}{evt.unit || ""}</span></span>}
+                            {evt.actual != null && <span>Act: <span style={{ color: T.green, fontWeight: 700 }}>{evt.actual}{evt.unit || ""}</span></span>}
+                          </div>
+                        )}
                       </div>
-                      <div style={{ color: T.text, lineHeight: 1.4 }}>{alert.text}</div>
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
+                    );
+                  }) : (
+                    <div style={{ color: T.textDim, fontSize: 12 }}>No upcoming events</div>
+                  )}
+
+                  {hasMore && (
+                    <button
+                      onClick={() => setCalendarExpanded(!calendarExpanded)}
+                      style={{
+                        background: "none", border: `1px solid ${T.border}`, borderRadius: T.radius,
+                        color: T.amber, fontSize: 10, padding: "6px 0", cursor: "pointer",
+                        fontFamily: T.font, fontWeight: 600, letterSpacing: "0.05em",
+                        width: "100%",
+                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,149,0,0.08)")}
+                      onMouseLeave={(e) => (e.currentTarget.style.background = "none")}
+                    >
+                      {calendarExpanded ? "SHOW LESS" : `SHOW ALL ${calendarEvents.length} EVENTS`}
+                    </button>
+                  )}
+
+                  {nonCalendarAlerts.length > 0 && (
+                    <>
+                      <div style={{ borderTop: `1px solid ${T.border}`, margin: "4px 0" }} />
+                      {nonCalendarAlerts.map((alert, i) => (
+                        <div
+                          key={`alert-${i}`}
+                          style={{
+                            padding: "8px 10px", borderRadius: T.radius, fontSize: 12,
+                            background: getSeverityBg(alert.severity),
+                            borderLeft: `3px solid ${getSeverityColor(alert.severity)}`,
+                          }}
+                        >
+                          <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
+                            <span style={{
+                              fontSize: 8, textTransform: "uppercase", fontWeight: 700, letterSpacing: "0.05em",
+                              padding: "1px 4px", borderRadius: 2,
+                              background: alert.severity === "high" ? "rgba(255,59,59,0.2)" : "rgba(255,149,0,0.15)",
+                              color: getSeverityColor(alert.severity),
+                            }}>
+                              {alert.severity === "high" ? "ALERT" : "WARN"}
+                            </span>
+                          </div>
+                          <div style={{ color: T.text, lineHeight: 1.4 }}>{alert.text}</div>
+                        </div>
+                      ))}
+                    </>
+                  )}
+                </div>
+              );
+            })()}
           </Panel>
 
           {/* Signal Backtest */}
