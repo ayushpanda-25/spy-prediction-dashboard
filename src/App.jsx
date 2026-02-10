@@ -199,6 +199,70 @@ const FactorBar = ({ factor, isExpanded, onToggle, allZero }) => {
   );
 };
 
+// ── SPY Price Card (separate component for clean hover state) ──
+const SpyPriceCard = ({ history, displayPrice, displayChange, displayChangePct }) => {
+  const [hovered, setHovered] = useState(null);
+  const spyChartData = useMemo(() => history.slice(-20), [history]);
+  const basePrice = spyChartData.length > 0 ? spyChartData[0].spy : null;
+
+  const price = hovered ? hovered.spy : displayPrice;
+  const date = hovered ? hovered.fullDate : null;
+  const change = hovered && basePrice ? hovered.spy - basePrice : displayChange;
+  const changePct = hovered && basePrice && basePrice > 0
+    ? ((hovered.spy - basePrice) / basePrice * 100)
+    : displayChangePct;
+
+  return (
+    <>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+        <div>
+          <div style={{ fontSize: 32, fontWeight: 700 }}>
+            ${price ? Number(price).toFixed(2) : "---"}
+          </div>
+          {date && (
+            <div style={{ fontSize: 10, color: T.textDim, marginTop: 2 }}>{date}</div>
+          )}
+        </div>
+        <div style={{ textAlign: "right" }}>
+          <div style={{ fontSize: 16, fontWeight: 600, color: (change || 0) >= 0 ? T.green : T.red }}>
+            {change != null ? `${change >= 0 ? "+" : ""}${Number(change).toFixed(2)}` : "---"}
+          </div>
+          <div style={{ fontSize: 12, color: (changePct || 0) >= 0 ? T.green : T.red }}>
+            {changePct != null ? `(${changePct >= 0 ? "+" : ""}${Number(changePct).toFixed(2)}%)` : ""}
+          </div>
+        </div>
+      </div>
+      <div style={{ marginTop: 12, height: 80 }}>
+        {spyChartData.length > 0 && (
+          <ResponsiveContainer width="100%" height="100%">
+            <AreaChart
+              data={spyChartData}
+              margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+              onMouseMove={(e) => {
+                if (e && e.activePayload && e.activePayload.length > 0) {
+                  setHovered(e.activePayload[0].payload);
+                }
+              }}
+              onMouseLeave={() => setHovered(null)}
+            >
+              <defs>
+                <linearGradient id="spyGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor={T.amber} stopOpacity={0.3} />
+                  <stop offset="100%" stopColor={T.amber} stopOpacity={0} />
+                </linearGradient>
+              </defs>
+              <XAxis dataKey="date" hide />
+              <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
+              <Tooltip wrapperStyle={{ visibility: 'hidden' }} cursor={{ stroke: T.textDim, strokeWidth: 1 }} />
+              <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: T.amber }} isAnimationActive={false} />
+            </AreaChart>
+          </ResponsiveContainer>
+        )}
+      </div>
+    </>
+  );
+};
+
 // ── Main Dashboard ──
 export default function App() {
   const [data, setData] = useState(null);
@@ -215,7 +279,6 @@ export default function App() {
   const [liveData, setLiveData] = useState(null);
   const [liveError, setLiveError] = useState(false);
   const [backtest, setBacktest] = useState(null);
-  const [hoveredSpy, setHoveredSpy] = useState(null);
 
   // Fetch live market data from serverless function
   const fetchLive = useCallback(async () => {
@@ -450,64 +513,12 @@ export default function App() {
 
           {/* SPY Price Card */}
           <Panel title="SPY">
-            {(() => {
-              const spyChartData = history.slice(-20);
-              const hPrice = hoveredSpy ? hoveredSpy.spy : displayPrice;
-              const hDate = hoveredSpy ? hoveredSpy.fullDate : null;
-              // Compute change from first visible point when hovering
-              const basePrice = spyChartData.length > 0 ? spyChartData[0].spy : null;
-              const hChange = hoveredSpy && basePrice ? hoveredSpy.spy - basePrice : displayChange;
-              const hChangePct = hoveredSpy && basePrice && basePrice > 0 ? ((hoveredSpy.spy - basePrice) / basePrice * 100) : displayChangePct;
-              return (
-                <>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
-                    <div>
-                      <div style={{ fontSize: 32, fontWeight: 700 }}>
-                        ${hPrice ? Number(hPrice).toFixed(2) : "---"}
-                      </div>
-                      {hDate && (
-                        <div style={{ fontSize: 10, color: T.textDim, marginTop: 2 }}>{hDate}</div>
-                      )}
-                    </div>
-                    <div style={{ textAlign: "right" }}>
-                      <div style={{ fontSize: 16, fontWeight: 600, color: (hChange || 0) >= 0 ? T.green : T.red }}>
-                        {hChange != null ? `${hChange >= 0 ? "+" : ""}${Number(hChange).toFixed(2)}` : "---"}
-                      </div>
-                      <div style={{ fontSize: 12, color: (hChangePct || 0) >= 0 ? T.green : T.red }}>
-                        {hChangePct != null ? `(${hChangePct >= 0 ? "+" : ""}${Number(hChangePct).toFixed(2)}%)` : ""}
-                      </div>
-                    </div>
-                  </div>
-                  <div style={{ marginTop: 12, height: 80 }}>
-                    {spyChartData.length > 0 && (
-                      <ResponsiveContainer width="100%" height="100%">
-                        <AreaChart
-                          data={spyChartData}
-                          margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
-                          onMouseMove={(e) => {
-                            if (e && e.activePayload && e.activePayload.length > 0) {
-                              setHoveredSpy(e.activePayload[0].payload);
-                            }
-                          }}
-                          onMouseLeave={() => setHoveredSpy(null)}
-                        >
-                          <defs>
-                            <linearGradient id="spyGrad" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="0%" stopColor={T.amber} stopOpacity={0.3} />
-                              <stop offset="100%" stopColor={T.amber} stopOpacity={0} />
-                            </linearGradient>
-                          </defs>
-                          <XAxis dataKey="date" hide />
-                          <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
-                          <Tooltip wrapperStyle={{ visibility: 'hidden' }} cursor={{ stroke: T.textDim, strokeWidth: 1 }} />
-                          <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: T.amber }} isAnimationActive={false} />
-                        </AreaChart>
-                      </ResponsiveContainer>
-                    )}
-                  </div>
-                </>
-              );
-            })()}
+            <SpyPriceCard
+              history={history}
+              displayPrice={displayPrice}
+              displayChange={displayChange}
+              displayChangePct={displayChangePct}
+            />
           </Panel>
 
           {/* Factor Contribution Chart */}
