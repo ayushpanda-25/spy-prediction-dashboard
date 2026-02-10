@@ -292,6 +292,7 @@ export default function App() {
   const [liveError, setLiveError] = useState(false);
   const [backtest, setBacktest] = useState(null);
   const [calendarEvents, setCalendarEvents] = useState([]);
+  const [logExpanded, setLogExpanded] = useState(false);
 
   // Fetch live market data from serverless function
   const fetchLive = useCallback(async () => {
@@ -989,50 +990,70 @@ export default function App() {
                 ))}
               </div>
             </div>
-            <div style={{ flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: 1 }}>
-              {activityLog
-                .filter((e) => logFilter === "all" || e.type === logFilter)
-                .map((entry, i) => {
-                  const statusColor = entry.status === "ok" ? T.green : entry.status === "warn" ? T.amber : T.red;
-                  const isEOD = entry.type === "eod";
-                  return (
-                    <div
-                      key={i}
-                      style={{
-                        padding: "6px 8px", borderRadius: T.radius, fontSize: 11,
-                        background: i === 0 ? "rgba(255,149,0,0.05)" : "transparent",
-                        borderLeft: i === 0 ? `2px solid ${T.amber}` : "2px solid transparent",
-                      }}
-                    >
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 2 }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                          <div style={{ width: 5, height: 5, borderRadius: "50%", background: statusColor }} />
-                          <span style={{ color: T.textDim, fontSize: 10 }}>
-                            {(entry.time || "").split(" ")[1] || ""}
-                          </span>
-                          <span style={{
-                            fontSize: 9, padding: "1px 5px", borderRadius: 2, fontWeight: 700, letterSpacing: "0.05em",
-                            background: isEOD ? "rgba(255,149,0,0.12)" : "rgba(107,114,128,0.12)",
-                            color: isEOD ? T.amber : T.textDim,
-                          }}>
-                            {(entry.type || "").toUpperCase()}
-                          </span>
+            {(() => {
+              const filtered = activityLog.filter((e) => logFilter === "all" || e.type === logFilter);
+              const visible = logExpanded ? filtered : filtered.slice(0, 5);
+              const hasMore = filtered.length > 5;
+              return (
+                <div style={{ flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: 1 }}>
+                  {visible.map((entry, i) => {
+                    const statusColor = entry.status === "ok" ? T.green : entry.status === "warn" ? T.amber : T.red;
+                    const isEOD = entry.type === "eod";
+                    return (
+                      <div
+                        key={i}
+                        style={{
+                          padding: "6px 8px", borderRadius: T.radius, fontSize: 11,
+                          background: i === 0 ? "rgba(255,149,0,0.05)" : "transparent",
+                          borderLeft: i === 0 ? `2px solid ${T.amber}` : "2px solid transparent",
+                        }}
+                      >
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 2 }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                            <div style={{ width: 5, height: 5, borderRadius: "50%", background: statusColor }} />
+                            <span style={{ color: T.textDim, fontSize: 10 }}>
+                              {(entry.time || "").split(" ")[1] || ""}
+                            </span>
+                            <span style={{
+                              fontSize: 9, padding: "1px 5px", borderRadius: 2, fontWeight: 700, letterSpacing: "0.05em",
+                              background: isEOD ? "rgba(255,149,0,0.12)" : "rgba(107,114,128,0.12)",
+                              color: isEOD ? T.amber : T.textDim,
+                            }}>
+                              {(entry.type || "").toUpperCase()}
+                            </span>
+                          </div>
+                          <span style={{ color: T.textDim, fontSize: 10 }}>{entry.duration || ""}</span>
                         </div>
-                        <span style={{ color: T.textDim, fontSize: 10 }}>{entry.duration || ""}</span>
+                        <div style={{ color: T.text, fontSize: 11, paddingLeft: 11, opacity: 0.8 }}>{entry.message || ""}</div>
+                        {i === 0 && entry.time && (
+                          <div style={{ color: T.textDim, fontSize: 9, paddingLeft: 11, marginTop: 2 }}>
+                            {entry.time.split(" ")[0]}
+                          </div>
+                        )}
                       </div>
-                      <div style={{ color: T.text, fontSize: 11, paddingLeft: 11, opacity: 0.8 }}>{entry.message || ""}</div>
-                      {i === 0 && entry.time && (
-                        <div style={{ color: T.textDim, fontSize: 9, paddingLeft: 11, marginTop: 2 }}>
-                          {entry.time.split(" ")[0]}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              {activityLog.length === 0 && (
-                <div style={{ color: T.textDim, fontSize: 11, padding: 8 }}>No activity logged yet</div>
-              )}
-            </div>
+                    );
+                  })}
+                  {filtered.length === 0 && (
+                    <div style={{ color: T.textDim, fontSize: 11, padding: 8 }}>No activity logged yet</div>
+                  )}
+                  {hasMore && (
+                    <button
+                      onClick={() => setLogExpanded(!logExpanded)}
+                      style={{
+                        background: "none", border: `1px solid ${T.border}`, borderRadius: T.radius,
+                        color: T.amber, fontSize: 10, padding: "6px 0", cursor: "pointer",
+                        fontFamily: T.font, fontWeight: 600, letterSpacing: "0.05em",
+                        marginTop: 4, width: "100%",
+                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,149,0,0.08)")}
+                      onMouseLeave={(e) => (e.currentTarget.style.background = "none")}
+                    >
+                      {logExpanded ? `SHOW LESS` : `SHOW ALL ${filtered.length} ENTRIES`}
+                    </button>
+                  )}
+                </div>
+              );
+            })()}
           </Panel>
 
           {/* Model Info */}
