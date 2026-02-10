@@ -1,8 +1,8 @@
 {
   "date": "2026-02-09",
-  "composite": 0.0,
+  "composite": 0.0023587704889591467,
   "signal": "NEUTRAL",
-  "confidence": 0.0,
+  "confidence": 0.004717540977918293,
   "spyPrice": 694.87,
   "spyChange": 4.25,
   "spyChangePct": 0.0,
@@ -98,9 +98,9 @@
       ]
     },
     "flows": {
-      "score": 0.0,
+      "score": 0.01572513659306098,
       "weight": 0.15,
-      "weighted": 0.0,
+      "weighted": 0.0024,
       "label": "Systematic Flows",
       "signals": [
         {
@@ -196,5 +196,5 @@
     }
   ],
   "lastUpdate": "2026-02-09 18:24:40",
-  "exportedAt": "2026-02-09T16:30:00.496935"
+  "exportedAt": "2026-02-09T18:45:04.684557"
 }

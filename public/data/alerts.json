@@ -29,7 +29,19 @@
       "severity": "low",
       "text": "Check economic calendar for upcoming data releases",
       "date": "2026-02-03"
+    },
+    {
+      "type": "info",
+      "severity": "low",
+      "text": "Check economic calendar for upcoming data releases",
+      "date": "2026-02-02"
+    },
+    {
+      "type": "info",
+      "severity": "low",
+      "text": "Check economic calendar for upcoming data releases",
+      "date": "2026-01-30"
     }
   ],
-  "exportedAt": "2026-02-09T16:30:00.497001"
+  "exportedAt": "2026-02-09T18:45:04.684931"
 }
