@@ -132,6 +132,11 @@ const FactorBar = ({ factor, isExpanded, onToggle, allZero }) => {
             <div style={{ fontSize: 13, color: T.text, fontWeight: 500 }}>{factor.label}</div>
             <div style={{ fontSize: 10, color: T.textDim, marginTop: 1 }}>
               {(factor.weight * 100).toFixed(0)}% weight · {signalsWithValues}/{totalSignals} signals
+              {factor.lastUpdated && (
+                <span style={{ marginLeft: 4, opacity: 0.7 }}>
+                  · {new Date(factor.lastUpdated + "Z").toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}
+                </span>
+              )}
             </div>
           </div>
           <div style={{ flex: 1, height: 6, background: T.panelHeader, borderRadius: 3, position: "relative", overflow: "hidden" }}>
@@ -199,7 +204,7 @@ export default function App() {
   const [data, setData] = useState(null);
   const [history, setHistory] = useState([]);
   const [activityLog, setActivityLog] = useState([]);
-  const [expandedFactor, setExpandedFactor] = useState(null);
+  const [expandedFactors, setExpandedFactors] = useState(new Set());
   // Default to SPY price view when composite scores are all zero (insufficient history for z-scores)
   const [chartView, setChartView] = useState("spy");
   const [timeRange, setTimeRange] = useState("1M");
@@ -264,11 +269,11 @@ export default function App() {
       if (latest.exportedAt) setExportedAt(latest.exportedAt);
       if (hist.data) {
         setHistory(hist.data.map((d) => {
-          const dt = new Date(d.date);
+          const dt = new Date(d.date + "T12:00:00");
           return {
             ...d,
             date: `${dt.getMonth() + 1}/${dt.getDate()}`,
-            fullDate: new Date(d.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
+            fullDate: dt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
             composite: d.composite,
             spy: d.spyPrice,
           };
@@ -651,8 +656,12 @@ export default function App() {
               <FactorBar
                 key={key}
                 factor={factor}
-                isExpanded={expandedFactor === key}
-                onToggle={() => setExpandedFactor(expandedFactor === key ? null : key)}
+                isExpanded={expandedFactors.has(key)}
+                onToggle={() => setExpandedFactors(prev => {
+                  const next = new Set(prev);
+                  next.has(key) ? next.delete(key) : next.add(key);
+                  return next;
+                })}
                 allZero={Object.values(factors).every((f) => f.score === 0)}
               />
             ))}

@@ -14,12 +14,6 @@
       "label": "Options Flow",
       "signals": [
         {
-          "name": "Gex",
-          "value": 0.0,
-          "zScore": 0,
-          "interpretation": "Neutral"
-        },
-        {
           "name": "Iv Term Structure",
           "value": 0.9907,
           "zScore": 0,
@@ -30,14 +24,9 @@
           "value": 0.1495,
           "zScore": 0,
           "interpretation": "Steep skew (fear)"
-        },
-        {
-          "name": "Zero Dte Share",
-          "value": 0.0128,
-          "zScore": 0,
-          "interpretation": "Normal"
         }
-      ]
+      ],
+      "lastUpdated": "2026-02-09 18:24:40"
     },
     "macro": {
       "score": 0.10901285837630388,
@@ -69,7 +58,8 @@
           "zScore": 0,
           "interpretation": "Inverted (recession signal)"
         }
-      ]
+      ],
+      "lastUpdated": "2026-02-09 18:24:40"
     },
     "microstructure": {
       "score": 0.333469264511034,
@@ -77,12 +67,6 @@
       "weighted": 0.0667,
       "label": "Microstructure",
       "signals": [
-        {
-          "name": "Block Trade Imbalance",
-          "value": 0.0623,
-          "zScore": 0,
-          "interpretation": "Short-biased"
-        },
         {
           "name": "Dark Pool Pct",
           "value": 0.5918,
@@ -95,7 +79,8 @@
           "zScore": 0,
           "interpretation": "Normal"
         }
-      ]
+      ],
+      "lastUpdated": "2026-02-09 18:24:40"
     },
     "flows": {
       "score": -0.040833771296078486,
@@ -127,7 +112,8 @@
           "zScore": 0,
           "interpretation": "Low alloc \u2192 room to add"
         }
-      ]
+      ],
+      "lastUpdated": "2026-02-09 18:24:40"
     },
     "technical": {
       "score": 0.020463858339960048,
@@ -159,7 +145,8 @@
           "zScore": 0,
           "interpretation": "Below avg volume"
         }
-      ]
+      ],
+      "lastUpdated": "2026-02-09 18:24:40"
     },
     "sentiment": {
       "score": -0.2928526394812647,
@@ -185,7 +172,8 @@
           "zScore": 0,
           "interpretation": "Slightly positive"
         }
-      ]
+      ],
+      "lastUpdated": "2026-02-09 18:24:40"
     }
   },
   "alerts": [
@@ -196,5 +184,5 @@
     }
   ],
   "lastUpdate": "2026-02-10 01:15:47",
-  "exportedAt": "2026-02-09T21:46:01.926116"
+  "exportedAt": "2026-02-09T21:58:08.919903"
 }
