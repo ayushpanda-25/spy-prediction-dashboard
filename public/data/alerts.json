@@ -1,9 +1,9 @@
 {
   "alerts": [
     {
-      "type": "info",
-      "severity": "low",
-      "text": "Check economic calendar for upcoming data releases",
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: CPI 02-11",
       "date": "2026-02-09"
     },
     {
@@ -43,5 +43,5 @@
       "date": "2026-01-30"
     }
   ],
-  "exportedAt": "2026-02-09T19:31:51.600373"
+  "exportedAt": "2026-02-09T19:46:50.565803"
 }

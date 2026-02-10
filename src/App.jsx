@@ -198,6 +198,7 @@ export default function App() {
   const [exportedAt, setExportedAt] = useState(null);
   const [liveData, setLiveData] = useState(null);
   const [liveError, setLiveError] = useState(false);
+  const [backtest, setBacktest] = useState(null);
 
   // Fetch live market data from serverless function
   const fetchLive = useCallback(async () => {
@@ -232,16 +233,21 @@ export default function App() {
   // Fetch data from static JSON files
   const fetchData = useCallback(async () => {
     try {
-      const [latestRes, histRes, logRes, statusRes] = await Promise.all([
+      const [latestRes, histRes, logRes, statusRes, btRes] = await Promise.all([
         fetch("/data/latest.json"),
         fetch("/data/history.json"),
         fetch("/data/log.json"),
         fetch("/data/status.json"),
+        fetch("/data/backtest.json").catch(() => null),
       ]);
       const latest = await latestRes.json();
       const hist = await histRes.json();
       const log = await logRes.json();
       const st = await statusRes.json();
+      if (btRes && btRes.ok) {
+        const bt = await btRes.json();
+        setBacktest(bt);
+      }
 
       if (!latest.error) setData(latest);
       if (latest.exportedAt) setExportedAt(latest.exportedAt);
@@ -663,6 +669,90 @@ export default function App() {
               )}
             </div>
           </Panel>
+
+          {/* Signal Backtest */}
+          {backtest && backtest.hitRate && Object.keys(backtest.hitRate).length > 0 && (
+            <Panel title="Signal Accuracy" tag={`${backtest.totalSignals} SIGNALS`}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                {/* Hit rate bars */}
+                <div style={{ display: "flex", gap: 8 }}>
+                  {["1d", "3d", "5d"].map((h) => {
+                    const d = backtest.hitRate[h];
+                    if (!d) return null;
+                    const pct = d.hitRate;
+                    const isGood = pct >= 55;
+                    const color = isGood ? T.green : pct >= 50 ? T.amber : T.red;
+                    return (
+                      <div key={h} style={{ flex: 1, textAlign: "center" }}>
+                        <div style={{ fontSize: 10, color: T.textDim, marginBottom: 4, textTransform: "uppercase", letterSpacing: "0.05em" }}>{h} hit</div>
+                        <div style={{ fontSize: 22, fontWeight: 700, color, lineHeight: 1 }}>{pct.toFixed(0)}%</div>
+                        <div style={{ fontSize: 9, color: T.textDim, marginTop: 2 }}>n={d.count}</div>
+                        <div style={{ height: 3, background: T.panelHeader, borderRadius: 2, marginTop: 4, overflow: "hidden" }}>
+                          <div style={{ height: "100%", width: `${pct}%`, background: color, borderRadius: 2 }} />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                {/* Long vs Short breakdown */}
+                <div style={{ borderTop: `1px solid ${T.border}`, paddingTop: 8 }}>
+                  <div style={{ display: "flex", gap: 12 }}>
+                    {["long", "short"].map((dir) => {
+                      const d = backtest.hitRate[`1d_${dir}`];
+                      if (!d) return null;
+                      const color = dir === "long" ? T.green : T.red;
+                      return (
+                        <div key={dir} style={{ flex: 1 }}>
+                          <div style={{ fontSize: 10, color, fontWeight: 600, marginBottom: 4, textTransform: "uppercase" }}>
+                            {dir} signals
+                          </div>
+                          {["1d", "3d", "5d"].map((h) => {
+                            const hd = backtest.hitRate[`${h}_${dir}`];
+                            if (!hd) return null;
+                            return (
+                              <div key={h} style={{ display: "flex", justifyContent: "space-between", fontSize: 11, padding: "2px 0", color: T.text }}>
+                                <span style={{ color: T.textDim }}>{h}</span>
+                                <span style={{ fontWeight: 500 }}>{hd.hitRate.toFixed(0)}% <span style={{ color: T.textDim, fontSize: 9 }}>({hd.avgReturn >= 0 ? "+" : ""}{hd.avgReturn.toFixed(2)}%)</span></span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+                {/* Recent signals */}
+                {backtest.records && backtest.records.length > 0 && (
+                  <div style={{ borderTop: `1px solid ${T.border}`, paddingTop: 8 }}>
+                    <div style={{ fontSize: 10, color: T.textDim, marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.05em" }}>Recent Signals</div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                      {backtest.records.slice(-8).reverse().map((r, i) => {
+                        const isLong = r.composite > 0;
+                        const sigColor = isLong ? T.green : T.red;
+                        const hit1d = r.hit_1d;
+                        return (
+                          <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 10, padding: "3px 4px", background: i === 0 ? "rgba(255,149,0,0.05)" : "transparent", borderRadius: 2 }}>
+                            <span style={{ color: T.textDim, width: 55 }}>{r.date.slice(5)}</span>
+                            <span style={{ color: sigColor, fontWeight: 600, width: 45, textAlign: "center" }}>{isLong ? "LONG" : "SHORT"}</span>
+                            <span style={{ color: T.text, width: 40, textAlign: "right" }}>{r.composite >= 0 ? "+" : ""}{r.composite.toFixed(2)}</span>
+                            <span style={{ width: 45, textAlign: "right", color: r.return_1d != null ? (r.return_1d >= 0 ? T.green : T.red) : T.textDim }}>
+                              {r.return_1d != null ? `${r.return_1d >= 0 ? "+" : ""}${r.return_1d.toFixed(1)}%` : "..."}
+                            </span>
+                            <span style={{ width: 16, textAlign: "center" }}>
+                              {hit1d === 1 ? <span style={{ color: T.green }}>&#10003;</span> : hit1d === 0 ? <span style={{ color: T.red }}>&#10007;</span> : <span style={{ color: T.textDim }}>-</span>}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+                <div style={{ fontSize: 9, color: T.textDim, textAlign: "center" }}>
+                  Based on {backtest.totalSignals} non-neutral signals from backfilled + live data
+                </div>
+              </div>
+            </Panel>
+          )}
 
           {/* Factor Scores Summary */}
           <Panel title="Factor Scores">
