@@ -200,6 +200,7 @@ const FactorBar = ({ factor, isExpanded, onToggle, allZero }) => {
 };
 
 // ── SPY Price Card (separate component for clean hover state) ──
+// Recharts v3 removed activePayload from onMouseMove — must use Tooltip content to capture hover data
 const SpyPriceCard = ({ history, displayPrice, displayChange, displayChangePct }) => {
   const [hovered, setHovered] = useState(null);
   const spyChartData = useMemo(() => history.slice(-20), [history]);
@@ -211,6 +212,17 @@ const SpyPriceCard = ({ history, displayPrice, displayChange, displayChangePct }
   const changePct = hovered && basePrice && basePrice > 0
     ? ((hovered.spy - basePrice) / basePrice * 100)
     : displayChangePct;
+
+  // Recharts v3: Tooltip content component receives {active, payload, label}
+  // We use this to capture the hovered data point via a ref + state update
+  const SpyTooltipCapture = useCallback(({ active, payload }) => {
+    if (active && payload && payload.length > 0) {
+      const pt = payload[0].payload;
+      // Use setTimeout to avoid setState during render
+      setTimeout(() => setHovered(pt), 0);
+    }
+    return null; // render nothing — we just want the data
+  }, []);
 
   return (
     <>
@@ -232,18 +244,15 @@ const SpyPriceCard = ({ history, displayPrice, displayChange, displayChangePct }
           </div>
         </div>
       </div>
-      <div style={{ marginTop: 12, height: 80 }}>
+      <div
+        style={{ marginTop: 12, height: 80 }}
+        onMouseLeave={() => setHovered(null)}
+      >
         {spyChartData.length > 0 && (
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart
               data={spyChartData}
               margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
-              onMouseMove={(e) => {
-                if (e && e.activePayload && e.activePayload.length > 0) {
-                  setHovered(e.activePayload[0].payload);
-                }
-              }}
-              onMouseLeave={() => setHovered(null)}
             >
               <defs>
                 <linearGradient id="spyGrad" x1="0" y1="0" x2="0" y2="1">
@@ -253,7 +262,10 @@ const SpyPriceCard = ({ history, displayPrice, displayChange, displayChangePct }
               </defs>
               <XAxis dataKey="date" hide />
               <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
-              <Tooltip wrapperStyle={{ visibility: 'hidden' }} cursor={{ stroke: T.textDim, strokeWidth: 1 }} />
+              <Tooltip
+                content={SpyTooltipCapture}
+                cursor={{ stroke: T.textDim, strokeWidth: 1 }}
+              />
               <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: T.amber }} isAnimationActive={false} />
             </AreaChart>
           </ResponsiveContainer>
