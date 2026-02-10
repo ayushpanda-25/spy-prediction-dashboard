@@ -1,10 +1,10 @@
 {
   "events": [
     {
-      "event": "CPI",
-      "date": "2026-02-11",
-      "time": "8:30 AM ET",
-      "impact": "high",
+      "event": "Existing Home Sales",
+      "date": "2026-02-12",
+      "time": "10:00 AM ET",
+      "impact": "medium",
       "actual": null,
       "estimate": null,
       "previous": null
@@ -19,8 +19,8 @@
       "previous": null
     },
     {
-      "event": "PPI",
-      "date": "2026-02-12",
+      "event": "CPI",
+      "date": "2026-02-13",
       "time": "8:30 AM ET",
       "impact": "high",
       "actual": null,
@@ -28,36 +28,9 @@
       "previous": null
     },
     {
-      "event": "Michigan Sentiment (Prelim)",
-      "date": "2026-02-13",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Empire State Mfg Index",
-      "date": "2026-02-16",
-      "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Housing Starts",
+      "event": "Empire State Mfg",
       "date": "2026-02-17",
       "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Industrial Production",
-      "date": "2026-02-17",
-      "time": "9:15 AM ET",
       "impact": "medium",
       "actual": null,
       "estimate": null,
@@ -73,9 +46,27 @@
       "previous": null
     },
     {
+      "event": "Durable Goods",
+      "date": "2026-02-18",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
       "event": "FOMC Minutes",
       "date": "2026-02-18",
       "time": "2:00 PM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Industrial Production",
+      "date": "2026-02-18",
+      "time": "9:15 AM ET",
       "impact": "medium",
       "actual": null,
       "estimate": null,
@@ -91,10 +82,28 @@
       "previous": null
     },
     {
-      "event": "Philly Fed Mfg Index",
+      "event": "Philly Fed Mfg",
       "date": "2026-02-19",
       "time": "8:30 AM ET",
       "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Core PCE",
+      "date": "2026-02-20",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "GDP (Advance)",
+      "date": "2026-02-20",
+      "time": "8:30 AM ET",
+      "impact": "high",
       "actual": null,
       "estimate": null,
       "previous": null
@@ -107,26 +116,8 @@
       "actual": null,
       "estimate": null,
       "previous": null
-    },
-    {
-      "event": "Existing Home Sales",
-      "date": "2026-02-24",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "New Home Sales",
-      "date": "2026-02-24",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-02-10T08:45:04.342711"
+  "exportedAt": "2026-02-10T09:00:17.112872"
 }
