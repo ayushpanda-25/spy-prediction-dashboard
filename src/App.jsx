@@ -56,6 +56,23 @@ const getSeverityBg = (severity) => {
   return "rgba(107, 114, 128, 0.06)";
 };
 
+// ── Regime Classification ──
+const REGIME_COLORS = {
+  RISK_ON_BULL: "#00d26a",
+  RISK_ON_NEUTRAL: "#ff9500",
+  RISK_OFF_BEAR: "#ff3b3b",
+  RISK_OFF_NEUTRAL: "#ff3b3b",
+  TRANSITION: "#3b82f6",
+};
+const REGIME_LABELS = {
+  RISK_ON_BULL: "RISK ON",
+  RISK_ON_NEUTRAL: "RISK ON (FLAT)",
+  RISK_OFF_BEAR: "RISK OFF",
+  RISK_OFF_NEUTRAL: "RISK OFF (FLAT)",
+  TRANSITION: "TRANSITION",
+};
+const getRegimeColor = (r) => REGIME_COLORS[r] || T.textDim;
+
 // ── Panel Component (Bloomberg style) ──
 const Panel = ({ title, tag, children, style = {}, contentStyle = {} }) => (
   <div style={{ background: T.panel, border: `1px solid ${T.border}`, borderRadius: T.radius, overflow: "hidden", ...style }}>
@@ -354,6 +371,14 @@ export default function App() {
           <div style={{ fontSize: 10, padding: "0.2rem 0.5rem", borderRadius: 2, background: "rgba(255,149,0,0.15)", color: T.amber }}>
             v1.0
           </div>
+          {history.length > 0 && history[history.length - 1]?.regime && (
+            <div style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, padding: "0.2rem 0.5rem", borderRadius: 2, background: `${getRegimeColor(history[history.length - 1].regime)}15`, border: `1px solid ${getRegimeColor(history[history.length - 1].regime)}30` }}>
+              <div style={{ width: 5, height: 5, borderRadius: "50%", background: getRegimeColor(history[history.length - 1].regime) }} />
+              <span style={{ color: getRegimeColor(history[history.length - 1].regime), fontWeight: 600 }}>
+                {REGIME_LABELS[history[history.length - 1].regime] || history[history.length - 1].regime}
+              </span>
+            </div>
+          )}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 12 }}>
           {isLive && (
@@ -531,7 +556,7 @@ export default function App() {
                 ))}
               </div>
               <div style={{ display: "flex", gap: 4 }}>
-                {["2W", "1M", "3M"].map((r) => (
+                {["2W", "1M", "3M", "6M", "1Y"].map((r) => (
                   <button
                     key={r}
                     onClick={() => setTimeRange(r)}
@@ -551,7 +576,7 @@ export default function App() {
               {history.length > 0 && (
                 <ResponsiveContainer width="100%" height="100%">
                   {chartView === "composite" ? (
-                    <AreaChart data={timeRange === "2W" ? history.slice(-10) : timeRange === "1M" ? history.slice(-22) : history}>
+                    <AreaChart data={timeRange === "2W" ? history.slice(-10) : timeRange === "1M" ? history.slice(-22) : timeRange === "3M" ? history.slice(-66) : timeRange === "6M" ? history.slice(-132) : history}>
                       <defs>
                         <linearGradient id="posGrad" x1="0" y1="0" x2="0" y2="1">
                           <stop offset="0%" stopColor={T.amber} stopOpacity={0.2} />
@@ -568,7 +593,7 @@ export default function App() {
                       <Area type="monotone" dataKey="composite" name="Signal" stroke={T.amber} fill="url(#posGrad)" strokeWidth={2} dot={false} activeDot={{ r: 4, fill: T.amber }} />
                     </AreaChart>
                   ) : chartView === "spy" ? (
-                    <AreaChart data={timeRange === "2W" ? history.slice(-10) : timeRange === "1M" ? history.slice(-22) : history}>
+                    <AreaChart data={timeRange === "2W" ? history.slice(-10) : timeRange === "1M" ? history.slice(-22) : timeRange === "3M" ? history.slice(-66) : timeRange === "6M" ? history.slice(-132) : history}>
                       <defs>
                         <linearGradient id="spyGrad2" x1="0" y1="0" x2="0" y2="1">
                           <stop offset="0%" stopColor={T.amber} stopOpacity={0.2} />
@@ -582,7 +607,7 @@ export default function App() {
                       <Area type="monotone" dataKey="spy" name="SPY" stroke={T.amber} fill="url(#spyGrad2)" strokeWidth={2} dot={false} activeDot={{ r: 4, fill: T.amber }} />
                     </AreaChart>
                   ) : (
-                    <LineChart data={timeRange === "2W" ? history.slice(-10) : timeRange === "1M" ? history.slice(-22) : history}>
+                    <LineChart data={timeRange === "2W" ? history.slice(-10) : timeRange === "1M" ? history.slice(-22) : timeRange === "3M" ? history.slice(-66) : timeRange === "6M" ? history.slice(-132) : history}>
                       <CartesianGrid strokeDasharray="3 3" stroke={T.border} />
                       <XAxis dataKey="date" tick={{ fontSize: 10, fill: T.textDim, fontFamily: T.font }} axisLine={false} tickLine={false} />
                       <YAxis yAxisId="score" domain={[-1, 1]} tick={{ fontSize: 10, fill: T.textDim, fontFamily: T.font }} axisLine={false} tickLine={false} />
@@ -732,7 +757,10 @@ export default function App() {
                         const hit1d = r.hit_1d;
                         return (
                           <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 10, padding: "3px 4px", background: i === 0 ? "rgba(255,149,0,0.05)" : "transparent", borderRadius: 2 }}>
-                            <span style={{ color: T.textDim, width: 55 }}>{r.date.slice(5)}</span>
+                            <span style={{ color: T.textDim, width: 55, display: "flex", alignItems: "center", gap: 3 }}>
+                              {r.regime && <div style={{ width: 4, height: 4, borderRadius: "50%", background: getRegimeColor(r.regime), flexShrink: 0 }} />}
+                              {r.date.slice(5)}
+                            </span>
                             <span style={{ color: sigColor, fontWeight: 600, width: 45, textAlign: "center" }}>{isLong ? "LONG" : "SHORT"}</span>
                             <span style={{ color: T.text, width: 40, textAlign: "right" }}>{r.composite >= 0 ? "+" : ""}{r.composite.toFixed(2)}</span>
                             <span style={{ width: 45, textAlign: "right", color: r.return_1d != null ? (r.return_1d >= 0 ? T.green : T.red) : T.textDim }}>
@@ -741,6 +769,30 @@ export default function App() {
                             <span style={{ width: 16, textAlign: "center" }}>
                               {hit1d === 1 ? <span style={{ color: T.green }}>&#10003;</span> : hit1d === 0 ? <span style={{ color: T.red }}>&#10007;</span> : <span style={{ color: T.textDim }}>-</span>}
                             </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+                {/* Regime breakdown */}
+                {backtest.regimeHitRate && Object.keys(backtest.regimeHitRate).length > 0 && (
+                  <div style={{ borderTop: `1px solid ${T.border}`, paddingTop: 8 }}>
+                    <div style={{ fontSize: 10, color: T.textDim, marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.05em" }}>1d Hit Rate by Regime</div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+                      {Object.entries(backtest.regimeHitRate).map(([regime, d]) => {
+                        const color = getRegimeColor(regime);
+                        const hitColor = d.hitRate >= 55 ? T.green : d.hitRate >= 50 ? T.amber : T.red;
+                        return (
+                          <div key={regime} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 11 }}>
+                            <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
+                              <div style={{ width: 5, height: 5, borderRadius: "50%", background: color }} />
+                              <span style={{ color: T.text, fontSize: 10 }}>{REGIME_LABELS[regime] || regime}</span>
+                            </div>
+                            <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                              <span style={{ color: hitColor, fontWeight: 600 }}>{d.hitRate.toFixed(0)}%</span>
+                              <span style={{ color: T.textDim, fontSize: 9 }}>n={d.count}</span>
+                            </div>
                           </div>
                         );
                       })}
