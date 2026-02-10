@@ -294,7 +294,6 @@ export default function App() {
   const [calendarEvents, setCalendarEvents] = useState([]);
   const [logExpanded, setLogExpanded] = useState(false);
   const [calendarExpanded, setCalendarExpanded] = useState(false);
-  const [newsHeadlines, setNewsHeadlines] = useState([]);
 
   // Fetch live market data from serverless function
   const fetchLive = useCallback(async () => {
@@ -393,30 +392,6 @@ export default function App() {
         }
       } catch { /* no calendar available */ }
     })();
-  }, []);
-
-  // Fetch breaking news headlines
-  useEffect(() => {
-    (async () => {
-      try {
-        const res = await fetch("/api/news");
-        if (res.ok) {
-          const data = await res.json();
-          if (data.headlines) setNewsHeadlines(data.headlines);
-        }
-      } catch { /* no news available */ }
-    })();
-    // Refresh news every 5 minutes
-    const interval = setInterval(async () => {
-      try {
-        const res = await fetch("/api/news");
-        if (res.ok) {
-          const data = await res.json();
-          if (data.headlines) setNewsHeadlines(data.headlines);
-        }
-      } catch { /* ignore */ }
-    }, 5 * 60 * 1000);
-    return () => clearInterval(interval);
   }, []);
 
   // Auto-switch to composite view once real scores exist
@@ -530,68 +505,6 @@ export default function App() {
         </div>
       </div>
 
-      {/* ── Breaking News Ticker ── */}
-      {newsHeadlines.length > 0 && (
-        <div style={{
-          borderBottom: `1px solid ${T.border}`,
-          background: T.panelHeader,
-          overflow: "hidden",
-          whiteSpace: "nowrap",
-          position: "relative",
-        }}>
-          <div style={{
-            display: "flex", alignItems: "center",
-            position: "absolute", left: 0, top: 0, bottom: 0, zIndex: 2,
-            background: `linear-gradient(90deg, ${T.panelHeader} 80%, transparent)`,
-            padding: "0 12px", gap: 6,
-          }}>
-            <div style={{
-              fontSize: 9, fontWeight: 700, letterSpacing: "0.06em",
-              padding: "2px 6px", borderRadius: 2,
-              background: "rgba(255,59,59,0.2)", color: T.red,
-            }}>
-              BREAKING
-            </div>
-          </div>
-          <div style={{
-            display: "inline-flex", gap: 40,
-            animation: `ticker ${Math.max(newsHeadlines.length * 8, 30)}s linear infinite`,
-            paddingLeft: 100,
-          }}>
-            {[...newsHeadlines, ...newsHeadlines].map((h, i) => (
-              <a
-                key={i}
-                href={h.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-flex", alignItems: "center", gap: 8,
-                  padding: "6px 0", fontSize: 11, color: T.text,
-                  textDecoration: "none", cursor: "pointer",
-                }}
-              >
-                <span style={{ color: T.amber, fontSize: 9, fontWeight: 700, flexShrink: 0 }}>
-                  {(h.source || "").toUpperCase()}
-                </span>
-                <span style={{ color: T.text }}>{h.headline}</span>
-                {h.datetime && (
-                  <span style={{ color: T.textDim, fontSize: 9, flexShrink: 0 }}>
-                    {new Date(h.datetime).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })}
-                  </span>
-                )}
-                <span style={{ color: T.border }}>│</span>
-              </a>
-            ))}
-          </div>
-          <style>{`
-            @keyframes ticker {
-              0% { transform: translateX(0); }
-              100% { transform: translateX(-50%); }
-            }
-          `}</style>
-        </div>
-      )}
-
       <div className="dashboard-grid" style={{ padding: "1.5rem", display: "grid", gridTemplateColumns: "320px 1fr 280px", gap: "1.5rem", maxWidth: 1440, margin: "0 auto" }}>
         {/* ── Left: Score + SPY ── */}
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
@@ -607,7 +520,10 @@ export default function App() {
               }}>
                 {signalLabel}
               </div>
-              <div style={{ marginTop: 16, display: "flex", justifyContent: "center", gap: 24 }}>
+              <div style={{ fontSize: 9, color: T.textDim, marginTop: 6, letterSpacing: "0.04em" }}>
+                NEXT-DAY OUTLOOK · Based on {data?.lastUpdate || "EOD"} close
+              </div>
+              <div style={{ marginTop: 14, display: "flex", justifyContent: "center", gap: 24 }}>
                 <div>
                   <div style={{ fontSize: 10, color: T.textDim }}>CONFIDENCE</div>
                   <div style={{ fontSize: 16, fontWeight: 600, color: T.text }}>{(confidence * 100).toFixed(0)}%</div>
