@@ -3,6 +3,18 @@
     {
       "type": "calendar",
       "severity": "medium",
+      "text": "Upcoming high-impact: CPI 02-13, Retail Sales 02-17",
+      "date": "2026-02-10"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Existing Home Sales 02-12, Initial Jobless Claims 02-12, Empire State Mfg 02-17",
+      "date": "2026-02-10"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
       "text": "Upcoming high-impact: CPI 02-11",
       "date": "2026-02-09"
     },
@@ -35,13 +47,7 @@
       "severity": "low",
       "text": "Check economic calendar for upcoming data releases",
       "date": "2026-02-02"
-    },
-    {
-      "type": "info",
-      "severity": "low",
-      "text": "Check economic calendar for upcoming data releases",
-      "date": "2026-01-30"
     }
   ],
-  "exportedAt": "2026-02-10T09:24:27.868646"
+  "exportedAt": "2026-02-10T16:30:15.173550"
 }

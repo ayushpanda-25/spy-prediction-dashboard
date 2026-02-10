@@ -1,108 +1,9 @@
 {
   "events": [
     {
-      "event": "NFIB Small Business Optimism Index",
-      "date": "2026-02-10",
-      "time": "6:00 AM ET",
-      "impact": "medium",
-      "actual": "99.3",
-      "estimate": "99.8",
-      "previous": "99.5"
-    },
-    {
-      "event": "Retail Sales (Dec, delayed)",
-      "date": "2026-02-10",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": "0.0%",
-      "estimate": "0.4%",
-      "previous": "0.6%"
-    },
-    {
-      "event": "Employment Cost Index (Q4)",
-      "date": "2026-02-10",
-      "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": "0.7%",
-      "estimate": "0.8%",
-      "previous": "0.8%"
-    },
-    {
-      "event": "Fed Speaker: Beth Hammack",
-      "date": "2026-02-10",
-      "time": "12:00 PM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Fed Speaker: Lorie Logan",
-      "date": "2026-02-10",
-      "time": "1:00 PM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Employment Situation (NFP, delayed)",
-      "date": "2026-02-11",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": "67K",
-      "previous": "50K"
-    },
-    {
-      "event": "Unemployment Rate",
-      "date": "2026-02-11",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": "4.1%",
-      "previous": "4.1%"
-    },
-    {
-      "event": "Average Hourly Earnings",
-      "date": "2026-02-11",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": "0.3%",
-      "previous": "0.3%"
-    },
-    {
-      "event": "Fed Speaker: Jeffrey Schmid",
-      "date": "2026-02-11",
-      "time": "10:10 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Fed Speaker: Michelle Bowman",
-      "date": "2026-02-11",
-      "time": "10:15 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "EIA Petroleum Status Report",
-      "date": "2026-02-11",
-      "time": "10:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": "-3.5M barrels"
-    },
-    {
-      "event": "10-Year Treasury Note Auction",
-      "date": "2026-02-11",
-      "time": "1:00 PM ET",
+      "event": "Existing Home Sales",
+      "date": "2026-02-12",
+      "time": "10:00 AM ET",
       "impact": "medium",
       "actual": null,
       "estimate": null,
@@ -114,67 +15,20 @@
       "time": "8:30 AM ET",
       "impact": "medium",
       "actual": null,
-      "estimate": "215K",
-      "previous": "231K"
-    },
-    {
-      "event": "Existing Home Sales",
-      "date": "2026-02-12",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": "4.20M",
-      "previous": "4.35M"
-    },
-    {
-      "event": "Fed Speaker: Michelle Bowman",
-      "date": "2026-02-12",
-      "time": "10:15 AM ET",
-      "impact": "medium",
-      "actual": null,
       "estimate": null,
       "previous": null
     },
     {
-      "event": "30-Year Treasury Bond Auction",
-      "date": "2026-02-12",
-      "time": "1:00 PM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "CPI (Jan, delayed)",
+      "event": "CPI",
       "date": "2026-02-13",
       "time": "8:30 AM ET",
       "impact": "high",
       "actual": null,
-      "estimate": "0.3% m/m",
-      "previous": "0.3% m/m",
-      "unit": ""
-    },
-    {
-      "event": "Core CPI (Jan, delayed)",
-      "date": "2026-02-13",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": "0.3% m/m",
-      "previous": "0.2% m/m",
-      "unit": ""
-    },
-    {
-      "event": "Presidents' Day — Markets Closed",
-      "date": "2026-02-16",
-      "time": null,
-      "impact": "medium",
-      "actual": null,
       "estimate": null,
       "previous": null
     },
     {
-      "event": "Empire State Manufacturing Index",
+      "event": "Empire State Mfg",
       "date": "2026-02-17",
       "time": "8:30 AM ET",
       "impact": "medium",
@@ -183,7 +37,16 @@
       "previous": null
     },
     {
-      "event": "Durable Goods Orders (Dec, delayed)",
+      "event": "Retail Sales",
+      "date": "2026-02-17",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Durable Goods",
       "date": "2026-02-18",
       "time": "8:30 AM ET",
       "impact": "medium",
@@ -192,28 +55,19 @@
       "previous": null
     },
     {
-      "event": "Housing Starts & Building Permits",
+      "event": "FOMC Minutes",
       "date": "2026-02-18",
-      "time": "8:30 AM ET",
+      "time": "2:00 PM ET",
       "impact": "medium",
       "actual": null,
       "estimate": null,
       "previous": null
     },
     {
-      "event": "Industrial Production & Capacity Utilization",
+      "event": "Industrial Production",
       "date": "2026-02-18",
       "time": "9:15 AM ET",
       "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "FOMC Minutes (Jan 27-28 Meeting)",
-      "date": "2026-02-18",
-      "time": "2:00 PM ET",
-      "impact": "high",
       "actual": null,
       "estimate": null,
       "previous": null
@@ -228,7 +82,7 @@
       "previous": null
     },
     {
-      "event": "Philadelphia Fed Manufacturing Index",
+      "event": "Philly Fed Mfg",
       "date": "2026-02-19",
       "time": "8:30 AM ET",
       "impact": "medium",
@@ -237,34 +91,7 @@
       "previous": null
     },
     {
-      "event": "International Trade in Goods & Services",
-      "date": "2026-02-19",
-      "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Pending Home Sales",
-      "date": "2026-02-19",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "GDP Advance Estimate (Q4 2025, delayed)",
-      "date": "2026-02-20",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": null,
-      "previous": "4.4%"
-    },
-    {
-      "event": "Personal Income & Outlays / PCE Deflator (Dec)",
+      "event": "Core PCE",
       "date": "2026-02-20",
       "time": "8:30 AM ET",
       "impact": "high",
@@ -273,37 +100,10 @@
       "previous": null
     },
     {
-      "event": "S&P Global Flash Manufacturing PMI (Feb)",
+      "event": "GDP (Advance)",
       "date": "2026-02-20",
-      "time": "9:45 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": "52.4"
-    },
-    {
-      "event": "S&P Global Flash Services PMI (Feb)",
-      "date": "2026-02-20",
-      "time": "9:45 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Michigan Consumer Sentiment (Final, Feb)",
-      "date": "2026-02-20",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "New Home Sales",
-      "date": "2026-02-20",
-      "time": "10:00 AM ET",
-      "impact": "medium",
+      "time": "8:30 AM ET",
+      "impact": "high",
       "actual": null,
       "estimate": null,
       "previous": null
@@ -316,27 +116,8 @@
       "actual": null,
       "estimate": null,
       "previous": null
-    },
-    {
-      "event": "PPI (Jan, delayed due to shutdown)",
-      "date": "2026-02-27",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": null,
-      "previous": "0.5% m/m"
-    },
-    {
-      "event": "Core PPI (Jan, delayed)",
-      "date": "2026-02-27",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": null,
-      "previous": "0.7% m/m"
     }
   ],
-  "source": "BEA, BLS, Census, Fed, Econoday, NY Fed",
-  "exportedAt": "2026-02-10T17:00:00.000000",
-  "notes": "Multiple releases delayed due to Jan 31-Feb 3 govt shutdown. NFP rescheduled to Feb 11, CPI to Feb 13, Durable Goods to Feb 18, GDP/PCE to Feb 20, PPI to Feb 27. Fed held at 3.50-3.75% on Jan 28."
+  "source": "hardcoded",
+  "exportedAt": "2026-02-10T16:30:15.216730"
 }
