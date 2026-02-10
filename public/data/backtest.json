@@ -1,71 +1,76 @@
 {
   "hitRate": {
     "1d": {
-      "hitRate": 57.1,
-      "avgReturn": 0.055,
-      "count": 42
+      "hitRate": 45.8,
+      "avgReturn": 0.051,
+      "count": 179
     },
     "3d": {
-      "hitRate": 50.0,
-      "avgReturn": 0.136,
-      "count": 40
+      "hitRate": 58.2,
+      "avgReturn": 0.087,
+      "count": 177
     },
     "5d": {
-      "hitRate": 51.3,
-      "avgReturn": 0.026,
-      "count": 39
+      "hitRate": 59.7,
+      "avgReturn": 0.115,
+      "count": 176
     },
     "1d_long": {
-      "hitRate": 61.5,
-      "avgReturn": 0.123,
-      "count": 26
+      "hitRate": 49.6,
+      "avgReturn": 0.106,
+      "count": 121
     },
     "3d_long": {
-      "hitRate": 57.7,
-      "avgReturn": 0.147,
-      "count": 26
+      "hitRate": 65.3,
+      "avgReturn": 0.21,
+      "count": 121
     },
     "5d_long": {
-      "hitRate": 57.7,
-      "avgReturn": 0.048,
-      "count": 26
+      "hitRate": 65.3,
+      "avgReturn": 0.309,
+      "count": 121
     },
     "1d_short": {
-      "hitRate": 50.0,
-      "avgReturn": -0.056,
-      "count": 16
+      "hitRate": 37.9,
+      "avgReturn": -0.062,
+      "count": 58
     },
     "3d_short": {
-      "hitRate": 35.7,
-      "avgReturn": 0.114,
-      "count": 14
+      "hitRate": 42.9,
+      "avgReturn": -0.179,
+      "count": 56
     },
     "5d_short": {
-      "hitRate": 38.5,
-      "avgReturn": -0.018,
-      "count": 13
+      "hitRate": 47.3,
+      "avgReturn": -0.311,
+      "count": 55
     }
   },
   "regimeHitRate": {
+    "RISK_OFF_BEAR": {
+      "hitRate": 12.5,
+      "avgReturn": 0.306,
+      "count": 8
+    },
     "TRANSITION": {
-      "hitRate": 42.9,
-      "avgReturn": -0.023,
-      "count": 7
+      "hitRate": 57.1,
+      "avgReturn": 0.072,
+      "count": 42
     },
     "RISK_ON_BULL": {
-      "hitRate": 28.6,
-      "avgReturn": 0.159,
-      "count": 14
+      "hitRate": 47.3,
+      "avgReturn": 0.126,
+      "count": 91
     }
   },
-  "totalSignals": 43,
+  "totalSignals": 180,
   "records": [
     {
       "date": "2025-11-10",
       "signal": "LEAN_LONG",
       "composite": 0.0583,
       "spyPrice": 681.44,
-      "regime": null,
+      "regime": "TRANSITION",
       "return_1d": 0.23,
       "hit_1d": 1,
       "return_3d": -1.38,
@@ -78,7 +83,7 @@
       "signal": "LEAN_LONG",
       "composite": 0.0853,
       "spyPrice": 683.0,
-      "regime": null,
+      "regime": "RISK_ON_BULL",
       "return_1d": 0.06,
       "hit_1d": 1,
       "return_3d": -1.62,
@@ -91,7 +96,7 @@
       "signal": "LEAN_SHORT",
       "composite": -0.0501,
       "spyPrice": 683.38,
-      "regime": null,
+      "regime": "RISK_ON_BULL",
       "return_1d": -1.66,
       "hit_1d": 1,
       "return_3d": -2.59,
@@ -104,7 +109,7 @@
       "signal": "LEAN_SHORT",
       "composite": -0.0851,
       "spyPrice": 671.93,
-      "regime": null,
+      "regime": "TRANSITION",
       "return_1d": -0.93,
       "hit_1d": 1,
       "return_3d": -1.38,
@@ -117,7 +122,7 @@
       "signal": "LEAN_SHORT",
       "composite": -0.0742,
       "spyPrice": 665.67,
-      "regime": null,
+      "regime": "TRANSITION",
       "return_1d": -0.84,
       "hit_1d": 1,
       "return_3d": -1.97,
@@ -130,7 +135,7 @@
       "signal": "LEAN_SHORT",
       "composite": -0.0857,
       "spyPrice": 662.63,
-      "regime": null,
+      "regime": "TRANSITION",
       "return_1d": -1.52,
       "hit_1d": 1,
       "return_3d": 0.92,
@@ -143,7 +148,7 @@
       "signal": "LEAN_LONG",
       "composite": 0.0702,
       "spyPrice": 675.02,
-      "regime": null,
+      "regime": "TRANSITION",
       "return_1d": 0.69,
       "hit_1d": 1,
       "return_3d": 1.24,
@@ -156,7 +161,7 @@
       "signal": "LEAN_SHORT",
       "composite": -0.1246,
       "spyPrice": 685.69,
-      "regime": null,
+      "regime": "TRANSITION",
       "return_1d": -0.3,
       "hit_1d": 1,
       "return_3d": 0.27,
@@ -451,5 +456,5 @@
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-02-09T20:22:46.495290"
+  "exportedAt": "2026-02-09T21:15:35.770998"
 }

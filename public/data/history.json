@@ -1,6 +1,3084 @@
 {
-  "count": 94,
+  "count": 265,
   "data": [
+    {
+      "date": "2025-02-03",
+      "composite": 0.04514034240454376,
+      "signal": "NEUTRAL",
+      "confidence": 0.09028068480908752,
+      "spyPrice": 601.78,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.20371827741819162,
+        "microstructure": 0.333469264511034,
+        "flows": 0.071942332583953,
+        "technical": 0.0839879509838234,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-04",
+      "composite": 0.02112674899294551,
+      "signal": "NEUTRAL",
+      "confidence": 0.04225349798589102,
+      "spyPrice": 604.22,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.19032533442495594,
+        "microstructure": 0.333469264511034,
+        "flows": -0.06879996041510338,
+        "technical": 0.02817957037995418,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-05",
+      "composite": 0.031511806909691624,
+      "signal": "NEUTRAL",
+      "confidence": 0.06302361381938325,
+      "spyPrice": 606.32,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.13751620097953726,
+        "microstructure": 0.333469264511034,
+        "flows": -0.06636419555634958,
+        "technical": 0.02275823536844722,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-06",
+      "composite": -0.05225280401702087,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.10450560803404174,
+      "spyPrice": 600.77,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1725105391570468,
+        "microstructure": -0.09607325702302372,
+        "flows": -0.05011477975698688,
+        "technical": 0.0898117218254127,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-07",
+      "composite": 4.098035901976306e-05,
+      "signal": "NEUTRAL",
+      "confidence": 8.196071803952612e-05,
+      "spyPrice": 600.77,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.258914321636854,
+        "microstructure": 0.333469264511034,
+        "flows": -0.05887647395351391,
+        "technical": -0.060385371227891345,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-10",
+      "composite": 0.03960606100396738,
+      "signal": "NEUTRAL",
+      "confidence": 0.07921212200793476,
+      "spyPrice": 605.31,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.08421032176039395,
+        "microstructure": 0.333469264511034,
+        "flows": -0.003936444361623116,
+        "technical": -0.09655260891917153,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-11",
+      "composite": 0.0357514562574086,
+      "signal": "NEUTRAL",
+      "confidence": 0.0715029125148172,
+      "spyPrice": 603.36,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.10218605601629857,
+        "microstructure": 0.333469264511034,
+        "flows": -0.00429729841477179,
+        "technical": -0.09860590679322709,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-12",
+      "composite": 0.02684827576114131,
+      "signal": "NEUTRAL",
+      "confidence": 0.05369655152228262,
+      "spyPrice": 609.73,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.12955631870541318,
+        "microstructure": 0.333469264511034,
+        "flows": -0.01079267137144852,
+        "technical": -0.12315412694265568,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-13",
+      "composite": 0.06737845999775968,
+      "signal": "LEAN_LONG",
+      "confidence": 0.13475691999551936,
+      "spyPrice": 609.7,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.09320693848207617,
+        "microstructure": 0.333469264511034,
+        "flows": 0.043696290654006424,
+        "technical": 0.12771551193867156,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-14",
+      "composite": 0.046763545979536476,
+      "signal": "NEUTRAL",
+      "confidence": 0.09352709195907295,
+      "spyPrice": 609.7,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1613051494101374,
+        "microstructure": 0.333469264511034,
+        "flows": 0.04667333659248324,
+        "technical": 0.05329722470484678,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-17",
+      "composite": 0.05963089979785002,
+      "signal": "LEAN_LONG",
+      "confidence": 0.11926179959570005,
+      "spyPrice": 611.49,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.09696838031856965,
+        "microstructure": 0.333469264511034,
+        "flows": 0.04667333659248324,
+        "technical": 0.05329722470484678,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-18",
+      "composite": 0.062487623915717355,
+      "signal": "LEAN_LONG",
+      "confidence": 0.12497524783143471,
+      "spyPrice": 612.93,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.11568376120266405,
+        "microstructure": 0.333469264511034,
+        "flows": 0.07211354733946718,
+        "technical": 0.08113491153123299,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-19",
+      "composite": 0.07692094669040625,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1538418933808125,
+      "spyPrice": 610.38,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.09794783420151613,
+        "microstructure": 0.333469264511034,
+        "flows": 0.09746354457316395,
+        "technical": 0.151971289425281,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-20",
+      "composite": 0.07269282524118867,
+      "signal": "LEAN_LONG",
+      "confidence": 0.14538565048237734,
+      "spyPrice": 599.94,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07946073087460638,
+        "microstructure": 0.333469264511034,
+        "flows": 0.09863632024589722,
+        "technical": 0.0709567047701857,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-21",
+      "composite": 0.034266728002522284,
+      "signal": "NEUTRAL",
+      "confidence": 0.06853345600504457,
+      "spyPrice": 599.94,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.12115660329892747,
+        "microstructure": 0.333469264511034,
+        "flows": 0.01288837586643545,
+        "technical": -0.10129060619864332,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-24",
+      "composite": -0.05072447146676815,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.1014489429335363,
+      "spyPrice": 594.24,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.18693744956242597,
+        "microstructure": 0.333469264511034,
+        "flows": -0.3920792441155889,
+        "technical": -0.21218947839151414,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-25",
+      "composite": -0.0426457561742644,
+      "signal": "NEUTRAL",
+      "confidence": 0.0852915123485288,
+      "spyPrice": 594.54,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.14376611332793104,
+        "microstructure": 0.333469264511034,
+        "flows": -0.34155967667476983,
+        "technical": -0.2935243490966951,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-26",
+      "composite": -0.03979215449820839,
+      "signal": "NEUTRAL",
+      "confidence": 0.07958430899641677,
+      "spyPrice": 585.05,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1174643396478663,
+        "microstructure": 0.333469264511034,
+        "flows": -0.31003005378090137,
+        "technical": -0.36488631403706706,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-27",
+      "composite": -0.07930421093137893,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.15860842186275786,
+      "spyPrice": 594.18,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17395394797829009,
+        "microstructure": 0.333469264511034,
+        "flows": -0.3815693698176328,
+        "technical": -0.5397186876528279,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-02-28",
+      "composite": -0.042827264226179,
+      "signal": "NEUTRAL",
+      "confidence": 0.085654528452358,
+      "spyPrice": 594.18,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.16482055543350238,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4398924061577928,
+        "technical": -0.10573145118016405,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-03",
+      "composite": -0.06528941194375051,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.13057882388750103,
+      "spyPrice": 576.86,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.29152255238342695,
+        "microstructure": 0.333469264511034,
+        "flows": -0.17103771201988482,
+        "technical": -0.48023097566289186,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-04",
+      "composite": -0.08667022944913894,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.17334045889827787,
+      "spyPrice": 583.06,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.29250200626637346,
+        "microstructure": 0.333469264511034,
+        "flows": -0.3403325819743327,
+        "technical": -0.4381379380192113,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-05",
+      "composite": -0.08649142000607335,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.1729828400121467,
+      "spyPrice": 572.71,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.26795318634366383,
+        "microstructure": 0.333469264511034,
+        "flows": -0.3522407657282401,
+        "technical": -0.4675852078031135,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-06",
+      "composite": -0.12291229831271616,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.24582459662543232,
+      "spyPrice": 575.92,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.38721882677977426,
+        "microstructure": 0.333469264511034,
+        "flows": -0.37826736431159064,
+        "technical": -0.554222812122295,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-07",
+      "composite": -0.12243222298341234,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2448644459668247,
+      "spyPrice": 575.92,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.38881503891858826,
+        "microstructure": 0.333469264511034,
+        "flows": -0.38169547781650337,
+        "technical": -0.5410874642942598,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-10",
+      "composite": -0.12640968031344674,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2528193606268935,
+      "spyPrice": 555.92,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3382343852253483,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4678614150785924,
+        "technical": -0.5527744390879501,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-11",
+      "composite": -0.14338472845804254,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2867694569160851,
+      "spyPrice": 558.87,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.4011459391706751,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4605992272589747,
+        "technical": -0.6075950943726811,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-12",
+      "composite": -0.15182815623539275,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.3036563124707855,
+      "spyPrice": 551.42,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3993137492233101,
+        "microstructure": 0.333469264511034,
+        "flows": -0.46578650427298746,
+        "technical": -0.6879128365198941,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-13",
+      "composite": -0.16002466404321375,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.3200493280864275,
+      "spyPrice": 562.81,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.4494688319342317,
+        "microstructure": 0.333469264511034,
+        "flows": -0.47219166371637694,
+        "technical": -0.6599600100111765,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-14",
+      "composite": -0.16254676484681096,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.32509352969362193,
+      "spyPrice": 562.81,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.4418364607543789,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.6705271084262154,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-17",
+      "composite": -0.1303780175196329,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2607560350392658,
+      "spyPrice": 561.02,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2789452867226155,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.6746219832179617,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-18",
+      "composite": -0.1330256405438306,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2660512810876612,
+      "spyPrice": 567.13,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2789868402202007,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.7010151064647681,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-19",
+      "composite": -0.08613635551177828,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.17227271102355657,
+      "spyPrice": 565.49,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.127397641099097,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.5353006543864525,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-20",
+      "composite": -0.08032847105202681,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.16065694210405362,
+      "spyPrice": 563.98,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.06755253249066992,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.5969120270057919,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-21",
+      "composite": -0.08553135865289216,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.17106271730578432,
+      "spyPrice": 563.98,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.12679488218007967,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.5304562036356258,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-24",
+      "composite": -0.0528165529661212,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.1056331059322424,
+      "spyPrice": 575.46,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07617219821124131,
+        "microstructure": 0.333469264511034,
+        "flows": -0.45459657810316884,
+        "technical": -0.360864795106044,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-25",
+      "composite": -0.06271767317452773,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.12543534634905545,
+      "spyPrice": 568.59,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.10081178402153279,
+        "microstructure": 0.333469264511034,
+        "flows": -0.45459657810316884,
+        "technical": -0.41059682556952626,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-26",
+      "composite": -0.08591584897127265,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.1718316979425453,
+      "spyPrice": 567.08,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17384745502368176,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.44019596113222653,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-27",
+      "composite": -0.11296486547079396,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.22592973094158791,
+      "spyPrice": 555.66,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17106756575486198,
+        "microstructure": 0.333469264511034,
+        "flows": -0.6493887976340793,
+        "technical": -0.48036885576916466,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-28",
+      "composite": -0.15467782936680818,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.30935565873361637,
+      "spyPrice": 555.66,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.37462568686951925,
+        "microstructure": 0.333469264511034,
+        "flows": -0.6493887976340793,
+        "technical": -0.49038225249999234,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-03-31",
+      "composite": -0.1344388032025847,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2688776064051694,
+      "spyPrice": 560.97,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3570614927074416,
+        "microstructure": 0.333469264511034,
+        "flows": -0.6493887976340793,
+        "technical": -0.32312037918191266,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-01",
+      "composite": -0.11287753652971172,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.22575507305942344,
+      "spyPrice": 564.52,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.43675467785084104,
+        "microstructure": 0.333469264511034,
+        "flows": -0.33488606577285973,
+        "technical": -0.41987543995821336,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-02",
+      "composite": -0.07229766729226147,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.14459533458452295,
+      "spyPrice": 536.7,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.37100422331060434,
+        "microstructure": 0.333469264511034,
+        "flows": -0.33488606577285973,
+        "technical": -0.14557765666418432,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-03",
+      "composite": -0.11523384483885393,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.23046768967770787,
+      "spyPrice": 505.28,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.45573440385384223,
+        "microstructure": 0.333469264511034,
+        "flows": -0.33488606577285973,
+        "technical": -0.40547907104363323,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-04",
+      "composite": -0.14135632784282534,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2827126556856507,
+      "spyPrice": 505.28,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.4312986733673614,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.47969831316039424,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-07",
+      "composite": -0.14341625328816088,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.28683250657632176,
+      "spyPrice": 496.48,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.4457094887824654,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.4714759367835416,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-08",
+      "composite": -0.14764708543212104,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2952941708642421,
+      "spyPrice": 548.62,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.45260161789403697,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.5,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-09",
+      "composite": -0.11393629936766282,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.22787259873532564,
+      "spyPrice": 524.58,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.4582406326216864,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.15161410990011887,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-10",
+      "composite": -0.1552356467744932,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.3104712935489864,
+      "spyPrice": 533.94,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.507112093594648,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.4668646620224993,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-11",
+      "composite": -0.1755013787306866,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.3510027574613732,
+      "spyPrice": 533.94,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.5221494662017133,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.6394472363703029,
+        "sentiment": 0.0
+      },
+      "regime": null
+    },
+    {
+      "date": "2025-04-14",
+      "composite": -0.07271577066989293,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.14543154133978586,
+      "spyPrice": 537.61,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.02528225216151847,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.605325583842756,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-15",
+      "composite": -0.07861271149096752,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.15722542298193504,
+      "spyPrice": 525.66,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.028415038121323705,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.6580294201338914,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-16",
+      "composite": -0.08314845429309975,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.1662969085861995,
+      "spyPrice": 526.41,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.03280093846505103,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.694615047467759,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-17",
+      "composite": -0.08667118747602207,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.17334237495204413,
+      "spyPrice": 526.41,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.04721175388015514,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.701020748466774,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-18",
+      "composite": -0.13904486671276786,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2780897334255357,
+      "spyPrice": 526.41,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3090801500638842,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.701020748466774,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-21",
+      "composite": -0.12594786603251404,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.2518957320650281,
+      "spyPrice": 527.25,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.24021624836754513,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.7077785450569136,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-22",
+      "composite": -0.099275044303021,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.198550088606042,
+      "spyPrice": 535.42,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.15194642269415407,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.6175899791087656,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-23",
+      "composite": -0.05113184974252901,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.10226369948505802,
+      "spyPrice": 546.69,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.005241232528732209,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.4295684138346893,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-24",
+      "composite": -0.015276546789902225,
+      "signal": "NEUTRAL",
+      "confidence": 0.03055309357980445,
+      "spyPrice": 550.64,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.08687148519950906,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.255240819764904,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-25",
+      "composite": 0.0008395287084097137,
+      "signal": "NEUTRAL",
+      "confidence": 0.0016790574168194274,
+      "spyPrice": 550.64,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.09501672869500268,
+        "microstructure": 0.333469264511034,
+        "flows": -0.4921374317034695,
+        "technical": -0.11037055177277184,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-28",
+      "composite": -0.024024491187713957,
+      "signal": "NEUTRAL",
+      "confidence": 0.048048982375427915,
+      "spyPrice": 554.32,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.09439017150304162,
+        "microstructure": 0.333469264511034,
+        "flows": -0.6493887976340793,
+        "technical": -0.1218805874541719,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-29",
+      "composite": -0.01701751821129912,
+      "signal": "NEUTRAL",
+      "confidence": 0.03403503642259824,
+      "spyPrice": 554.54,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.050531168065768295,
+        "microstructure": 0.333469264511034,
+        "flows": -0.6493887976340793,
+        "technical": 0.035907149184523146,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-04-30",
+      "composite": -0.021663615036038624,
+      "signal": "NEUTRAL",
+      "confidence": 0.04332723007207725,
+      "spyPrice": 558.47,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.03549379545870315,
+        "microstructure": 0.333469264511034,
+        "flows": -0.6493887976340793,
+        "technical": 0.019520926151258403,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-05-01",
+      "composite": 0.029385862038995677,
+      "signal": "NEUTRAL",
+      "confidence": 0.058771724077991354,
+      "spyPrice": 566.76,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.049241874477950615,
+        "microstructure": 0.333469264511034,
+        "flows": -0.29734521217255905,
+        "technical": 0.1714216585826286,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-05-02",
+      "composite": 0.03456471423862488,
+      "signal": "NEUTRAL",
+      "confidence": 0.06912942847724976,
+      "spyPrice": 566.76,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.09389869116824204,
+        "microstructure": 0.333469264511034,
+        "flows": -0.29734521217255905,
+        "technical": 0.3125238139595035,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-05-05",
+      "composite": -0.045018541469837345,
+      "signal": "NEUTRAL",
+      "confidence": 0.09003708293967469,
+      "spyPrice": 558.8,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3104362253523454,
+        "microstructure": 0.333469264511034,
+        "flows": -0.45459657810316884,
+        "technical": 0.18564337413900273,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2025-05-06",
+      "composite": -0.05125871549307308,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.10251743098614616,
+      "spyPrice": 561.15,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3226919779291122,
+        "microstructure": 0.333469264511034,
+        "flows": -0.45459657810316884,
+        "technical": 0.14775313906017895,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-07",
+      "composite": -0.033148343651993914,
+      "signal": "NEUTRAL",
+      "confidence": 0.06629668730398783,
+      "spyPrice": 565.06,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.29690293615828245,
+        "microstructure": 0.333469264511034,
+        "flows": -0.45459657810316884,
+        "technical": 0.27727877392931105,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-08",
+      "composite": -0.027390741939426463,
+      "signal": "NEUTRAL",
+      "confidence": 0.05478148387885293,
+      "spyPrice": 564.34,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3577184385913621,
+        "microstructure": 0.333469264511034,
+        "flows": -0.45459657810316884,
+        "technical": 0.45648579592114485,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-09",
+      "composite": -0.003914109557659778,
+      "signal": "NEUTRAL",
+      "confidence": 0.007828219115319557,
+      "spyPrice": 564.34,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.22093796659689025,
+        "microstructure": 0.333469264511034,
+        "flows": -0.45459657810316884,
+        "technical": 0.417691175749868,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-12",
+      "composite": 0.12358695453590524,
+      "signal": "LEAN_LONG",
+      "confidence": 0.24717390907181047,
+      "spyPrice": 586.84,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.03363901943665454,
+        "microstructure": 0.333469264511034,
+        "flows": -0.20945140918043886,
+        "technical": 0.8158300912343336,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-13",
+      "composite": 0.11651788202776239,
+      "signal": "LEAN_LONG",
+      "confidence": 0.23303576405552479,
+      "spyPrice": 587.59,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.036771076038817574,
+        "microstructure": 0.333469264511034,
+        "flows": -0.20945140918043886,
+        "technical": 0.738875252948579,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-14",
+      "composite": 0.10677352997875254,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2135470599575051,
+      "spyPrice": 590.46,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.021002412810893795,
+        "microstructure": 0.333469264511034,
+        "flows": -0.20945140918043886,
+        "technical": 0.7569787101579034,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-15",
+      "composite": 0.11372255471013802,
+      "signal": "LEAN_LONG",
+      "confidence": 0.22744510942027604,
+      "spyPrice": 594.2,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.018575861757985396,
+        "microstructure": 0.333469264511034,
+        "flows": -0.20945140918043886,
+        "technical": 0.7473124083339997,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-16",
+      "composite": 0.10926778437458062,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21853556874916125,
+      "spyPrice": 594.2,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.009829116784492525,
+        "microstructure": 0.333469264511034,
+        "flows": -0.20945140918043886,
+        "technical": 0.7202581949254115,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-19",
+      "composite": 0.07396402855643107,
+      "signal": "LEAN_LONG",
+      "confidence": 0.14792805711286214,
+      "spyPrice": 592.85,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.22228530839135135,
+        "microstructure": 0.333469264511034,
+        "flows": -0.14737593048823464,
+        "technical": 0.7383362690572973,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-20",
+      "composite": 0.0724415540480519,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1448831080961038,
+      "spyPrice": 582.86,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.22682968111509832,
+        "microstructure": 0.333469264511034,
+        "flows": -0.11566588056779188,
+        "technical": 0.6846351945403356,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-21",
+      "composite": 0.03633813232883797,
+      "signal": "NEUTRAL",
+      "confidence": 0.07267626465767595,
+      "spyPrice": 583.09,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3690330469693397,
+        "microstructure": 0.333469264511034,
+        "flows": -0.1573896304631113,
+        "technical": 0.6705933338996581,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-22",
+      "composite": 0.03993516460812148,
+      "signal": "NEUTRAL",
+      "confidence": 0.07987032921624296,
+      "spyPrice": 579.11,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2842156484585075,
+        "microstructure": 0.333469264511034,
+        "flows": -0.1266719291888275,
+        "technical": 0.49085230775940303,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-23",
+      "composite": 0.05536512202951947,
+      "signal": "LEAN_LONG",
+      "confidence": 0.11073024405903895,
+      "spyPrice": 579.11,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.19849116767631553,
+        "microstructure": 0.333469264511034,
+        "flows": -0.13555796024761443,
+        "technical": 0.48703196699717954,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-26",
+      "composite": 0.043964926549233695,
+      "signal": "NEUTRAL",
+      "confidence": 0.08792985309846739,
+      "spyPrice": 591.15,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2554921450777444,
+        "microstructure": 0.333469264511034,
+        "flows": -0.13555796024761443,
+        "technical": 0.48703196699717954,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-27",
+      "composite": 0.0637388179027647,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1274776358055294,
+      "spyPrice": 587.73,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07075513272154713,
+        "microstructure": 0.333469264511034,
+        "flows": -0.32366234772243874,
+        "technical": 0.5974534370323313,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-28",
+      "composite": 0.050904652459796626,
+      "signal": "LEAN_LONG",
+      "confidence": 0.10180930491959325,
+      "spyPrice": 590.05,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07815863090412377,
+        "microstructure": 0.333469264511034,
+        "flows": -0.33006750716582833,
+        "technical": 0.4935265181328883,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-29",
+      "composite": 0.061579544378310334,
+      "signal": "LEAN_LONG",
+      "confidence": 0.12315908875662067,
+      "spyPrice": 589.39,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.0474273046980193,
+        "microstructure": 0.333469264511034,
+        "flows": -0.32952622608610527,
+        "technical": 0.5380008632862319,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-05-30",
+      "composite": 0.09952629871867491,
+      "signal": "LEAN_LONG",
+      "confidence": 0.19905259743734982,
+      "spyPrice": 589.39,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.12311163120901582,
+        "microstructure": 0.333469264511034,
+        "flows": -0.32948111932946167,
+        "technical": 0.576322874740842,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-02",
+      "composite": 0.0681541558954547,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1363083117909094,
+      "spyPrice": 596.09,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.20658539742763354,
+        "microstructure": 0.333469264511034,
+        "flows": -0.002168068581463012,
+        "technical": 0.43102592765994063,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-03",
+      "composite": 0.06853687918211764,
+      "signal": "LEAN_LONG",
+      "confidence": 0.13707375836423527,
+      "spyPrice": 595.93,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1837937286317335,
+        "microstructure": 0.333469264511034,
+        "flows": 0.00360559626891635,
+        "technical": 0.38060932565920086,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-04",
+      "composite": 0.04704496053333075,
+      "signal": "NEUTRAL",
+      "confidence": 0.0940899210666615,
+      "spyPrice": 593.05,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17290664648309337,
+        "microstructure": 0.333469264511034,
+        "flows": -0.14128651834135023,
+        "technical": 0.3612541467894516,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-05",
+      "composite": 0.041756328330089826,
+      "signal": "NEUTRAL",
+      "confidence": 0.08351265666017965,
+      "spyPrice": 599.14,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2440224552500039,
+        "microstructure": 0.333469264511034,
+        "flows": -0.14769167778473977,
+        "technical": 0.46020718145594786,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-06",
+      "composite": 0.033728938997002425,
+      "signal": "NEUTRAL",
+      "confidence": 0.06745787799400485,
+      "spyPrice": 599.14,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.22759618735089246,
+        "microstructure": 0.333469264511034,
+        "flows": -0.15157085885608837,
+        "technical": 0.3528995239338738,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-09",
+      "composite": 0.04243938151104022,
+      "signal": "NEUTRAL",
+      "confidence": 0.08487876302208044,
+      "spyPrice": 603.08,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.15447781863577653,
+        "microstructure": 0.333469264511034,
+        "flows": -0.1501274426434935,
+        "technical": 0.2916020873251276,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-10",
+      "composite": 0.08925569997559848,
+      "signal": "LEAN_LONG",
+      "confidence": 0.17851139995119697,
+      "spyPrice": 601.36,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.09440196283088667,
+        "microstructure": 0.333469264511034,
+        "flows": -0.002763668688889843,
+        "technical": 0.418567899429025,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-11",
+      "composite": 0.08938518944415588,
+      "signal": "LEAN_LONG",
+      "confidence": 0.17877037888831177,
+      "spyPrice": 603.75,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.14523233156974136,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0008691849098590356,
+        "technical": 0.5186818059237621,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-12",
+      "composite": 0.0790972830611943,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1581945661223886,
+      "spyPrice": 597.0,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17447320274514283,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0026734551756025845,
+        "technical": 0.47699088984356464,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-13",
+      "composite": 0.06145822702838371,
+      "signal": "LEAN_LONG",
+      "confidence": 0.12291645405676742,
+      "spyPrice": 597.0,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.25465123604144624,
+        "microstructure": 0.333469264511034,
+        "flows": -0.03366179698974789,
+        "technical": 0.5074389088292834,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-16",
+      "composite": 0.06261786618626135,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1252357323725227,
+      "spyPrice": 597.53,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.19331172803874122,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0432695361548323,
+        "technical": 0.41076789315027645,
+        "sentiment": 0.0
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2025-06-17",
+      "composite": 0.03890755206172196,
+      "signal": "NEUTRAL",
+      "confidence": 0.07781510412344392,
+      "spyPrice": 597.44,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2705409031656786,
+        "microstructure": 0.333469264511034,
+        "flows": -0.05905690098008825,
+        "technical": 0.3518041493966412,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-18",
+      "composite": 0.036263909202808434,
+      "signal": "NEUTRAL",
+      "confidence": 0.07252781840561687,
+      "spyPrice": 597.44,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2506195216029316,
+        "microstructure": 0.333469264511034,
+        "flows": -0.05653092260804737,
+        "technical": 0.2817359901239507,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-19",
+      "composite": 0.025390155870497637,
+      "signal": "NEUTRAL",
+      "confidence": 0.050780311740995274,
+      "spyPrice": 594.28,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3049882882644856,
+        "microstructure": 0.333469264511034,
+        "flows": -0.05653092260804737,
+        "technical": 0.2817359901239507,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-20",
+      "composite": 0.04726897001221268,
+      "signal": "NEUTRAL",
+      "confidence": 0.09453794002442537,
+      "spyPrice": 594.28,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.23294050724314666,
+        "microstructure": 0.333469264511034,
+        "flows": 0.003912131294361321,
+        "technical": 0.26576398864481027,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-23",
+      "composite": 0.06662607729255401,
+      "signal": "LEAN_LONG",
+      "confidence": 0.13325215458510803,
+      "spyPrice": 606.78,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17358024375632125,
+        "microstructure": 0.333469264511034,
+        "flows": -0.014626745686153622,
+        "technical": 0.3684228499453452,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-24",
+      "composite": 0.07330420944890251,
+      "signal": "LEAN_LONG",
+      "confidence": 0.14660841889780502,
+      "spyPrice": 607.12,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.131942926657774,
+        "microstructure": 0.333469264511034,
+        "flows": -0.01625058892532273,
+        "technical": 0.35436530217048917,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-25",
+      "composite": 0.08601077848035554,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1720215569607111,
+      "spyPrice": 611.87,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1376384861035378,
+        "microstructure": 0.333469264511034,
+        "flows": 0.09430607160811269,
+        "technical": 0.326987120576394,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-26",
+      "composite": 0.11359805455888419,
+      "signal": "LEAN_LONG",
+      "confidence": 0.22719610911776839,
+      "spyPrice": 614.91,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.05978452876803009,
+        "microstructure": 0.333469264511034,
+        "flows": -0.055277145693086976,
+        "technical": 0.43238867757034427,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-27",
+      "composite": 0.10563214939429297,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21126429878858594,
+      "spyPrice": 614.91,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.00754508372836496,
+        "microstructure": 0.333469264511034,
+        "flows": -0.05735205649869213,
+        "technical": 0.4905012171256298,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-06-30",
+      "composite": 0.10480642941326045,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2096128588265209,
+      "spyPrice": 617.65,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.04112238378901306,
+        "microstructure": 0.333469264511034,
+        "flows": -0.055367359206374145,
+        "technical": 0.5464215714981239,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-01",
+      "composite": 0.12858859878095139,
+      "signal": "LEAN_LONG",
+      "confidence": 0.25717719756190277,
+      "spyPrice": 620.45,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.11227400639835955,
+        "microstructure": 0.333469264511034,
+        "flows": 0.2613004969737376,
+        "technical": 0.45154472612355856,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-02",
+      "composite": 0.12897692229280067,
+      "signal": "LEAN_LONG",
+      "confidence": 0.25795384458560133,
+      "spyPrice": 625.34,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.11732315171149131,
+        "microstructure": 0.333469264511034,
+        "flows": 0.2644128631821452,
+        "technical": 0.46085770255570346,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-03",
+      "composite": 0.12771476023753442,
+      "signal": "LEAN_LONG",
+      "confidence": 0.25542952047506884,
+      "spyPrice": 625.34,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.12743157396633495,
+        "microstructure": 0.333469264511034,
+        "flows": 0.2534970280743968,
+        "technical": 0.48482667917435096,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-07",
+      "composite": 0.06736909514166342,
+      "signal": "LEAN_LONG",
+      "confidence": 0.13473819028332684,
+      "spyPrice": 620.34,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3274279404326005,
+        "microstructure": 0.333469264511034,
+        "flows": 0.07851870678285675,
+        "technical": 0.5438302430854821,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-08",
+      "composite": 0.055431114574937566,
+      "signal": "LEAN_LONG",
+      "confidence": 0.11086222914987513,
+      "spyPrice": 624.06,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.3502338646025324,
+        "microstructure": 0.333469264511034,
+        "flows": 0.10323720942354324,
+        "technical": 0.4329845317970577,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-09",
+      "composite": 0.0797579730059128,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1595159460118256,
+      "spyPrice": 625.82,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2870784148877592,
+        "microstructure": 0.333469264511034,
+        "flows": 0.09656140944029216,
+        "technical": 0.5599559166521402,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-10",
+      "composite": 0.10291114342672528,
+      "signal": "LEAN_LONG",
+      "confidence": 0.20582228685345055,
+      "spyPrice": 623.62,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1577522431075268,
+        "microstructure": 0.333469264511034,
+        "flows": 0.10206443375080997,
+        "technical": 0.5245807408340235,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-11",
+      "composite": 0.08878363480082777,
+      "signal": "LEAN_LONG",
+      "confidence": 0.17756726960165553,
+      "spyPrice": 623.62,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.22962121803016178,
+        "microstructure": 0.333469264511034,
+        "flows": 0.0992227080822639,
+        "technical": 0.5313061929231375,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-14",
+      "composite": 0.10003938228164935,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2000787645632987,
+      "spyPrice": 622.14,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.15365153296234713,
+        "microstructure": 0.333469264511034,
+        "flows": 0.10125251213122537,
+        "technical": 0.4888795915222817,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-15",
+      "composite": 0.08414473742258533,
+      "signal": "LEAN_LONG",
+      "confidence": 0.16828947484517065,
+      "spyPrice": 624.22,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2216351827611851,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4466173040641834,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-16",
+      "composite": 0.10976304132339201,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21952608264678403,
+      "spyPrice": 628.04,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.15148667118791634,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.5625033199257128,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-17",
+      "composite": 0.11936162862373051,
+      "signal": "LEAN_LONG",
+      "confidence": 0.23872325724746102,
+      "spyPrice": 627.58,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.04874565593510104,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4530071624234671,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-18",
+      "composite": 0.10862411653165278,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21724823306330557,
+      "spyPrice": 627.58,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07808944968738915,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.40431962900726603,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-21",
+      "composite": 0.11630421669697386,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2326084333939477,
+      "spyPrice": 628.86,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.03234281535438233,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.3896273619944632,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-22",
+      "composite": 0.12007399612045913,
+      "signal": "LEAN_LONG",
+      "confidence": 0.24014799224091826,
+      "spyPrice": 634.21,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.022752867695225304,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4081452609110019,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-23",
+      "composite": 0.13239668790563358,
+      "signal": "LEAN_LONG",
+      "confidence": 0.26479337581126716,
+      "spyPrice": 634.42,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.011407131747488697,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.5086807068672731,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-24",
+      "composite": 0.13110410620756838,
+      "signal": "LEAN_LONG",
+      "confidence": 0.26220821241513675,
+      "spyPrice": 637.1,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.014345958092394959,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4442487102068537,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-25",
+      "composite": 0.13037275374645188,
+      "signal": "LEAN_LONG",
+      "confidence": 0.26074550749290376,
+      "spyPrice": 637.1,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.0245533030810986,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.5147337079426759,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-28",
+      "composite": 0.09095089956755134,
+      "signal": "LEAN_LONG",
+      "confidence": 0.18190179913510268,
+      "spyPrice": 635.26,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.10033836277404098,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0431434281559617,
+        "technical": 0.50796233443547,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-29",
+      "composite": 0.08991175771516575,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1798235154303315,
+      "spyPrice": 634.46,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07995869533544613,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0431434281559617,
+        "technical": 0.4568115810344244,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-30",
+      "composite": 0.09398320270791286,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1879664054158257,
+      "spyPrice": 632.08,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.09286395564455346,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0431434281559617,
+        "technical": 0.52333655158011,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-07-31",
+      "composite": 0.09353576658894996,
+      "signal": "LEAN_LONG",
+      "confidence": 0.18707153317789993,
+      "spyPrice": 621.72,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.110087777728199,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0431434281559617,
+        "technical": 0.5533098345577722,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-01",
+      "composite": 0.06603187384140265,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1320637476828053,
+      "spyPrice": 621.72,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.27485147948351146,
+        "microstructure": 0.333469264511034,
+        "flows": 0.27135930370525785,
+        "technical": 0.13604421280109474,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-04",
+      "composite": 0.07270882779161011,
+      "signal": "LEAN_LONG",
+      "confidence": 0.14541765558322023,
+      "spyPrice": 627.97,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17652479570146823,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.2420374336349975,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-05",
+      "composite": 0.053312762593281604,
+      "signal": "LEAN_LONG",
+      "confidence": 0.10662552518656321,
+      "spyPrice": 632.78,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.19845392949685628,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11081514453966608,
+        "technical": 0.09687423909496158,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-06",
+      "composite": 0.06530781860816005,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1306156372163201,
+      "spyPrice": 632.25,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.17464549204883373,
+        "microstructure": 0.333469264511034,
+        "flows": 0.10192911348087921,
+        "technical": 0.18253697093588125,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-07",
+      "composite": 0.05961176016809488,
+      "signal": "LEAN_LONG",
+      "confidence": 0.11922352033618976,
+      "spyPrice": 637.18,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.2175124081358426,
+        "microstructure": 0.333469264511034,
+        "flows": 0.1030567823969689,
+        "technical": 0.20961871533511267,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-08",
+      "composite": 0.07438016303056824,
+      "signal": "LEAN_LONG",
+      "confidence": 0.14876032606113648,
+      "spyPrice": 637.18,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.16496267981736762,
+        "microstructure": 0.333469264511034,
+        "flows": 0.09060731756333844,
+        "technical": 0.2708774845733421,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-11",
+      "composite": 0.07092367148822928,
+      "signal": "LEAN_LONG",
+      "confidence": 0.14184734297645857,
+      "spyPrice": 642.69,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.13361286459391702,
+        "microstructure": 0.333469264511034,
+        "flows": 0.08740473784164371,
+        "technical": 0.17841680828559334,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-12",
+      "composite": 0.09979595376175748,
+      "signal": "LEAN_LONG",
+      "confidence": 0.19959190752351497,
+      "spyPrice": 644.89,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07645032121275996,
+        "microstructure": 0.333469264511034,
+        "flows": 0.06584370816600836,
+        "technical": 0.38515608877201435,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-13",
+      "composite": 0.1105955407597881,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2211910815195762,
+      "spyPrice": 644.95,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.014030618087270429,
+        "microstructure": 0.333469264511034,
+        "flows": 0.06575349465272119,
+        "technical": 0.3684478727712721,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-14",
+      "composite": 0.10154263466702342,
+      "signal": "LEAN_LONG",
+      "confidence": 0.20308526933404683,
+      "spyPrice": 643.44,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.062068464089987375,
+        "microstructure": 0.333469264511034,
+        "flows": 0.07279014868912104,
+        "technical": 0.36343952279445946,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-15",
+      "composite": 0.08861864869288823,
+      "signal": "LEAN_LONG",
+      "confidence": 0.17723729738577645,
+      "spyPrice": 643.44,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07467884411921817,
+        "microstructure": 0.333469264511034,
+        "flows": 0.06940714194085186,
+        "technical": 0.26449493323397283,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-18",
+      "composite": 0.07780038184713745,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1556007636942749,
+      "spyPrice": 639.81,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.08934062856340241,
+        "microstructure": 0.333469264511034,
+        "flows": 0.06882075410448518,
+        "technical": 0.1865154154193836,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-19",
+      "composite": 0.07211730913005886,
+      "signal": "LEAN_LONG",
+      "confidence": 0.14423461826011771,
+      "spyPrice": 638.11,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.0943642478734142,
+        "microstructure": 0.333469264511034,
+        "flows": 0.054476805491824,
+        "technical": 0.16124784978761303,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-20",
+      "composite": 0.0689810706964081,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1379621413928162,
+      "spyPrice": 635.55,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.10347741555428226,
+        "microstructure": 0.333469264511034,
+        "flows": 0.0728803622024082,
+        "technical": 0.12050646574696537,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-21",
+      "composite": 0.05977340978619207,
+      "signal": "LEAN_LONG",
+      "confidence": 0.11954681957238414,
+      "spyPrice": 645.31,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1284219396490278,
+        "microstructure": 0.333469264511034,
+        "flows": 0.06633988248908779,
+        "technical": 0.0881296244042767,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-22",
+      "composite": 0.10715135279526287,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21430270559052575,
+      "spyPrice": 645.31,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.00378648854830524,
+        "microstructure": 0.333469264511034,
+        "flows": 0.002243181298548525,
+        "technical": 0.40878320407934854,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-25",
+      "composite": 0.08736133021809013,
+      "signal": "LEAN_LONG",
+      "confidence": 0.17472266043618026,
+      "spyPrice": 645.16,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.013015367513687114,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0038913376049795386,
+        "technical": 0.1864810445389285,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-26",
+      "composite": 0.10904646794030098,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21809293588060197,
+      "spyPrice": 646.63,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.11143991967669144,
+        "microstructure": 0.333469264511034,
+        "flows": -0.004387511928058958,
+        "technical": 0.20722757891964744,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-27",
+      "composite": 0.09495683508750424,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1899136701750085,
+      "spyPrice": 648.92,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.14342745386642644,
+        "microstructure": 0.333469264511034,
+        "flows": -0.16096227650901496,
+        "technical": 0.23721832888364408,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-28",
+      "composite": 0.10877135767862542,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21754271535725084,
+      "spyPrice": 645.05,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.179823947795033,
+        "microstructure": 0.333469264511034,
+        "flows": -0.15627117381808167,
+        "technical": 0.2955339129012427,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-08-29",
+      "composite": 0.10857626514340928,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21715253028681855,
+      "spyPrice": 645.05,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.14223162004711598,
+        "microstructure": 0.333469264511034,
+        "flows": -0.07115472403163019,
+        "technical": 0.24109296836523808,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-01",
+      "composite": 0.14114582997574263,
+      "signal": "LEAN_LONG",
+      "confidence": 0.28229165995148525,
+      "spyPrice": 640.27,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.06920239531286802,
+        "microstructure": 0.333469264511034,
+        "flows": 0.24334800782958937,
+        "technical": 0.24109296836523808,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-02",
+      "composite": 0.0961639133104944,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1923278266209888,
+      "spyPrice": 643.74,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.07112067197375747,
+        "microstructure": 0.333469264511034,
+        "flows": 0.27135930370525785,
+        "technical": 0.029902992472504192,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-03",
+      "composite": 0.10669694456345123,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21339388912690246,
+      "spyPrice": 649.12,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.02678462948971118,
+        "microstructure": 0.333469264511034,
+        "flows": 0.27135930370525785,
+        "technical": 0.04656122003397995,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-04",
+      "composite": 0.09553735788030301,
+      "signal": "LEAN_LONG",
+      "confidence": 0.19107471576060603,
+      "spyPrice": 647.24,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.03369981799642681,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.1846727791118437,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-05",
+      "composite": 0.09273837585954563,
+      "signal": "LEAN_LONG",
+      "confidence": 0.18547675171909125,
+      "spyPrice": 647.24,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.06803510857398636,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.2253535400593889,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-08",
+      "composite": 0.12002844302653431,
+      "signal": "LEAN_LONG",
+      "confidence": 0.24005688605306863,
+      "spyPrice": 650.33,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.10613111016813198,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.1499217742450392,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-09",
+      "composite": 0.11921531252992075,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2384306250598415,
+      "spyPrice": 652.21,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.08071666164520189,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.19261936632476367,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-10",
+      "composite": 0.13466713450135082,
+      "signal": "LEAN_LONG",
+      "confidence": 0.26933426900270163,
+      "spyPrice": 657.63,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.09390784799935412,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.32075521333075974,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-11",
+      "composite": 0.1482325622397156,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2964651244794312,
+      "spyPrice": 657.41,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.09835998314252473,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4475052204280665,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-12",
+      "composite": 0.11913302621107053,
+      "signal": "LEAN_LONG",
+      "confidence": 0.23826605242214105,
+      "spyPrice": 657.41,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.004004754486457037,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.3452203174537511,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-15",
+      "composite": 0.12814988427694685,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2562997685538937,
+      "spyPrice": 660.0,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.015382934456637992,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.47416427599870437,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-16",
+      "composite": 0.11981957598593809,
+      "signal": "LEAN_LONG",
+      "confidence": 0.23963915197187619,
+      "spyPrice": 659.18,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.012796733652286684,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.3856887914799142,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-17",
+      "composite": 0.12211001397616739,
+      "signal": "LEAN_LONG",
+      "confidence": 0.24422002795233477,
+      "spyPrice": 662.26,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.05215564353985806,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4873109911573499,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-18",
+      "composite": 0.14214086068070828,
+      "signal": "LEAN_LONG",
+      "confidence": 0.28428172136141655,
+      "spyPrice": 663.7,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.05194240358874723,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4794233639455482,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-19",
+      "composite": 0.143653797568569,
+      "signal": "LEAN_LONG",
+      "confidence": 0.287307595137138,
+      "spyPrice": 663.7,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.03714483823643879,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.5241478635287723,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-22",
+      "composite": 0.12987031487423806,
+      "signal": "LEAN_LONG",
+      "confidence": 0.2597406297484761,
+      "spyPrice": 663.21,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.06571125628256783,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.5920252256234761,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-23",
+      "composite": 0.10710818391778762,
+      "signal": "LEAN_LONG",
+      "confidence": 0.21421636783557524,
+      "spyPrice": 661.1,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.11944712833902438,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.4718756601718848,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-24",
+      "composite": 0.08841072076551917,
+      "signal": "LEAN_LONG",
+      "confidence": 0.17682144153103835,
+      "spyPrice": 658.05,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.1213724419271825,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.28875165582551665,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-25",
+      "composite": 0.0984805676514556,
+      "signal": "LEAN_LONG",
+      "confidence": 0.1969611353029112,
+      "spyPrice": 661.82,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.061143238530898855,
+        "microstructure": 0.333469264511034,
+        "flows": 0.11410793777464807,
+        "technical": 0.26899171789231363,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-26",
+      "composite": 0.09316902058843768,
+      "signal": "LEAN_LONG",
+      "confidence": 0.18633804117687536,
+      "spyPrice": 661.82,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.01474993602336578,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0431434281559617,
+        "technical": 0.29996694704951987,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-29",
+      "composite": 0.08394503507767623,
+      "signal": "LEAN_LONG",
+      "confidence": 0.16789007015535246,
+      "spyPrice": 666.18,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.03346100565665137,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0431434281559617,
+        "technical": 0.3041489753019396,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
+    {
+      "date": "2025-09-30",
+      "composite": 0.09029721394332356,
+      "signal": "LEAN_LONG",
+      "confidence": 0.18059442788664712,
+      "spyPrice": 668.45,
+      "spyChange": 0.0,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": -0.059377760160990334,
+        "microstructure": 0.333469264511034,
+        "flows": -0.0431434281559617,
+        "technical": 0.4195042729670908,
+        "sentiment": 0.0
+      },
+      "regime": "RISK_ON_BULL"
+    },
     {
       "date": "2025-10-01",
       "composite": 0.09240604237057994,
@@ -17,7 +3095,7 @@
         "technical": 0.3556464695917316,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-02",
@@ -35,7 +3113,7 @@
         "technical": 0.3277870316143289,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-03",
@@ -53,7 +3131,7 @@
         "technical": 0.2944944286375845,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-06",
@@ -71,7 +3149,7 @@
         "technical": 0.3077176285458434,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-07",
@@ -89,7 +3167,7 @@
         "technical": 0.3004785637567028,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-08",
@@ -107,7 +3185,7 @@
         "technical": 0.33064840227552633,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-09",
@@ -125,7 +3203,7 @@
         "technical": 0.24909638345132523,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-10",
@@ -143,7 +3221,7 @@
         "technical": -0.10802200581927934,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-10-13",
@@ -161,7 +3239,7 @@
         "technical": -0.03964517545095708,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-14",
@@ -179,7 +3257,7 @@
         "technical": -0.013990969887602147,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-15",
@@ -197,7 +3275,7 @@
         "technical": 0.022586670681767895,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-16",
@@ -215,7 +3293,7 @@
         "technical": -0.05290211980123184,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-17",
@@ -233,7 +3311,7 @@
         "technical": -0.01431068280649007,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-20",
@@ -251,7 +3329,7 @@
         "technical": 0.043796015544584566,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-21",
@@ -269,7 +3347,7 @@
         "technical": 0.015492048641875145,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-22",
@@ -287,7 +3365,7 @@
         "technical": 0.01600626285226707,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-23",
@@ -305,7 +3383,7 @@
         "technical": 0.019556972669458758,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-24",
@@ -323,7 +3401,7 @@
         "technical": 0.1504984326964021,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-27",
@@ -341,7 +3419,7 @@
         "technical": 0.3571983394363261,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-28",
@@ -359,7 +3437,7 @@
         "technical": 0.34741039954081326,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-29",
@@ -377,7 +3455,7 @@
         "technical": 0.45645136553486837,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-30",
@@ -395,7 +3473,7 @@
         "technical": 0.312344628003569,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-10-31",
@@ -413,7 +3491,7 @@
         "technical": 0.36039033820866767,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-03",
@@ -431,7 +3509,7 @@
         "technical": 0.274993757194895,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-04",
@@ -449,7 +3527,7 @@
         "technical": 0.06640310829998325,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-05",
@@ -467,7 +3545,7 @@
         "technical": 0.10462572064095498,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-06",
@@ -485,7 +3563,7 @@
         "technical": -0.07526405628326896,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-07",
@@ -503,7 +3581,7 @@
         "technical": -0.039596637765672335,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-11-10",
@@ -521,7 +3599,7 @@
         "technical": 0.16171868247938717,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-11",
@@ -539,7 +3617,7 @@
         "technical": 0.15378016028444802,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-11-12",
@@ -557,7 +3635,7 @@
         "technical": 0.12099357913374321,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "RISK_ON_BULL"
     },
     {
       "date": "2025-11-13",
@@ -575,7 +3653,7 @@
         "technical": -0.19748485691293877,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-14",
@@ -593,7 +3671,7 @@
         "technical": -0.1746628843065919,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-17",
@@ -611,7 +3689,7 @@
         "technical": -0.4040999844073493,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-18",
@@ -629,7 +3707,7 @@
         "technical": -0.47849559097589134,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-19",
@@ -647,7 +3725,7 @@
         "technical": -0.4867300529070556,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-20",
@@ -665,7 +3743,7 @@
         "technical": -0.4877826311698067,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-21",
@@ -683,7 +3761,7 @@
         "technical": -0.49963886079458575,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-24",
@@ -701,7 +3779,7 @@
         "technical": -0.2609777580345154,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-25",
@@ -719,7 +3797,7 @@
         "technical": -0.09778443280185417,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-26",
@@ -737,7 +3815,7 @@
         "technical": 0.028628038929411403,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-27",
@@ -755,7 +3833,7 @@
         "technical": 0.028628038929411403,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-11-28",
@@ -773,7 +3851,7 @@
         "technical": 0.08793246906259014,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-01",
@@ -791,7 +3869,7 @@
         "technical": -0.03943883743038217,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-02",
@@ -809,7 +3887,7 @@
         "technical": -0.03134020724026548,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-03",
@@ -827,7 +3905,7 @@
         "technical": 0.032697131799666865,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-04",
@@ -845,7 +3923,7 @@
         "technical": 0.10136917630747884,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-05",
@@ -863,7 +3941,7 @@
         "technical": 0.13995227984517147,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-08",
@@ -881,7 +3959,7 @@
         "technical": 0.11209633403975339,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-09",
@@ -899,7 +3977,7 @@
         "technical": 0.15102056138832054,
         "sentiment": 0.0
       },
-      "regime": null
+      "regime": "TRANSITION"
     },
     {
       "date": "2025-12-10",
@@ -1694,5 +4772,5 @@
       "regime": "TRANSITION"
     }
   ],
-  "exportedAt": "2026-02-09T20:22:46.494651"
+  "exportedAt": "2026-02-09T21:15:35.765241"
 }
