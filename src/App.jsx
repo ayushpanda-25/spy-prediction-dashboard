@@ -28,14 +28,20 @@ const getScoreColor = (score) => {
   if (score >= 0.5) return T.green;
   if (score >= 0.2) return T.greenDim;
   if (score >= 0.09) return T.amber;
-  return T.textDim;
+  if (score > -0.09) return T.textDim;
+  if (score > -0.2) return T.amber;
+  if (score > -0.5) return T.red;
+  return T.red;
 };
 
 const getSignalLabel = (score) => {
   if (score >= 0.5) return "STRONG BUY";
   if (score >= 0.2) return "BUY";
   if (score >= 0.09) return "LEAN LONG";
-  return "NEUTRAL";
+  if (score > -0.09) return "NEUTRAL";
+  if (score > -0.2) return "LEAN SHORT";
+  if (score > -0.5) return "SELL";
+  return "STRONG SELL";
 };
 
 const getSeverityColor = (severity) => {
@@ -906,10 +912,28 @@ export default function App() {
                     );
                   })}
                 </div>
+                {/* Long / Short breakdown */}
+                {(backtest.hitRate["1d_long"] || backtest.hitRate["1d_short"]) && (
+                  <div style={{ display: "flex", gap: 8 }}>
+                    {[{ key: "long", label: "LONG", color: T.green }, { key: "short", label: "SHORT", color: T.red }].map(({ key, label, color }) => {
+                      const d = backtest.hitRate[`1d_${key}`];
+                      if (!d) return null;
+                      return (
+                        <div key={key} style={{ flex: 1, padding: "6px 8px", background: `${color}08`, borderRadius: 3, border: `1px solid ${color}22` }}>
+                          <div style={{ fontSize: 9, color, letterSpacing: "0.05em", marginBottom: 2 }}>{label} 1d</div>
+                          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                            <span style={{ fontSize: 16, fontWeight: 700, color }}>{d.hitRate.toFixed(0)}%</span>
+                            <span style={{ fontSize: 9, color: T.textDim }}>n={d.count}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
                 {/* Model info */}
                 <div style={{ borderTop: `1px solid ${T.border}`, paddingTop: 8 }}>
                   <div style={{ fontSize: 10, color: T.textDim, fontStyle: "italic" }}>
-                    Long-only model ({backtest.totalSignals} signals) &middot; Risk-off regimes gated
+                    Bidirectional model ({backtest.totalSignals} signals)
                   </div>
                 </div>
                 {/* Recent signals */}
@@ -918,7 +942,9 @@ export default function App() {
                     <div style={{ fontSize: 10, color: T.textDim, marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.05em" }}>Recent Signals</div>
                     <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
                       {backtest.records.slice(-8).reverse().map((r, i) => {
-                        const sigColor = T.green;
+                        const isLongSignal = (r.signalDir || 1) > 0;
+                        const sigColor = isLongSignal ? T.green : T.red;
+                        const sigLabel = isLongSignal ? "LONG" : "SHORT";
                         const hit1d = r.hit_1d;
                         return (
                           <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 10, padding: "3px 4px", background: i === 0 ? "rgba(255,149,0,0.05)" : "transparent", borderRadius: 2 }}>
@@ -926,7 +952,7 @@ export default function App() {
                               {r.regime && <div style={{ width: 4, height: 4, borderRadius: "50%", background: getRegimeColor(r.regime), flexShrink: 0 }} />}
                               {r.date.slice(5)}
                             </span>
-                            <span style={{ color: sigColor, fontWeight: 600, width: 45, textAlign: "center" }}>LONG</span>
+                            <span style={{ color: sigColor, fontWeight: 600, width: 45, textAlign: "center" }}>{sigLabel}</span>
                             <span style={{ color: T.text, width: 40, textAlign: "right" }}>{r.composite >= 0 ? "+" : ""}{r.composite.toFixed(2)}</span>
                             <span style={{ width: 45, textAlign: "right", color: r.return_1d != null ? (r.return_1d >= 0 ? T.green : T.red) : T.textDim }}>
                               {r.return_1d != null ? `${r.return_1d >= 0 ? "+" : ""}${r.return_1d.toFixed(1)}%` : "..."}
@@ -965,7 +991,7 @@ export default function App() {
                   </div>
                 )}
                 <div style={{ fontSize: 9, color: T.textDim, textAlign: "center" }}>
-                  Based on {backtest.totalSignals} non-neutral signals from backfilled + live data
+                  Based on {backtest.totalSignals} directional signals (long + short) from backfilled + live data
                 </div>
               </div>
             </Panel>
