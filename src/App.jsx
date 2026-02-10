@@ -215,6 +215,7 @@ export default function App() {
   const [liveData, setLiveData] = useState(null);
   const [liveError, setLiveError] = useState(false);
   const [backtest, setBacktest] = useState(null);
+  const [hoveredSpy, setHoveredSpy] = useState(null);
 
   // Fetch live market data from serverless function
   const fetchLive = useCallback(async () => {
@@ -449,37 +450,62 @@ export default function App() {
 
           {/* SPY Price Card */}
           <Panel title="SPY">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
-              <div>
-                <div style={{ fontSize: 32, fontWeight: 700 }}>
-                  ${displayPrice ? Number(displayPrice).toFixed(2) : "---"}
-                </div>
-              </div>
-              <div style={{ textAlign: "right" }}>
-                <div style={{ fontSize: 16, fontWeight: 600, color: (displayChange || 0) >= 0 ? T.green : T.red }}>
-                  {displayChange != null ? `${displayChange >= 0 ? "+" : ""}${Number(displayChange).toFixed(2)}` : "---"}
-                </div>
-                <div style={{ fontSize: 12, color: (displayChangePct || 0) >= 0 ? T.green : T.red }}>
-                  {displayChangePct != null ? `(${displayChangePct >= 0 ? "+" : ""}${Number(displayChangePct).toFixed(2)}%)` : ""}
-                </div>
-              </div>
-            </div>
-            <div style={{ marginTop: 12, height: 80 }}>
-              {history.length > 0 && (
-                <ResponsiveContainer width="100%" height="100%">
-                  <AreaChart data={history.slice(-20)}>
-                    <defs>
-                      <linearGradient id="spyGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor={T.amber} stopOpacity={0.3} />
-                        <stop offset="100%" stopColor={T.amber} stopOpacity={0} />
-                      </linearGradient>
-                    </defs>
-                    <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
-                    <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} />
-                  </AreaChart>
-                </ResponsiveContainer>
-              )}
-            </div>
+            {(() => {
+              const spyChartData = history.slice(-20);
+              const hPrice = hoveredSpy ? hoveredSpy.spy : displayPrice;
+              const hDate = hoveredSpy ? hoveredSpy.fullDate : null;
+              // Compute change from first visible point when hovering
+              const basePrice = spyChartData.length > 0 ? spyChartData[0].spy : null;
+              const hChange = hoveredSpy && basePrice ? hoveredSpy.spy - basePrice : displayChange;
+              const hChangePct = hoveredSpy && basePrice && basePrice > 0 ? ((hoveredSpy.spy - basePrice) / basePrice * 100) : displayChangePct;
+              return (
+                <>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                    <div>
+                      <div style={{ fontSize: 32, fontWeight: 700 }}>
+                        ${hPrice ? Number(hPrice).toFixed(2) : "---"}
+                      </div>
+                      {hDate && (
+                        <div style={{ fontSize: 10, color: T.textDim, marginTop: 2 }}>{hDate}</div>
+                      )}
+                    </div>
+                    <div style={{ textAlign: "right" }}>
+                      <div style={{ fontSize: 16, fontWeight: 600, color: (hChange || 0) >= 0 ? T.green : T.red }}>
+                        {hChange != null ? `${hChange >= 0 ? "+" : ""}${Number(hChange).toFixed(2)}` : "---"}
+                      </div>
+                      <div style={{ fontSize: 12, color: (hChangePct || 0) >= 0 ? T.green : T.red }}>
+                        {hChangePct != null ? `(${hChangePct >= 0 ? "+" : ""}${Number(hChangePct).toFixed(2)}%)` : ""}
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: 12, height: 80 }}>
+                    {spyChartData.length > 0 && (
+                      <ResponsiveContainer width="100%" height="100%">
+                        <AreaChart
+                          data={spyChartData}
+                          onMouseMove={(e) => {
+                            if (e && e.activePayload && e.activePayload.length > 0) {
+                              setHoveredSpy(e.activePayload[0].payload);
+                            }
+                          }}
+                          onMouseLeave={() => setHoveredSpy(null)}
+                        >
+                          <defs>
+                            <linearGradient id="spyGrad" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor={T.amber} stopOpacity={0.3} />
+                              <stop offset="100%" stopColor={T.amber} stopOpacity={0} />
+                            </linearGradient>
+                          </defs>
+                          <YAxis domain={["dataMin - 2", "dataMax + 2"]} hide />
+                          <Tooltip content={() => null} />
+                          <Area type="monotone" dataKey="spy" stroke={T.amber} fill="url(#spyGrad)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: T.amber }} />
+                        </AreaChart>
+                      </ResponsiveContainer>
+                    )}
+                  </div>
+                </>
+              );
+            })()}
           </Panel>
 
           {/* Factor Contribution Chart */}
@@ -665,6 +691,24 @@ export default function App() {
                 allZero={Object.values(factors).every((f) => f.score === 0)}
               />
             ))}
+            {/* Backfill disclaimer */}
+            {status && status.backfilledRecords > 0 && (
+              <div style={{
+                margin: "8px 8px 4px", padding: "8px 12px", borderRadius: T.radius,
+                background: "rgba(107,114,128,0.06)", border: `1px solid ${T.border}`,
+                fontSize: 10, color: T.textDim, lineHeight: 1.5,
+              }}>
+                <span style={{ fontWeight: 600, color: T.text }}>
+                  {status.liveRecords || 0}/{status.totalRecords || 0} live
+                </span>
+                {" "}· {status.backfilledRecords || 0} days backfilled from historical data.
+                {status.firstLiveDate
+                  ? ` Live collection since ${new Date(status.firstLiveDate + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" })}.`
+                  : " Live collection starts next trading day."
+                }
+                {" "}Updates daily as more live data replaces backfill.
+              </div>
+            )}
           </Panel>
         </div>
 
