@@ -1,6 +1,7 @@
 // api/calendar.js
 // Vercel Serverless Function — fetches economic calendar from Finnhub
 // Returns upcoming high/medium-impact US economic events for the next 14 days
+// Falls back gracefully — frontend also has static calendar.json
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -19,15 +20,26 @@ export default async function handler(req, res) {
     const from = now.toISOString().split('T')[0];
     const to = new Date(now.getTime() + 14 * 86400000).toISOString().split('T')[0];
 
-    const response = await fetch(
-      `https://finnhub.io/api/v1/calendar/economic?from=${from}&to=${to}&token=${API_KEY}`
-    );
+    const url = `https://finnhub.io/api/v1/calendar/economic?from=${from}&to=${to}&token=${API_KEY}`;
+    const response = await fetch(url);
+    const text = await response.text();
 
     if (!response.ok) {
-      throw new Error(`Finnhub returned ${response.status}`);
+      console.error(`Finnhub calendar error: ${response.status} — ${text}`);
+      return res.status(response.status).json({
+        error: `Finnhub returned ${response.status}`,
+        detail: text.substring(0, 200),
+      });
     }
 
-    const data = await response.json();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      console.error('Finnhub returned non-JSON:', text.substring(0, 200));
+      return res.status(502).json({ error: 'Invalid JSON from Finnhub' });
+    }
+
     const events = data.economicCalendar || [];
 
     // Filter for US high and medium impact events
@@ -53,7 +65,7 @@ export default async function handler(req, res) {
       fetchedAt: now.toISOString(),
     });
   } catch (error) {
-    console.error('Calendar API error:', error);
-    return res.status(500).json({ error: 'Failed to fetch economic calendar' });
+    console.error('Calendar API error:', error.message || error);
+    return res.status(500).json({ error: 'Failed to fetch economic calendar', detail: String(error.message || error) });
   }
 }

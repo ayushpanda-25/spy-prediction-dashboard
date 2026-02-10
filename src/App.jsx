@@ -293,6 +293,7 @@ export default function App() {
   const [backtest, setBacktest] = useState(null);
   const [calendarEvents, setCalendarEvents] = useState([]);
   const [logExpanded, setLogExpanded] = useState(false);
+  const [newsHeadlines, setNewsHeadlines] = useState([]);
 
   // Fetch live market data from serverless function
   const fetchLive = useCallback(async () => {
@@ -374,7 +375,6 @@ export default function App() {
   useEffect(() => {
     (async () => {
       try {
-        // Try live Finnhub calendar API first
         const liveRes = await fetch("/api/calendar");
         if (liveRes.ok) {
           const live = await liveRes.json();
@@ -385,7 +385,6 @@ export default function App() {
         }
       } catch { /* fall through to static */ }
       try {
-        // Fallback to static calendar.json
         const staticRes = await fetch("/data/calendar.json");
         if (staticRes.ok) {
           const data = await staticRes.json();
@@ -393,6 +392,30 @@ export default function App() {
         }
       } catch { /* no calendar available */ }
     })();
+  }, []);
+
+  // Fetch breaking news headlines
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await fetch("/api/news");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.headlines) setNewsHeadlines(data.headlines);
+        }
+      } catch { /* no news available */ }
+    })();
+    // Refresh news every 5 minutes
+    const interval = setInterval(async () => {
+      try {
+        const res = await fetch("/api/news");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.headlines) setNewsHeadlines(data.headlines);
+        }
+      } catch { /* ignore */ }
+    }, 5 * 60 * 1000);
+    return () => clearInterval(interval);
   }, []);
 
   // Auto-switch to composite view once real scores exist
@@ -505,6 +528,68 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      {/* ── Breaking News Ticker ── */}
+      {newsHeadlines.length > 0 && (
+        <div style={{
+          borderBottom: `1px solid ${T.border}`,
+          background: T.panelHeader,
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          position: "relative",
+        }}>
+          <div style={{
+            display: "flex", alignItems: "center",
+            position: "absolute", left: 0, top: 0, bottom: 0, zIndex: 2,
+            background: `linear-gradient(90deg, ${T.panelHeader} 80%, transparent)`,
+            padding: "0 12px", gap: 6,
+          }}>
+            <div style={{
+              fontSize: 9, fontWeight: 700, letterSpacing: "0.06em",
+              padding: "2px 6px", borderRadius: 2,
+              background: "rgba(255,59,59,0.2)", color: T.red,
+            }}>
+              BREAKING
+            </div>
+          </div>
+          <div style={{
+            display: "inline-flex", gap: 40,
+            animation: `ticker ${Math.max(newsHeadlines.length * 8, 30)}s linear infinite`,
+            paddingLeft: 100,
+          }}>
+            {[...newsHeadlines, ...newsHeadlines].map((h, i) => (
+              <a
+                key={i}
+                href={h.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  padding: "6px 0", fontSize: 11, color: T.text,
+                  textDecoration: "none", cursor: "pointer",
+                }}
+              >
+                <span style={{ color: T.amber, fontSize: 9, fontWeight: 700, flexShrink: 0 }}>
+                  {(h.source || "").toUpperCase()}
+                </span>
+                <span style={{ color: T.text }}>{h.headline}</span>
+                {h.datetime && (
+                  <span style={{ color: T.textDim, fontSize: 9, flexShrink: 0 }}>
+                    {new Date(h.datetime).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })}
+                  </span>
+                )}
+                <span style={{ color: T.border }}>│</span>
+              </a>
+            ))}
+          </div>
+          <style>{`
+            @keyframes ticker {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+          `}</style>
+        </div>
+      )}
 
       <div className="dashboard-grid" style={{ padding: "1.5rem", display: "grid", gridTemplateColumns: "320px 1fr 280px", gap: "1.5rem", maxWidth: 1440, margin: "0 auto" }}>
         {/* ── Left: Score + SPY ── */}
