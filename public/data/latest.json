@@ -14,12 +14,6 @@
       "label": "Options Flow",
       "signals": [
         {
-          "name": "Gex",
-          "value": 0.0,
-          "zScore": 0,
-          "interpretation": "Neutral"
-        },
-        {
           "name": "Iv Term Structure",
           "value": 0.9907,
           "zScore": 0,
@@ -30,12 +24,6 @@
           "value": 0.1495,
           "zScore": 0,
           "interpretation": "Steep skew (fear)"
-        },
-        {
-          "name": "Zero Dte Share",
-          "value": 0.0128,
-          "zScore": 0,
-          "interpretation": "Normal"
         }
       ],
       "lastUpdated": "2026-02-09 18:24:40"
@@ -79,12 +67,6 @@
       "weighted": 0.0667,
       "label": "Microstructure",
       "signals": [
-        {
-          "name": "Block Trade Imbalance",
-          "value": 0.0623,
-          "zScore": 0,
-          "interpretation": "Short-biased"
-        },
         {
           "name": "Dark Pool Pct",
           "value": 0.5918,
@@ -202,5 +184,5 @@
     }
   ],
   "lastUpdate": "2026-02-10 01:15:47",
-  "exportedAt": "2026-02-09T22:11:41.013369"
+  "exportedAt": "2026-02-09T23:23:54.150598"
 }
