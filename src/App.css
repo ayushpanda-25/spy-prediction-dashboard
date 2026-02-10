@@ -1,1 +1,120 @@
-/* Bloomberg terminal theme - styles in App.jsx inline */
+/* App-level styles — responsive overrides for inline styles */
+
+/* ── Tablet breakpoint ── */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .dashboard-right {
+    grid-column: 1 / -1;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .header-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .header-status {
+    flex-wrap: wrap;
+    gap: 6px !important;
+  }
+}
+
+/* ── Mobile breakpoint ── */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+    padding: 12px !important;
+    gap: 12px !important;
+  }
+
+  .dashboard-right {
+    grid-template-columns: 1fr !important;
+  }
+
+  .header-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 10px 14px !important;
+    gap: 8px;
+  }
+
+  .header-left {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  .header-status {
+    width: 100%;
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+
+  .header-status > div {
+    width: 100%;
+  }
+
+  /* Factor bar label + score layout */
+  .factor-bar-inner {
+    flex-wrap: wrap;
+    gap: 6px !important;
+  }
+
+  .factor-label {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+
+  .factor-score,
+  .factor-weighted {
+    width: auto !important;
+  }
+
+  .factor-expand-content {
+    padding-left: 12px !important;
+  }
+
+  /* Factor table on mobile */
+  .factor-expand-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Chart view/time-range buttons */
+  .chart-controls {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  /* Score card */
+  .score-display {
+    font-size: 42px !important;
+  }
+
+  /* SPY price */
+  .spy-price {
+    font-size: 26px !important;
+  }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 480px) {
+  .dashboard-grid {
+    padding: 8px !important;
+    gap: 10px !important;
+  }
+
+  .score-display {
+    font-size: 36px !important;
+  }
+
+  .spy-price {
+    font-size: 22px !important;
+  }
+}
