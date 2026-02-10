@@ -1516,21 +1516,21 @@
     },
     {
       "date": "2026-02-09",
-      "composite": 0.0023587704889591467,
+      "composite": 0.0023587704889591462,
       "signal": "NEUTRAL",
-      "confidence": 0.004717540977918293,
-      "spyPrice": 694.87,
-      "spyChange": 4.25,
+      "confidence": 0.0047175409779182925,
+      "spyPrice": 693.95,
+      "spyChange": 3.33,
       "spyChangePct": 0.0,
       "factorScores": {
         "options": 0.0,
         "macro": 0.0,
         "microstructure": 0.0,
-        "flows": 0.01572513659306098,
+        "flows": 0.015725136593060976,
         "technical": 0.0,
         "sentiment": 0.0
       }
     }
   ],
-  "exportedAt": "2026-02-09T18:45:04.684896"
+  "exportedAt": "2026-02-09T19:06:04.642726"
 }

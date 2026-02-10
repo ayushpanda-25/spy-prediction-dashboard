@@ -1,10 +1,10 @@
 {
   "date": "2026-02-09",
-  "composite": 0.0023587704889591467,
+  "composite": 0.0023587704889591462,
   "signal": "NEUTRAL",
-  "confidence": 0.004717540977918293,
-  "spyPrice": 694.87,
-  "spyChange": 4.25,
+  "confidence": 0.0047175409779182925,
+  "spyPrice": 693.95,
+  "spyChange": 3.33,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
@@ -15,7 +15,7 @@
       "signals": [
         {
           "name": "Gex",
-          "value": null,
+          "value": 0.0,
           "zScore": 0,
           "interpretation": "Neutral"
         },
@@ -33,9 +33,9 @@
         },
         {
           "name": "Zero Dte Share",
-          "value": null,
+          "value": 178852.0,
           "zScore": 0,
-          "interpretation": "Normal"
+          "interpretation": "Elevated \u2192 volatile intraday"
         }
       ]
     },
@@ -47,9 +47,9 @@
       "signals": [
         {
           "name": "Hy Credit Spread",
-          "value": -0.3821,
+          "value": 0.1857,
           "zScore": 0,
-          "interpretation": "Widening (risk-off)"
+          "interpretation": "Tight (risk-on)"
         },
         {
           "name": "Macro Surprise",
@@ -59,13 +59,13 @@
         },
         {
           "name": "Vix Vix3M Ratio",
-          "value": 0.8512,
+          "value": 0.8641,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Yield Curve 2S10S",
-          "value": -1.6602,
+          "value": -1.6211,
           "zScore": 0,
           "interpretation": "Inverted (recession signal)"
         }
@@ -98,7 +98,7 @@
       ]
     },
     "flows": {
-      "score": 0.01572513659306098,
+      "score": 0.015725136593060976,
       "weight": 0.15,
       "weighted": 0.0024,
       "label": "Systematic Flows",
@@ -137,25 +137,25 @@
       "signals": [
         {
           "name": "Price Vs 20Dma",
-          "value": 0.0357,
+          "value": 0.5189,
           "zScore": 0,
           "interpretation": "Above 20D (bullish)"
         },
         {
           "name": "Price Vs 50Dma",
-          "value": 0.5954,
+          "value": 1.0248,
           "zScore": 0,
           "interpretation": "Above 50D (bullish)"
         },
         {
           "name": "Rsi 14",
-          "value": 49.25,
+          "value": 63.88,
           "zScore": 0,
           "interpretation": "Mid-range (neutral)"
         },
         {
           "name": "Volume Ratio",
-          "value": 1.0614,
+          "value": 0.7567,
           "zScore": 0,
           "interpretation": "Below avg volume"
         }
@@ -181,7 +181,7 @@
         },
         {
           "name": "News Sentiment",
-          "value": 0.146,
+          "value": 0.1117,
           "zScore": 0,
           "interpretation": "Slightly positive"
         }
@@ -195,6 +195,6 @@
       "text": "Check economic calendar for upcoming data releases"
     }
   ],
-  "lastUpdate": "2026-02-09 18:24:40",
-  "exportedAt": "2026-02-09T18:45:04.684557"
+  "lastUpdate": "2026-02-10 01:05:25",
+  "exportedAt": "2026-02-09T19:06:04.640316"
 }
