@@ -1,8 +1,8 @@
 {
   "date": "2026-02-09",
-  "composite": 0.0023587704889591462,
+  "composite": 0.0011793852444795731,
   "signal": "NEUTRAL",
-  "confidence": 0.0047175409779182925,
+  "confidence": 0.0023587704889591462,
   "spyPrice": 693.95,
   "spyChange": 3.33,
   "spyChangePct": 0.0,
@@ -21,21 +21,21 @@
         },
         {
           "name": "Iv Term Structure",
-          "value": null,
+          "value": 0.9907,
           "zScore": 0,
-          "interpretation": ""
+          "interpretation": "Flat"
         },
         {
           "name": "Put Skew 25D",
-          "value": null,
+          "value": 0.1495,
           "zScore": 0,
-          "interpretation": ""
+          "interpretation": "Steep skew (fear)"
         },
         {
           "name": "Zero Dte Share",
-          "value": 178852.0,
+          "value": 0.0128,
           "zScore": 0,
-          "interpretation": "Elevated \u2192 volatile intraday"
+          "interpretation": "Normal"
         }
       ]
     },
@@ -47,15 +47,15 @@
       "signals": [
         {
           "name": "Hy Credit Spread",
-          "value": 0.1857,
+          "value": -0.2465,
           "zScore": 0,
-          "interpretation": "Tight (risk-on)"
+          "interpretation": "Widening (risk-off)"
         },
         {
           "name": "Macro Surprise",
-          "value": null,
+          "value": 38.7,
           "zScore": 0,
-          "interpretation": ""
+          "interpretation": "Beating expectations"
         },
         {
           "name": "Vix Vix3M Ratio",
@@ -65,7 +65,7 @@
         },
         {
           "name": "Yield Curve 2S10S",
-          "value": -1.6211,
+          "value": -1.6367,
           "zScore": 0,
           "interpretation": "Inverted (recession signal)"
         }
@@ -79,28 +79,28 @@
       "signals": [
         {
           "name": "Block Trade Imbalance",
-          "value": null,
+          "value": 0.0623,
           "zScore": 0,
-          "interpretation": ""
+          "interpretation": "Short-biased"
         },
         {
           "name": "Dark Pool Pct",
-          "value": null,
+          "value": 0.5918,
           "zScore": 0,
-          "interpretation": ""
+          "interpretation": "High off-exchange (>45%)"
         },
         {
           "name": "Short Volume Ratio",
-          "value": null,
+          "value": 0.5373,
           "zScore": 0,
-          "interpretation": "Below average"
+          "interpretation": "Normal"
         }
       ]
     },
     "flows": {
-      "score": 0.015725136593060976,
+      "score": 0.007862568296530488,
       "weight": 0.15,
-      "weighted": 0.0024,
+      "weighted": 0.0012,
       "label": "Systematic Flows",
       "signals": [
         {
@@ -111,9 +111,9 @@
         },
         {
           "name": "Cta Momentum",
-          "value": null,
+          "value": 1.0,
           "zScore": 0,
-          "interpretation": "Trend down"
+          "interpretation": "Following trend up"
         },
         {
           "name": "Month End Rebal",
@@ -123,7 +123,7 @@
         },
         {
           "name": "Vol Target Alloc",
-          "value": null,
+          "value": 1.1272,
           "zScore": 0,
           "interpretation": "Low alloc \u2192 room to add"
         }
@@ -195,6 +195,6 @@
       "text": "Check economic calendar for upcoming data releases"
     }
   ],
-  "lastUpdate": "2026-02-10 01:05:25",
-  "exportedAt": "2026-02-09T19:06:04.640316"
+  "lastUpdate": "2026-02-10 01:15:47",
+  "exportedAt": "2026-02-09T19:16:06.250490"
 }
