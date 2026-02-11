@@ -116,8 +116,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "New Home Sales",
+      "date": "2026-02-25",
+      "time": "10:00 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-02-10T16:30:15.216730"
+  "exportedAt": "2026-02-11T16:37:36.421051"
 }

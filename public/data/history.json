@@ -1,5 +1,5 @@
 {
-  "count": 266,
+  "count": 267,
   "data": [
     {
       "date": "2025-02-03",
@@ -4788,7 +4788,25 @@
         "sentiment": -0.2928526394812647
       },
       "regime": "TRANSITION"
+    },
+    {
+      "date": "2026-02-11",
+      "composite": -0.2168648615990837,
+      "signal": "SELL",
+      "confidence": 0.4337297231981674,
+      "spyPrice": 691.96,
+      "spyChange": -0.16,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.0,
+        "microstructure": -0.4402353970654853,
+        "flows": -0.056118483635363724,
+        "technical": -0.07978385894093475,
+        "sentiment": -0.28613329112664215
+      },
+      "regime": "TRANSITION"
     }
   ],
-  "exportedAt": "2026-02-10T16:30:15.173510"
+  "exportedAt": "2026-02-11T16:37:36.364586"
 }
