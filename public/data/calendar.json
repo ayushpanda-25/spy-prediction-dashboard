@@ -125,8 +125,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "Initial Jobless Claims",
+      "date": "2026-02-26",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-02-11T16:37:36.421051"
+  "exportedAt": "2026-02-12T16:30:23.409381"
 }

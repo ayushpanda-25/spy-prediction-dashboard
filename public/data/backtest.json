@@ -1,14 +1,14 @@
 {
   "hitRate": {
     "1d": {
-      "hitRate": 45.0,
-      "avgReturn": 0.054,
-      "count": 169
+      "hitRate": 45.3,
+      "avgReturn": 0.045,
+      "count": 170
     },
     "3d": {
-      "hitRate": 61.1,
-      "avgReturn": 0.166,
-      "count": 167
+      "hitRate": 60.7,
+      "avgReturn": 0.154,
+      "count": 168
     },
     "5d": {
       "hitRate": 62.3,
@@ -21,9 +21,9 @@
       "count": 118
     },
     "3d_long": {
-      "hitRate": 69.2,
-      "avgReturn": 0.309,
-      "count": 117
+      "hitRate": 68.6,
+      "avgReturn": 0.291,
+      "count": 118
     },
     "5d_long": {
       "hitRate": 69.2,
@@ -31,9 +31,9 @@
       "count": 117
     },
     "1d_short": {
-      "hitRate": 39.2,
-      "avgReturn": -0.052,
-      "count": 51
+      "hitRate": 40.4,
+      "avgReturn": -0.081,
+      "count": 52
     },
     "3d_short": {
       "hitRate": 42.0,
@@ -53,9 +53,9 @@
       "count": 8
     },
     "TRANSITION": {
-      "hitRate": 52.4,
-      "avgReturn": 0.008,
-      "count": 42
+      "hitRate": 53.5,
+      "avgReturn": -0.028,
+      "count": 43
     },
     "RISK_ON_BULL": {
       "hitRate": 47.6,
@@ -452,8 +452,8 @@
       "regime": "TRANSITION",
       "return_1d": -0.26,
       "hit_1d": 0,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": -1.83,
+      "hit_3d": 0,
       "return_5d": null,
       "hit_5d": null
     },
@@ -478,13 +478,13 @@
       "signalDir": -1,
       "spyPrice": 691.96,
       "regime": "TRANSITION",
-      "return_1d": null,
-      "hit_1d": null,
+      "return_1d": -1.54,
+      "hit_1d": 1,
       "return_3d": null,
       "hit_3d": null,
       "return_5d": null,
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-02-11T16:37:36.427090"
+  "exportedAt": "2026-02-12T16:30:23.413849"
 }
