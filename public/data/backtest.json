@@ -6,9 +6,9 @@
       "count": 170
     },
     "3d": {
-      "hitRate": 60.7,
-      "avgReturn": 0.154,
-      "count": 168
+      "hitRate": 60.9,
+      "avgReturn": 0.145,
+      "count": 169
     },
     "5d": {
       "hitRate": 62.3,
@@ -36,9 +36,9 @@
       "count": 52
     },
     "3d_short": {
-      "hitRate": 42.0,
-      "avgReturn": -0.17,
-      "count": 50
+      "hitRate": 43.1,
+      "avgReturn": -0.193,
+      "count": 51
     },
     "5d_short": {
       "hitRate": 46.0,
@@ -63,22 +63,8 @@
       "count": 84
     }
   },
-  "totalSignals": 170,
+  "totalSignals": 171,
   "records": [
-    {
-      "date": "2025-10-07",
-      "signal": "LEAN_LONG",
-      "composite": 0.0928,
-      "signalDir": 1,
-      "spyPrice": 669.12,
-      "regime": "RISK_ON_BULL",
-      "return_1d": 0.6,
-      "hit_1d": 1,
-      "return_3d": -2.41,
-      "hit_3d": 0,
-      "return_5d": -1.03,
-      "hit_5d": 0
-    },
     {
       "date": "2025-10-14",
       "signal": "LEAN_LONG",
@@ -466,8 +452,8 @@
       "regime": "TRANSITION",
       "return_1d": -0.02,
       "hit_1d": 1,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": -1.34,
+      "hit_3d": 1,
       "return_5d": null,
       "hit_5d": null
     },
@@ -484,7 +470,21 @@
       "hit_3d": null,
       "return_5d": null,
       "hit_5d": null
+    },
+    {
+      "date": "2026-02-17",
+      "signal": "LEAN_SHORT",
+      "composite": -0.1486,
+      "signalDir": -1,
+      "spyPrice": 682.85,
+      "regime": "TRANSITION",
+      "return_1d": null,
+      "hit_1d": null,
+      "return_3d": null,
+      "hit_3d": null,
+      "return_5d": null,
+      "hit_5d": null
     }
   ],
-  "exportedAt": "2026-02-16T16:30:06.311314"
+  "exportedAt": "2026-02-17T16:32:29.014845"
 }
