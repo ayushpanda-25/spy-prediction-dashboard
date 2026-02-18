@@ -3,6 +3,18 @@
     {
       "type": "calendar",
       "severity": "medium",
+      "text": "Upcoming high-impact: Core PCE 02-20, GDP (Advance) 02-20",
+      "date": "2026-02-18"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Durable Goods 02-18, FOMC Minutes 02-18, Industrial Production 02-18",
+      "date": "2026-02-18"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
       "text": "Upcoming high-impact: Retail Sales 02-17, Core PCE 02-20, GDP (Advance) 02-20",
       "date": "2026-02-17"
     },
@@ -59,13 +71,7 @@
       "severity": "low",
       "text": "Check economic calendar for upcoming data releases",
       "date": "2026-02-06"
-    },
-    {
-      "type": "info",
-      "severity": "low",
-      "text": "Check economic calendar for upcoming data releases",
-      "date": "2026-02-05"
     }
   ],
-  "exportedAt": "2026-02-17T16:32:28.935100"
+  "exportedAt": "2026-02-18T16:30:22.931858"
 }

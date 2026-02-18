@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "event": "Empire State Mfg",
-      "date": "2026-02-17",
-      "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Retail Sales",
-      "date": "2026-02-17",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "Durable Goods",
       "date": "2026-02-18",
       "time": "8:30 AM ET",
@@ -125,8 +107,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "ISM Services",
+      "date": "2026-03-04",
+      "time": "10:00 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-02-17T16:32:29.006419"
+  "exportedAt": "2026-02-18T16:30:22.958290"
 }
