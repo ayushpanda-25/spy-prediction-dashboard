@@ -1,16 +1,16 @@
 {
-  "date": "2026-02-18",
-  "composite": -0.10668324539642676,
-  "signal": "LEAN_SHORT",
-  "confidence": 0.21336649079285352,
-  "spyPrice": 686.29,
-  "spyChange": 3.44,
+  "date": "2026-02-19",
+  "composite": -0.011317164398106754,
+  "signal": "NEUTRAL",
+  "confidence": 0.022634328796213507,
+  "spyPrice": 684.48,
+  "spyChange": -1.81,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
-      "score": 0.10824482457845115,
+      "score": 0.2615058490838946,
       "weight": 0.3,
-      "weighted": 0.0325,
+      "weighted": 0.0785,
       "label": "Options Flow",
       "signals": [
         {
@@ -21,95 +21,95 @@
         },
         {
           "name": "Iv Term Structure",
-          "value": 0.9173,
+          "value": 0.9246,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Put Skew 25D",
-          "value": 0.1295,
+          "value": 0.1476,
           "zScore": 0,
           "interpretation": "Steep skew (fear)"
         },
         {
           "name": "Zero Dte Share",
-          "value": 0.9359,
+          "value": null,
           "zScore": 0,
-          "interpretation": "High 0DTE (>60%)"
+          "interpretation": "Moderate 0DTE"
         }
       ],
-      "lastUpdated": "2026-02-18 22:30:22"
+      "lastUpdated": "2026-02-19 22:30:19"
     },
     "macro": {
-      "score": 0.42598651129600196,
+      "score": 0.5009082539354477,
       "weight": 0.2,
-      "weighted": 0.0852,
+      "weighted": 0.1002,
       "label": "Macro",
       "signals": [
         {
           "name": "Hy Credit Spread",
-          "value": -0.0124,
+          "value": 0.0247,
           "zScore": 0,
-          "interpretation": "Widening (risk-off)"
+          "interpretation": "Tight (risk-on)"
         },
         {
           "name": "Macro Surprise",
-          "value": 36.4,
+          "value": 43.4,
           "zScore": 0,
           "interpretation": "Beating expectations"
         },
         {
           "name": "Vix Vix3M Ratio",
-          "value": 0.9173,
+          "value": 0.9246,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Yield Curve 2S10S",
-          "value": 0.2656,
+          "value": 0.3906,
           "zScore": 0,
           "interpretation": "Positive slope (healthy)"
         }
       ],
-      "lastUpdated": "2026-02-18 22:30:22"
+      "lastUpdated": "2026-02-19 22:30:19"
     },
     "microstructure": {
-      "score": -0.4136961024293231,
+      "score": -0.204552662252729,
       "weight": 0.2,
-      "weighted": -0.0827,
+      "weighted": -0.0409,
       "label": "Microstructure",
       "signals": [
         {
           "name": "Block Trade Imbalance",
-          "value": -0.0992,
+          "value": -0.0911,
           "zScore": 0,
           "interpretation": "Low shorts"
         },
         {
           "name": "Dark Pool Pct",
-          "value": 0.5498,
+          "value": 0.602,
           "zScore": 0,
           "interpretation": "High off-exchange (>45%)"
         },
         {
           "name": "Finra Adf Off Exchange Pct",
-          "value": 0.3241,
+          "value": 0.2929,
           "zScore": 0,
           "interpretation": "High ADF volume (>15%)"
         },
         {
           "name": "Short Volume Ratio",
-          "value": 0.4077,
+          "value": 0.41,
           "zScore": 0,
           "interpretation": "Normal"
         }
       ],
-      "lastUpdated": "2026-02-18 22:30:22"
+      "lastUpdated": "2026-02-19 22:30:19"
     },
     "flows": {
-      "score": -0.5451047959331485,
+      "score": -0.5167640318038982,
       "weight": 0.15,
-      "weighted": -0.0818,
+      "weighted": -0.0775,
       "label": "Systematic Flows",
       "signals": [
         {
@@ -132,72 +132,72 @@
         },
         {
           "name": "Vol Target Alloc",
-          "value": 1.216,
+          "value": 1.2834,
           "zScore": 0,
           "interpretation": "Near max \u2192 vulnerable"
         }
       ],
-      "lastUpdated": "2026-02-18 22:30:22"
+      "lastUpdated": "2026-02-19 22:30:19"
     },
     "technical": {
-      "score": -0.39899370102217074,
+      "score": -0.4768362179282277,
       "weight": 0.15,
-      "weighted": -0.0598,
+      "weighted": -0.0715,
       "label": "Technical",
       "signals": [
         {
           "name": "Price Vs 20Dma",
-          "value": -0.4137,
+          "value": -0.6697,
           "zScore": 0,
           "interpretation": "Below 20D (bearish)"
         },
         {
           "name": "Price Vs 50Dma",
-          "value": -0.1575,
+          "value": -0.4173,
           "zScore": 0,
           "interpretation": "Below 50D (bearish)"
         },
         {
           "name": "Rsi 14",
-          "value": 42.22,
+          "value": 41.92,
           "zScore": 0,
           "interpretation": "Mid-range (neutral)"
         },
         {
           "name": "Volume Ratio",
-          "value": 0.7803,
+          "value": 0.7003,
           "zScore": 0,
           "interpretation": "Below avg volume"
         }
       ],
-      "lastUpdated": "2026-02-18 22:30:22"
+      "lastUpdated": "2026-02-19 22:30:19"
     },
     "sentiment": {
-      "score": -0.528615965809962,
+      "score": -0.431322923124877,
       "weight": 0.0,
       "weighted": -0.0,
       "label": "Sentiment",
       "signals": [
         {
           "name": "Aaii Bull Bear",
-          "value": 0.39,
+          "value": -2.41,
           "zScore": 0,
           "interpretation": "Balanced"
         },
         {
           "name": "Naaim Exposure",
-          "value": 80.61,
+          "value": 82.87,
           "zScore": 0,
           "interpretation": "High exposure (contrarian bear)"
         },
         {
           "name": "News Sentiment",
-          "value": 0.0016,
+          "value": 0.1261,
           "zScore": 0,
-          "interpretation": "Neutral"
+          "interpretation": "Slightly positive"
         }
       ],
-      "lastUpdated": "2026-02-18 22:30:22"
+      "lastUpdated": "2026-02-19 22:30:19"
     }
   },
   "alerts": [
@@ -209,9 +209,9 @@
     {
       "type": "calendar",
       "severity": "low",
-      "text": "Also scheduled: Durable Goods 02-18, FOMC Minutes 02-18, Industrial Production 02-18"
+      "text": "Also scheduled: Initial Jobless Claims 02-19, Philly Fed Mfg 02-19, Consumer Confidence 02-24"
     }
   ],
-  "lastUpdate": "2026-02-18 22:30:22",
-  "exportedAt": "2026-02-18T16:30:22.921976"
+  "lastUpdate": "2026-02-19 22:30:19",
+  "exportedAt": "2026-02-19T16:30:19.843324"
 }
