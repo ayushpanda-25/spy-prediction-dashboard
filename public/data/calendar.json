@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "event": "Initial Jobless Claims",
-      "date": "2026-02-19",
-      "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Philly Fed Mfg",
-      "date": "2026-02-19",
-      "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "Core PCE",
       "date": "2026-02-20",
       "time": "8:30 AM ET",
@@ -98,8 +80,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "Nonfarm Payrolls",
+      "date": "2026-03-06",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-02-19T16:30:19.886450"
+  "exportedAt": "2026-02-20T16:30:47.753244"
 }

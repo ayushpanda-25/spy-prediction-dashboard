@@ -3,6 +3,18 @@
     {
       "type": "calendar",
       "severity": "medium",
+      "text": "Upcoming high-impact: Core PCE 02-20, GDP (Advance) 02-20, PPI 02-27",
+      "date": "2026-02-20"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Consumer Confidence 02-24, New Home Sales 02-25, Initial Jobless Claims 02-26",
+      "date": "2026-02-20"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
       "text": "Upcoming high-impact: Core PCE 02-20, GDP (Advance) 02-20",
       "date": "2026-02-19"
     },
@@ -71,13 +83,7 @@
       "severity": "low",
       "text": "Also scheduled: Existing Home Sales 02-12, Initial Jobless Claims 02-12, Empire State Mfg 02-17",
       "date": "2026-02-10"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: CPI 02-11",
-      "date": "2026-02-09"
     }
   ],
-  "exportedAt": "2026-02-19T16:30:19.854113"
+  "exportedAt": "2026-02-20T16:30:47.703618"
 }

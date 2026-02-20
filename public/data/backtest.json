@@ -6,14 +6,14 @@
       "count": 172
     },
     "3d": {
-      "hitRate": 61.2,
-      "avgReturn": 0.139,
-      "count": 170
+      "hitRate": 60.8,
+      "avgReturn": 0.144,
+      "count": 171
     },
     "5d": {
-      "hitRate": 62.1,
-      "avgReturn": 0.215,
-      "count": 169
+      "hitRate": 62.4,
+      "avgReturn": 0.211,
+      "count": 170
     },
     "1d_long": {
       "hitRate": 47.5,
@@ -36,14 +36,14 @@
       "count": 54
     },
     "3d_short": {
-      "hitRate": 44.2,
-      "avgReturn": -0.205,
-      "count": 52
+      "hitRate": 43.4,
+      "avgReturn": -0.183,
+      "count": 53
     },
     "5d_short": {
-      "hitRate": 47.1,
-      "avgReturn": -0.318,
-      "count": 51
+      "hitRate": 48.1,
+      "avgReturn": -0.319,
+      "count": 52
     }
   },
   "regimeHitRate": {
@@ -454,8 +454,8 @@
       "hit_1d": 1,
       "return_3d": -0.82,
       "hit_3d": 1,
-      "return_5d": null,
-      "hit_5d": null
+      "return_5d": -0.37,
+      "hit_5d": 1
     },
     {
       "date": "2026-02-17",
@@ -466,8 +466,8 @@
       "regime": "TRANSITION",
       "return_1d": 0.5,
       "hit_1d": 0,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": 0.96,
+      "hit_3d": 0,
       "return_5d": null,
       "hit_5d": null
     },
@@ -486,5 +486,5 @@
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-02-19T16:30:19.891239"
+  "exportedAt": "2026-02-20T16:30:47.758064"
 }
