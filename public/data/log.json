@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "time": "2026-02-23 16:30:20",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 22/23 signals captured",
+      "duration": ""
+    },
+    {
       "time": "2026-02-20 16:30:47",
       "type": "eod",
       "status": "ok",
@@ -342,14 +349,7 @@
       "status": "ok",
       "message": "EOD collection complete \u2014 17/22 signals captured",
       "duration": ""
-    },
-    {
-      "time": "2026-02-09 21:04:39",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 17/22 signals captured",
-      "duration": ""
     }
   ],
-  "exportedAt": "2026-02-20T16:30:47.755458"
+  "exportedAt": "2026-02-23T16:30:21.165824"
 }

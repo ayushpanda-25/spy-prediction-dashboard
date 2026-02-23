@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "event": "Core PCE",
-      "date": "2026-02-20",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "GDP (Advance)",
-      "date": "2026-02-20",
-      "time": "8:30 AM ET",
-      "impact": "high",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "Consumer Confidence",
       "date": "2026-02-24",
       "time": "10:00 AM ET",
@@ -92,5 +74,5 @@
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-02-20T16:30:47.753244"
+  "exportedAt": "2026-02-23T16:30:21.163177"
 }

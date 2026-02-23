@@ -6,9 +6,9 @@
       "count": 172
     },
     "3d": {
-      "hitRate": 60.8,
-      "avgReturn": 0.144,
-      "count": 171
+      "hitRate": 61.0,
+      "avgReturn": 0.14,
+      "count": 172
     },
     "5d": {
       "hitRate": 62.4,
@@ -36,9 +36,9 @@
       "count": 54
     },
     "3d_short": {
-      "hitRate": 43.4,
-      "avgReturn": -0.183,
-      "count": 53
+      "hitRate": 44.4,
+      "avgReturn": -0.19,
+      "count": 54
     },
     "5d_short": {
       "hitRate": 48.1,
@@ -63,22 +63,8 @@
       "count": 84
     }
   },
-  "totalSignals": 172,
+  "totalSignals": 173,
   "records": [
-    {
-      "date": "2025-10-15",
-      "signal": "LEAN_LONG",
-      "composite": 0.1407,
-      "signalDir": 1,
-      "spyPrice": 665.17,
-      "regime": "TRANSITION",
-      "return_1d": -0.68,
-      "hit_1d": 0,
-      "return_3d": 0.92,
-      "hit_3d": 1,
-      "return_5d": 0.4,
-      "hit_5d": 1
-    },
     {
       "date": "2025-10-16",
       "signal": "BUY",
@@ -480,11 +466,25 @@
       "regime": "TRANSITION",
       "return_1d": -0.26,
       "hit_1d": 1,
+      "return_3d": -0.57,
+      "hit_3d": 1,
+      "return_5d": null,
+      "hit_5d": null
+    },
+    {
+      "date": "2026-02-23",
+      "signal": "LEAN_LONG",
+      "composite": 0.1114,
+      "signalDir": 1,
+      "spyPrice": 682.39,
+      "regime": "TRANSITION",
+      "return_1d": null,
+      "hit_1d": null,
       "return_3d": null,
       "hit_3d": null,
       "return_5d": null,
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-02-20T16:30:47.758064"
+  "exportedAt": "2026-02-23T16:30:21.168584"
 }
