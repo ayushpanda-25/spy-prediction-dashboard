@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "event": "Consumer Confidence",
-      "date": "2026-02-24",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "New Home Sales",
-      "date": "2026-02-25",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "Initial Jobless Claims",
       "date": "2026-02-26",
       "time": "8:30 AM ET",
@@ -71,8 +53,53 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "Existing Home Sales",
+      "date": "2026-03-10",
+      "time": "10:00 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "CPI",
+      "date": "2026-03-11",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "JOLTS Job Openings",
+      "date": "2026-03-11",
+      "time": "10:00 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Initial Jobless Claims",
+      "date": "2026-03-12",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "PPI",
+      "date": "2026-03-12",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-02-23T16:30:21.163177"
+  "exportedAt": "2026-02-26T16:30:22.597596"
 }

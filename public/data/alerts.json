@@ -1,6 +1,24 @@
 {
   "alerts": [
     {
+      "type": "signal",
+      "severity": "high",
+      "text": "Sentiment factor at extreme bearish level (-0.73)",
+      "date": "2026-02-26"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: PPI 02-27",
+      "date": "2026-02-26"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Initial Jobless Claims 02-26, ISM Manufacturing 03-02, ISM Services 03-04",
+      "date": "2026-02-26"
+    },
+    {
       "type": "calendar",
       "severity": "medium",
       "text": "Upcoming high-impact: PPI 02-27",
@@ -71,19 +89,7 @@
       "severity": "low",
       "text": "Also scheduled: Existing Home Sales 02-12, Initial Jobless Claims 02-12, Empire State Mfg 02-17",
       "date": "2026-02-12"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: CPI 02-13, Retail Sales 02-17",
-      "date": "2026-02-11"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Existing Home Sales 02-12, Initial Jobless Claims 02-12, Empire State Mfg 02-17",
-      "date": "2026-02-11"
     }
   ],
-  "exportedAt": "2026-02-23T16:30:21.103422"
+  "exportedAt": "2026-02-26T16:30:22.560001"
 }
