@@ -1,5 +1,5 @@
 {
-  "count": 274,
+  "count": 279,
   "data": [
     {
       "date": "2025-02-03",
@@ -4932,7 +4932,97 @@
         "sentiment": -0.7323098985822899
       },
       "regime": "TRANSITION"
+    },
+    {
+      "date": "2026-02-27",
+      "composite": 0.01917151083355592,
+      "signal": "NEUTRAL",
+      "confidence": 0.03834302166711184,
+      "spyPrice": 685.99,
+      "spyChange": -3.31,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.027802374636035743,
+        "macro": 0.41214957260391927,
+        "microstructure": 0.0,
+        "flows": -0.22860919658257417,
+        "technical": -0.2742802583824248,
+        "sentiment": -0.6682677098266665
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2026-03-02",
+      "composite": 0.06089518517822952,
+      "signal": "NEUTRAL",
+      "confidence": 0.12179037035645904,
+      "spyPrice": 686.38,
+      "spyChange": 0.39,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.07791462319492953,
+        "macro": 0.23830963285390122,
+        "microstructure": 0.0,
+        "flows": 0.12337325934599207,
+        "technical": -0.27217436192382866,
+        "sentiment": -0.5626865461476146
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2026-03-03",
+      "composite": 0.0507460172675417,
+      "signal": "NEUTRAL",
+      "confidence": 0.1014920345350834,
+      "spyPrice": 680.33,
+      "spyChange": -6.05,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.10456209944209616,
+        "macro": 0.25996704542485854,
+        "microstructure": 0.0,
+        "flows": 0.12427845814582926,
+        "technical": -0.4093799588362773,
+        "sentiment": -0.40699463479752057
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2026-03-04",
+      "composite": -0.17347954192570486,
+      "signal": "LEAN_SHORT",
+      "confidence": 0.3469590838514097,
+      "spyPrice": 685.13,
+      "spyChange": 4.8,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0,
+        "macro": 0.0,
+        "microstructure": 0.0,
+        "flows": -0.03451847120069964,
+        "technical": -0.3124406126507101,
+        "sentiment": -0.6037267765237971
+      },
+      "regime": "TRANSITION"
+    },
+    {
+      "date": "2026-03-09",
+      "composite": 0.03601484859717499,
+      "signal": "NEUTRAL",
+      "confidence": 0.07202969719434998,
+      "spyPrice": 678.27,
+      "spyChange": 5.89,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": 0.0649507910342572,
+        "macro": 0.39364467691137095,
+        "microstructure": -0.11857311836662728,
+        "flows": 0.04757351314946398,
+        "technical": -0.3041381826298034,
+        "sentiment": -0.5738492357398562
+      },
+      "regime": "TRANSITION"
     }
   ],
-  "exportedAt": "2026-02-26T16:30:22.559917"
+  "exportedAt": "2026-03-09T16:30:19.978117"
 }
