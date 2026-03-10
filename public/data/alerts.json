@@ -4,6 +4,18 @@
       "type": "calendar",
       "severity": "medium",
       "text": "Upcoming high-impact: CPI 03-11, PPI 03-12, Core PCE 03-13, Retail Sales 03-16",
+      "date": "2026-03-10"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Existing Home Sales 03-10, JOLTS Job Openings 03-11, Initial Jobless Claims 03-12",
+      "date": "2026-03-10"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: CPI 03-11, PPI 03-12, Core PCE 03-13, Retail Sales 03-16",
       "date": "2026-03-09"
     },
     {
@@ -77,19 +89,7 @@
       "severity": "low",
       "text": "Also scheduled: Initial Jobless Claims 02-26, ISM Manufacturing 03-02, ISM Services 03-04",
       "date": "2026-02-26"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: PPI 02-27",
-      "date": "2026-02-23"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Consumer Confidence 02-24, New Home Sales 02-25, Initial Jobless Claims 02-26",
-      "date": "2026-02-23"
     }
   ],
-  "exportedAt": "2026-03-09T16:30:19.978156"
+  "exportedAt": "2026-03-10T16:30:22.571157"
 }
