@@ -1,6 +1,24 @@
 {
   "alerts": [
     {
+      "type": "signal",
+      "severity": "high",
+      "text": "Microstructure factor at extreme bullish level (+0.95)",
+      "date": "2026-03-11"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: CPI 03-11, PPI 03-12, Core PCE 03-13, Retail Sales 03-16",
+      "date": "2026-03-11"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: JOLTS Job Openings 03-11, Initial Jobless Claims 03-12, Industrial Production 03-16",
+      "date": "2026-03-11"
+    },
+    {
       "type": "calendar",
       "severity": "medium",
       "text": "Upcoming high-impact: CPI 03-11, PPI 03-12, Core PCE 03-13, Retail Sales 03-16",
@@ -71,25 +89,7 @@
       "severity": "low",
       "text": "Also scheduled: ISM Manufacturing 03-02, ISM Services 03-04, Initial Jobless Claims 03-05",
       "date": "2026-02-27"
-    },
-    {
-      "type": "signal",
-      "severity": "high",
-      "text": "Sentiment factor at extreme bearish level (-0.73)",
-      "date": "2026-02-26"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: PPI 02-27",
-      "date": "2026-02-26"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Initial Jobless Claims 02-26, ISM Manufacturing 03-02, ISM Services 03-04",
-      "date": "2026-02-26"
     }
   ],
-  "exportedAt": "2026-03-10T16:30:22.571157"
+  "exportedAt": "2026-03-11T16:30:21.257669"
 }
