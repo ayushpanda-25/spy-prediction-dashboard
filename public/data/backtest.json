@@ -6,14 +6,14 @@
       "count": 177
     },
     "3d": {
-      "hitRate": 61.1,
-      "avgReturn": 0.126,
-      "count": 175
+      "hitRate": 60.8,
+      "avgReturn": 0.119,
+      "count": 176
     },
     "5d": {
-      "hitRate": 62.1,
-      "avgReturn": 0.205,
-      "count": 174
+      "hitRate": 62.3,
+      "avgReturn": 0.19,
+      "count": 175
     },
     "1d_long": {
       "hitRate": 46.7,
@@ -21,9 +21,9 @@
       "count": 122
     },
     "3d_long": {
-      "hitRate": 68.3,
-      "avgReturn": 0.28,
-      "count": 120
+      "hitRate": 67.8,
+      "avgReturn": 0.268,
+      "count": 121
     },
     "5d_long": {
       "hitRate": 68.3,
@@ -41,9 +41,9 @@
       "count": 55
     },
     "5d_short": {
-      "hitRate": 48.1,
-      "avgReturn": -0.29,
-      "count": 54
+      "hitRate": 49.1,
+      "avgReturn": -0.328,
+      "count": 55
     }
   },
   "regimeHitRate": {
@@ -63,22 +63,8 @@
       "count": 84
     }
   },
-  "totalSignals": 177,
+  "totalSignals": 178,
   "records": [
-    {
-      "date": "2025-10-22",
-      "signal": "LEAN_LONG",
-      "composite": 0.1692,
-      "signalDir": 1,
-      "spyPrice": 667.8,
-      "regime": "TRANSITION",
-      "return_1d": 0.59,
-      "hit_1d": 1,
-      "return_3d": 2.61,
-      "hit_3d": 1,
-      "return_5d": 2.93,
-      "hit_5d": 1
-    },
     {
       "date": "2025-10-23",
       "signal": "LEAN_LONG",
@@ -454,8 +440,8 @@
       "hit_1d": 1,
       "return_3d": -1.28,
       "hit_3d": 1,
-      "return_5d": null,
-      "hit_5d": null
+      "return_5d": -2.35,
+      "hit_5d": 1
     },
     {
       "date": "2026-03-10",
@@ -466,8 +452,8 @@
       "regime": "TRANSITION",
       "return_1d": -0.13,
       "hit_1d": 0,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": -1.2,
+      "hit_3d": 0,
       "return_5d": null,
       "hit_5d": null
     },
@@ -484,7 +470,21 @@
       "hit_3d": null,
       "return_5d": null,
       "hit_5d": null
+    },
+    {
+      "date": "2026-03-16",
+      "signal": "SELL",
+      "composite": -0.2569,
+      "signalDir": -1,
+      "spyPrice": 669.03,
+      "regime": "RISK_ON_NEUTRAL",
+      "return_1d": null,
+      "hit_1d": null,
+      "return_3d": null,
+      "hit_3d": null,
+      "return_5d": null,
+      "hit_5d": null
     }
   ],
-  "exportedAt": "2026-03-12T16:30:46.366303"
+  "exportedAt": "2026-03-16T16:31:36.288110"
 }

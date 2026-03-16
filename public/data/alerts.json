@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Retail Sales 03-16, FOMC Rate Decision 03-18",
+      "date": "2026-03-16"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Industrial Production 03-16, Empire State Mfg 03-19, Initial Jobless Claims 03-19",
+      "date": "2026-03-16"
+    },
+    {
       "type": "signal",
       "severity": "high",
       "text": "Microstructure factor at extreme bullish level (+0.92)",
@@ -89,19 +101,7 @@
       "severity": "low",
       "text": "Also scheduled: ISM Services 03-04, Initial Jobless Claims 03-05, Existing Home Sales 03-10",
       "date": "2026-03-03"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Nonfarm Payrolls 03-06",
-      "date": "2026-03-02"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: ISM Manufacturing 03-02, ISM Services 03-04, Initial Jobless Claims 03-05",
-      "date": "2026-03-02"
     }
   ],
-  "exportedAt": "2026-03-12T16:30:46.335252"
+  "exportedAt": "2026-03-16T16:31:36.257345"
 }

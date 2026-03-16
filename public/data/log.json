@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "time": "2026-03-16 16:31:35",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 14/21 signals captured",
+      "duration": ""
+    },
+    {
+      "time": "2026-03-13 16:30:10",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
       "time": "2026-03-12 16:30:45",
       "type": "eod",
       "status": "ok",
@@ -335,21 +349,7 @@
       "status": "ok",
       "message": "EOD collection complete \u2014 17/22 signals captured",
       "duration": ""
-    },
-    {
-      "time": "2026-02-09 21:06:16",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 17/22 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-02-09 21:06:08",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 17/22 signals captured",
-      "duration": ""
     }
   ],
-  "exportedAt": "2026-03-12T16:30:46.363683"
+  "exportedAt": "2026-03-16T16:31:36.285517"
 }
