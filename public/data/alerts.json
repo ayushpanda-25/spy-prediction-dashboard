@@ -3,6 +3,18 @@
     {
       "type": "calendar",
       "severity": "medium",
+      "text": "Upcoming high-impact: Core PCE 03-27",
+      "date": "2026-03-23"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: New Home Sales 03-24, Initial Jobless Claims 03-26",
+      "date": "2026-03-23"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
       "text": "Upcoming high-impact: FOMC Rate Decision 03-18",
       "date": "2026-03-18"
     },
@@ -89,19 +101,7 @@
       "severity": "low",
       "text": "Also scheduled: Existing Home Sales 03-10, JOLTS Job Openings 03-11, Initial Jobless Claims 03-12",
       "date": "2026-03-09"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Nonfarm Payrolls 03-06, CPI 03-11",
-      "date": "2026-03-04"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: ISM Services 03-04, Initial Jobless Claims 03-05, Existing Home Sales 03-10",
-      "date": "2026-03-04"
     }
   ],
-  "exportedAt": "2026-03-18T16:31:26.223248"
+  "exportedAt": "2026-03-23T16:50:36.785798"
 }

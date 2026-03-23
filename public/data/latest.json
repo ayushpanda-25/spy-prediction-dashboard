@@ -1,10 +1,10 @@
 {
-  "date": "2026-03-18",
-  "composite": -0.3152211167368799,
-  "signal": "SELL",
-  "confidence": 0.6304422334737598,
-  "spyPrice": 661.43,
-  "spyChange": -9.36,
+  "date": "2026-03-23",
+  "composite": -0.10103257304716681,
+  "signal": "LEAN_SHORT",
+  "confidence": 0.20206514609433363,
+  "spyPrice": 655.38,
+  "spyChange": 6.81,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
@@ -38,33 +38,33 @@
           "interpretation": "Moderate 0DTE"
         }
       ],
-      "lastUpdated": "2026-03-18 21:31:25"
+      "lastUpdated": "2026-03-23 21:46:19"
     },
     "macro": {
-      "score": -0.35956147472211786,
+      "score": 0.18912116356360575,
       "weight": 0.2,
-      "weighted": -0.0719,
+      "weighted": 0.0378,
       "label": "Macro",
       "signals": [
         {
           "name": "Hy Credit Spread",
-          "value": -0.9605,
+          "value": 0.303,
           "zScore": 0,
-          "interpretation": "Widening (risk-off)"
+          "interpretation": "Tight (risk-on)"
         },
         {
           "name": "Macro Surprise",
-          "value": 27.8,
+          "value": 23.0,
           "zScore": 0,
           "interpretation": "Beating expectations"
         }
       ],
-      "lastUpdated": "2026-03-18 21:31:25"
+      "lastUpdated": "2026-03-23 21:46:19"
     },
     "microstructure": {
-      "score": 0.04993841444934665,
+      "score": 0.27846414209741127,
       "weight": 0.2,
-      "weighted": 0.01,
+      "weighted": 0.0557,
       "label": "Microstructure",
       "signals": [
         {
@@ -81,7 +81,7 @@
         },
         {
           "name": "Finra Adf Off Exchange Pct",
-          "value": 0.3344,
+          "value": 0.3589,
           "zScore": 0,
           "interpretation": "High ADF volume (>15%)"
         },
@@ -92,23 +92,23 @@
           "interpretation": "Below average"
         }
       ],
-      "lastUpdated": "2026-03-18 21:31:25"
+      "lastUpdated": "2026-03-23 21:46:19"
     },
     "flows": {
-      "score": -0.3777720686756978,
+      "score": -0.5760140827474473,
       "weight": 0.15,
-      "weighted": -0.0567,
+      "weighted": -0.0864,
       "label": "Systematic Flows",
       "signals": [
         {
           "name": "Cftc Net Spec",
-          "value": 898852.0,
+          "value": 886828.0,
           "zScore": 0,
           "interpretation": "Net long"
         },
         {
           "name": "Cta Momentum",
-          "value": 0.5,
+          "value": 0.0,
           "zScore": 0,
           "interpretation": "Trend down"
         },
@@ -120,86 +120,86 @@
         },
         {
           "name": "Vol Target Alloc",
-          "value": 1.1625,
+          "value": 1.0688,
           "zScore": 0,
           "interpretation": "Low alloc \u2192 room to add"
         }
       ],
-      "lastUpdated": "2026-03-18 21:31:25"
+      "lastUpdated": "2026-03-23 21:46:19"
     },
     "technical": {
-      "score": -0.6804290623993803,
+      "score": -0.5189183323540206,
       "weight": 0.15,
-      "weighted": -0.1021,
+      "weighted": -0.0778,
       "label": "Technical",
       "signals": [
         {
           "name": "Price Vs 20Dma",
-          "value": -2.5805,
+          "value": -2.8091,
           "zScore": 0,
           "interpretation": "Below 20D (bearish)"
         },
         {
           "name": "Price Vs 50Dma",
-          "value": -3.4904,
+          "value": -4.0732,
           "zScore": 0,
           "interpretation": "Below 50D (bearish)"
         },
         {
           "name": "Rsi 14",
-          "value": 29.21,
+          "value": 33.79,
           "zScore": 0,
-          "interpretation": "Oversold"
+          "interpretation": "Mid-range (neutral)"
         },
         {
           "name": "Volume Ratio",
-          "value": 1.0793,
+          "value": 1.4388,
           "zScore": 0,
-          "interpretation": "Below avg volume"
+          "interpretation": "Above avg volume"
         }
       ],
-      "lastUpdated": "2026-03-18 21:31:25"
+      "lastUpdated": "2026-03-23 21:46:19"
     },
     "sentiment": {
-      "score": -0.5050784823316038,
+      "score": -0.6556876468483379,
       "weight": 0.0,
       "weighted": -0.0,
       "label": "Sentiment",
       "signals": [
         {
           "name": "Aaii Bull Bear",
-          "value": -14.45,
+          "value": -21.6,
           "zScore": 0,
           "interpretation": "Bearish spread"
         },
         {
           "name": "Naaim Exposure",
-          "value": 66.99,
+          "value": 60.24,
           "zScore": 0,
           "interpretation": "Moderate"
         },
         {
           "name": "News Sentiment",
-          "value": 0.0579,
+          "value": 0.0216,
           "zScore": 0,
-          "interpretation": "Slightly positive"
+          "interpretation": "Neutral"
         }
       ],
-      "lastUpdated": "2026-03-18 21:31:25"
+      "lastUpdated": "2026-03-23 21:46:19"
     }
   },
   "alerts": [
     {
       "type": "calendar",
       "severity": "medium",
-      "text": "Upcoming high-impact: FOMC Rate Decision 03-18"
+      "text": "Upcoming high-impact: Core PCE 03-27"
     },
     {
       "type": "calendar",
       "severity": "low",
-      "text": "Also scheduled: Empire State Mfg 03-19, Initial Jobless Claims 03-19, Philly Fed Mfg 03-19"
+      "text": "Also scheduled: New Home Sales 03-24, Initial Jobless Claims 03-26"
     }
   ],
-  "lastUpdate": "2026-03-18 21:31:25",
-  "exportedAt": "2026-03-18T16:31:26.211479"
+  "lastUpdate": "2026-03-23 21:46:19",
+  "exportedAt": "2026-03-23T16:50:36.775634"
 }
