@@ -1,6 +1,24 @@
 {
   "alerts": [
     {
+      "type": "signal",
+      "severity": "high",
+      "text": "Technical factor at extreme bearish level (-0.72)",
+      "date": "2026-03-24"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Core PCE 03-27",
+      "date": "2026-03-24"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: New Home Sales 03-24, Initial Jobless Claims 03-26, Consumer Confidence 03-31",
+      "date": "2026-03-24"
+    },
+    {
       "type": "calendar",
       "severity": "medium",
       "text": "Upcoming high-impact: Core PCE 03-27",
@@ -89,19 +107,7 @@
       "severity": "low",
       "text": "Also scheduled: Existing Home Sales 03-10, JOLTS Job Openings 03-11, Initial Jobless Claims 03-12",
       "date": "2026-03-10"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: CPI 03-11, PPI 03-12, Core PCE 03-13, Retail Sales 03-16",
-      "date": "2026-03-09"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Existing Home Sales 03-10, JOLTS Job Openings 03-11, Initial Jobless Claims 03-12",
-      "date": "2026-03-09"
     }
   ],
-  "exportedAt": "2026-03-23T16:50:36.785798"
+  "exportedAt": "2026-03-24T16:30:20.710980"
 }
