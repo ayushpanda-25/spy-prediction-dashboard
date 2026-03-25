@@ -1,15 +1,6 @@
 {
   "events": [
     {
-      "event": "New Home Sales",
-      "date": "2026-03-24",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "Initial Jobless Claims",
       "date": "2026-03-26",
       "time": "8:30 AM ET",
@@ -80,8 +71,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "FOMC Minutes",
+      "date": "2026-04-08",
+      "time": "2:00 PM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-03-24T16:30:20.737963"
+  "exportedAt": "2026-03-25T16:30:23.165068"
 }
