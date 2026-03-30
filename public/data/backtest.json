@@ -1,19 +1,19 @@
 {
   "hitRate": {
     "1d": {
-      "hitRate": 45.9,
-      "avgReturn": 0.021,
-      "count": 181
+      "hitRate": 46.2,
+      "avgReturn": 0.0,
+      "count": 182
     },
     "3d": {
-      "hitRate": 60.9,
-      "avgReturn": 0.087,
-      "count": 179
+      "hitRate": 61.1,
+      "avgReturn": 0.067,
+      "count": 180
     },
     "5d": {
-      "hitRate": 61.6,
-      "avgReturn": 0.15,
-      "count": 177
+      "hitRate": 61.8,
+      "avgReturn": 0.118,
+      "count": 178
     },
     "1d_long": {
       "hitRate": 46.7,
@@ -31,19 +31,19 @@
       "count": 122
     },
     "1d_short": {
-      "hitRate": 44.1,
-      "avgReturn": -0.115,
-      "count": 59
+      "hitRate": 45.0,
+      "avgReturn": -0.176,
+      "count": 60
     },
     "3d_short": {
-      "hitRate": 47.4,
-      "avgReturn": -0.256,
-      "count": 57
+      "hitRate": 48.3,
+      "avgReturn": -0.313,
+      "count": 58
     },
     "5d_short": {
-      "hitRate": 49.1,
-      "avgReturn": -0.328,
-      "count": 55
+      "hitRate": 50.0,
+      "avgReturn": -0.421,
+      "count": 56
     }
   },
   "regimeHitRate": {
@@ -53,9 +53,9 @@
       "count": 8
     },
     "TRANSITION": {
-      "hitRate": 51.9,
-      "avgReturn": -0.055,
-      "count": 52
+      "hitRate": 52.8,
+      "avgReturn": -0.125,
+      "count": 53
     },
     "RISK_ON_BULL": {
       "hitRate": 47.6,
@@ -68,22 +68,8 @@
       "count": 2
     }
   },
-  "totalSignals": 182,
+  "totalSignals": 183,
   "records": [
-    {
-      "date": "2025-11-19",
-      "signal": "NEUTRAL",
-      "composite": -0.101,
-      "signalDir": -1,
-      "spyPrice": 662.63,
-      "regime": "TRANSITION",
-      "return_1d": -1.52,
-      "hit_1d": 1,
-      "return_3d": 0.92,
-      "hit_3d": 0,
-      "return_5d": 2.57,
-      "hit_5d": 0
-    },
     {
       "date": "2025-12-05",
       "signal": "NEUTRAL",
@@ -431,8 +417,8 @@
       "hit_1d": 1,
       "return_3d": -2.37,
       "hit_3d": 1,
-      "return_5d": null,
-      "hit_5d": null
+      "return_5d": -5.54,
+      "hit_5d": 1
     },
     {
       "date": "2026-03-18",
@@ -457,8 +443,8 @@
       "regime": "TRANSITION",
       "return_1d": -0.34,
       "hit_1d": 1,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": -3.57,
+      "hit_3d": 1,
       "return_5d": null,
       "hit_5d": null
     },
@@ -483,6 +469,20 @@
       "signalDir": -1,
       "spyPrice": 656.82,
       "regime": "TRANSITION",
+      "return_1d": -3.78,
+      "hit_1d": 1,
+      "return_3d": null,
+      "hit_3d": null,
+      "return_5d": null,
+      "hit_5d": null
+    },
+    {
+      "date": "2026-03-30",
+      "signal": "SELL",
+      "composite": -0.2237,
+      "signalDir": -1,
+      "spyPrice": 631.97,
+      "regime": "TRANSITION",
       "return_1d": null,
       "hit_1d": null,
       "return_3d": null,
@@ -491,5 +491,5 @@
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-03-25T16:30:23.170660"
+  "exportedAt": "2026-03-30T16:58:24.404108"
 }

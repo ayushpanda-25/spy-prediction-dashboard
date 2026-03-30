@@ -1,6 +1,30 @@
 {
   "alerts": [
     {
+      "type": "signal",
+      "severity": "high",
+      "text": "Flows factor at extreme bearish level (-0.75)",
+      "date": "2026-03-30"
+    },
+    {
+      "type": "signal",
+      "severity": "high",
+      "text": "Technical factor at extreme bearish level (-0.78)",
+      "date": "2026-03-30"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03",
+      "date": "2026-03-30"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Consumer Confidence 03-31, ISM Manufacturing 04-01, JOLTS Job Openings 04-01",
+      "date": "2026-03-30"
+    },
+    {
       "type": "calendar",
       "severity": "medium",
       "text": "Upcoming high-impact: Core PCE 03-27",
@@ -89,25 +113,7 @@
       "severity": "low",
       "text": "Also scheduled: Initial Jobless Claims 03-12, Industrial Production 03-16, Empire State Mfg 03-19",
       "date": "2026-03-12"
-    },
-    {
-      "type": "signal",
-      "severity": "high",
-      "text": "Microstructure factor at extreme bullish level (+0.95)",
-      "date": "2026-03-11"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: CPI 03-11, PPI 03-12, Core PCE 03-13, Retail Sales 03-16",
-      "date": "2026-03-11"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: JOLTS Job Openings 03-11, Initial Jobless Claims 03-12, Industrial Production 03-16",
-      "date": "2026-03-11"
     }
   ],
-  "exportedAt": "2026-03-25T16:30:23.105333"
+  "exportedAt": "2026-03-30T16:58:24.175324"
 }
