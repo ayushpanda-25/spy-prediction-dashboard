@@ -89,8 +89,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "CPI",
+      "date": "2026-04-14",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-03-30T16:58:24.381612"
+  "exportedAt": "2026-03-31T16:30:30.004730"
 }
