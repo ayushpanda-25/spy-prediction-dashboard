@@ -1,24 +1,24 @@
 {
   "hitRate": {
     "1d": {
-      "hitRate": 45.9,
-      "avgReturn": 0.016,
-      "count": 183
+      "hitRate": 46.2,
+      "avgReturn": 0.02,
+      "count": 184
     },
     "3d": {
-      "hitRate": 61.3,
-      "avgReturn": 0.064,
-      "count": 181
+      "hitRate": 61.5,
+      "avgReturn": 0.063,
+      "count": 182
     },
     "5d": {
-      "hitRate": 62.0,
+      "hitRate": 62.2,
       "avgReturn": 0.108,
-      "count": 179
+      "count": 180
     },
     "1d_long": {
-      "hitRate": 46.7,
-      "avgReturn": 0.087,
-      "count": 122
+      "hitRate": 47.2,
+      "avgReturn": 0.093,
+      "count": 123
     },
     "3d_long": {
       "hitRate": 67.2,
@@ -36,14 +36,14 @@
       "count": 61
     },
     "3d_short": {
-      "hitRate": 49.2,
-      "avgReturn": -0.315,
-      "count": 59
+      "hitRate": 50.0,
+      "avgReturn": -0.314,
+      "count": 60
     },
     "5d_short": {
-      "hitRate": 50.9,
-      "avgReturn": -0.443,
-      "count": 57
+      "hitRate": 51.7,
+      "avgReturn": -0.436,
+      "count": 58
     }
   },
   "regimeHitRate": {
@@ -53,9 +53,9 @@
       "count": 8
     },
     "TRANSITION": {
-      "hitRate": 51.9,
-      "avgReturn": -0.069,
-      "count": 54
+      "hitRate": 52.7,
+      "avgReturn": -0.054,
+      "count": 55
     },
     "RISK_ON_BULL": {
       "hitRate": 47.6,
@@ -431,8 +431,8 @@
       "hit_1d": 1,
       "return_3d": -3.57,
       "hit_3d": 1,
-      "return_5d": null,
-      "hit_5d": null
+      "return_5d": -0.02,
+      "hit_5d": 1
     },
     {
       "date": "2026-03-24",
@@ -457,8 +457,8 @@
       "regime": "TRANSITION",
       "return_1d": -3.78,
       "hit_1d": 1,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": -0.24,
+      "hit_3d": 1,
       "return_5d": null,
       "hit_5d": null
     },
@@ -483,13 +483,13 @@
       "signalDir": 1,
       "spyPrice": 650.34,
       "regime": "TRANSITION",
-      "return_1d": null,
-      "hit_1d": null,
+      "return_1d": 0.75,
+      "hit_1d": 1,
       "return_3d": null,
       "hit_3d": null,
       "return_5d": null,
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-03-31T16:30:30.010274"
+  "exportedAt": "2026-04-01T16:30:12.335563"
 }

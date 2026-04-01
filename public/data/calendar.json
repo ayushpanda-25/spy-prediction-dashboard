@@ -1,15 +1,6 @@
 {
   "events": [
     {
-      "event": "Consumer Confidence",
-      "date": "2026-03-31",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "ISM Manufacturing",
       "date": "2026-04-01",
       "time": "10:00 AM ET",
@@ -98,8 +89,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "PPI",
+      "date": "2026-04-15",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-03-31T16:30:30.004730"
+  "exportedAt": "2026-04-01T16:30:12.329838"
 }

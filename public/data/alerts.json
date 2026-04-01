@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03",
+      "date": "2026-04-01"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: ISM Manufacturing 04-01, JOLTS Job Openings 04-01, Initial Jobless Claims 04-02",
+      "date": "2026-04-01"
+    },
+    {
       "type": "signal",
       "severity": "high",
       "text": "Flows factor at extreme bearish level (-0.78)",
@@ -95,19 +107,7 @@
       "severity": "low",
       "text": "Also scheduled: Empire State Mfg 03-19, Initial Jobless Claims 03-19, Philly Fed Mfg 03-19",
       "date": "2026-03-18"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Retail Sales 03-16, FOMC Rate Decision 03-18",
-      "date": "2026-03-16"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Industrial Production 03-16, Empire State Mfg 03-19, Initial Jobless Claims 03-19",
-      "date": "2026-03-16"
     }
   ],
-  "exportedAt": "2026-03-31T16:30:29.947829"
+  "exportedAt": "2026-04-01T16:30:12.282233"
 }
