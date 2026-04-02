@@ -3,6 +3,18 @@
     {
       "type": "calendar",
       "severity": "medium",
+      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03, GDP (Third Estimate) 04-09",
+      "date": "2026-04-02"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Initial Jobless Claims 04-02, ISM Services 04-03, FOMC Minutes 04-08",
+      "date": "2026-04-02"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
       "text": "Upcoming high-impact: Nonfarm Payrolls 04-03",
       "date": "2026-04-01"
     },
@@ -95,19 +107,7 @@
       "severity": "low",
       "text": "Also scheduled: New Home Sales 03-24, Initial Jobless Claims 03-26",
       "date": "2026-03-23"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: FOMC Rate Decision 03-18",
-      "date": "2026-03-18"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Empire State Mfg 03-19, Initial Jobless Claims 03-19, Philly Fed Mfg 03-19",
-      "date": "2026-03-18"
     }
   ],
-  "exportedAt": "2026-04-01T16:30:12.282233"
+  "exportedAt": "2026-04-02T16:30:16.322545"
 }

@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "event": "ISM Manufacturing",
-      "date": "2026-04-01",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "JOLTS Job Openings",
-      "date": "2026-04-01",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "Initial Jobless Claims",
       "date": "2026-04-02",
       "time": "8:30 AM ET",
@@ -98,8 +80,53 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "Empire State Mfg",
+      "date": "2026-04-16",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Industrial Production",
+      "date": "2026-04-16",
+      "time": "9:15 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Initial Jobless Claims",
+      "date": "2026-04-16",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Philly Fed Mfg",
+      "date": "2026-04-16",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Retail Sales",
+      "date": "2026-04-16",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-04-01T16:30:12.329838"
+  "exportedAt": "2026-04-02T16:30:16.382694"
 }

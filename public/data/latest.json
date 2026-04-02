@@ -1,16 +1,16 @@
 {
-  "date": "2026-04-01",
-  "composite": -0.009115049786580934,
-  "signal": "NEUTRAL",
-  "confidence": 0.01823009957316187,
-  "spyPrice": 655.24,
-  "spyChange": 4.9,
+  "date": "2026-04-02",
+  "composite": 0.1500070389909003,
+  "signal": "LEAN_LONG",
+  "confidence": 0.3000140779818006,
+  "spyPrice": 655.83,
+  "spyChange": 0.59,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
-      "score": 0.4418057827694632,
+      "score": 0.3827591087114633,
       "weight": 0.3,
-      "weighted": 0.1325,
+      "weighted": 0.1148,
       "label": "Options Flow",
       "signals": [
         {
@@ -21,7 +21,7 @@
         },
         {
           "name": "Iv Term Structure",
-          "value": 0.9871,
+          "value": 0.9656,
           "zScore": 0,
           "interpretation": "Flat"
         },
@@ -33,50 +33,50 @@
         },
         {
           "name": "Zero Dte Share",
-          "value": 1.0,
+          "value": null,
           "zScore": 0,
-          "interpretation": "High 0DTE (>60%)"
+          "interpretation": "Moderate 0DTE"
         }
       ],
-      "lastUpdated": "2026-04-01 21:30:11"
+      "lastUpdated": "2026-04-02 21:30:15"
     },
     "macro": {
-      "score": 0.06428364197425677,
+      "score": 0.11742587309956837,
       "weight": 0.2,
-      "weighted": 0.0129,
+      "weighted": 0.0235,
       "label": "Macro",
       "signals": [
         {
           "name": "Hy Credit Spread",
-          "value": -0.0881,
+          "value": 0.1511,
           "zScore": 0,
-          "interpretation": "Widening (risk-off)"
+          "interpretation": "Tight (risk-on)"
         },
         {
           "name": "Macro Surprise",
-          "value": 24.6,
+          "value": 28.0,
           "zScore": 0,
           "interpretation": "Beating expectations"
         },
         {
           "name": "Vix Vix3M Ratio",
-          "value": 0.9871,
+          "value": 0.9656,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Yield Curve 2S10S",
-          "value": -1.707,
+          "value": -1.6016,
           "zScore": 0,
           "interpretation": "Inverted (recession signal)"
         }
       ],
-      "lastUpdated": "2026-04-01 21:30:11"
+      "lastUpdated": "2026-04-02 21:30:15"
     },
     "microstructure": {
-      "score": -0.30507627723143865,
+      "score": 0.5861897848636758,
       "weight": 0.2,
-      "weighted": -0.061,
+      "weighted": 0.1172,
       "label": "Microstructure",
       "signals": [
         {
@@ -93,7 +93,7 @@
         },
         {
           "name": "Finra Adf Off Exchange Pct",
-          "value": 0.3025,
+          "value": 0.3969,
           "zScore": 0,
           "interpretation": "High ADF volume (>15%)"
         },
@@ -104,12 +104,12 @@
           "interpretation": "Below average"
         }
       ],
-      "lastUpdated": "2026-04-01 21:30:11"
+      "lastUpdated": "2026-04-02 21:30:15"
     },
     "flows": {
-      "score": -0.4353867093463135,
+      "score": -0.40790899056148483,
       "weight": 0.15,
-      "weighted": -0.0653,
+      "weighted": -0.0612,
       "label": "Systematic Flows",
       "signals": [
         {
@@ -132,86 +132,86 @@
         },
         {
           "name": "Vol Target Alloc",
-          "value": 0.7884,
+          "value": 0.789,
           "zScore": 0,
           "interpretation": "Low alloc \u2192 room to add"
         }
       ],
-      "lastUpdated": "2026-04-01 21:30:11"
+      "lastUpdated": "2026-04-02 21:30:15"
     },
     "technical": {
-      "score": -0.18793500776024324,
+      "score": -0.2957165108730988,
       "weight": 0.15,
-      "weighted": -0.0282,
+      "weighted": -0.0444,
       "label": "Technical",
       "signals": [
         {
           "name": "Price Vs 20Dma",
-          "value": -0.7629,
+          "value": -0.4816,
           "zScore": 0,
           "interpretation": "Below 20D (bearish)"
         },
         {
           "name": "Price Vs 50Dma",
-          "value": -3.2208,
+          "value": -3.0489,
           "zScore": 0,
           "interpretation": "Below 50D (bearish)"
         },
         {
           "name": "Rsi 14",
-          "value": 44.32,
+          "value": 46.49,
           "zScore": 0,
           "interpretation": "Mid-range (neutral)"
         },
         {
           "name": "Volume Ratio",
-          "value": 1.1031,
+          "value": 0.5913,
           "zScore": 0,
           "interpretation": "Below avg volume"
         }
       ],
-      "lastUpdated": "2026-04-01 21:30:11"
+      "lastUpdated": "2026-04-02 21:30:15"
     },
     "sentiment": {
-      "score": -0.3400829818046858,
+      "score": -0.1939452275813013,
       "weight": 0.0,
       "weighted": -0.0,
       "label": "Sentiment",
       "signals": [
         {
           "name": "Aaii Bull Bear",
-          "value": -17.7,
+          "value": -17.86,
           "zScore": 0,
           "interpretation": "Bearish spread"
         },
         {
           "name": "Naaim Exposure",
-          "value": 68.52,
+          "value": 68.36,
           "zScore": 0,
           "interpretation": "Moderate"
         },
         {
           "name": "News Sentiment",
-          "value": 0.0646,
+          "value": 0.1773,
           "zScore": 0,
           "interpretation": "Slightly positive"
         }
       ],
-      "lastUpdated": "2026-04-01 21:30:11"
+      "lastUpdated": "2026-04-02 21:30:15"
     }
   },
   "alerts": [
     {
       "type": "calendar",
       "severity": "medium",
-      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03"
+      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03, GDP (Third Estimate) 04-09"
     },
     {
       "type": "calendar",
       "severity": "low",
-      "text": "Also scheduled: ISM Manufacturing 04-01, JOLTS Job Openings 04-01, Initial Jobless Claims 04-02"
+      "text": "Also scheduled: Initial Jobless Claims 04-02, ISM Services 04-03, FOMC Minutes 04-08"
     }
   ],
-  "lastUpdate": "2026-04-01 21:30:11",
-  "exportedAt": "2026-04-01T16:30:12.271347"
+  "lastUpdate": "2026-04-02 21:30:15",
+  "exportedAt": "2026-04-02T16:30:16.311704"
 }
