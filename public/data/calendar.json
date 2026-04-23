@@ -71,8 +71,26 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "FOMC Rate Decision",
+      "date": "2026-05-06",
+      "time": "2:00 PM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Initial Jobless Claims",
+      "date": "2026-05-07",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-04-21T16:30:34.074640"
+  "exportedAt": "2026-04-23T16:30:16.815307"
 }

@@ -1,6 +1,24 @@
 {
   "alerts": [
     {
+      "type": "warning",
+      "severity": "medium",
+      "text": "NAAIM exposure at 94.2 \u2014 near extremes (contrarian bearish)",
+      "date": "2026-04-23"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Core PCE 04-30",
+      "date": "2026-04-23"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Initial Jobless Claims 04-23, New Home Sales 04-23, Consumer Confidence 04-28",
+      "date": "2026-04-23"
+    },
+    {
       "type": "calendar",
       "severity": "low",
       "text": "Also scheduled: Initial Jobless Claims 04-23, New Home Sales 04-23, Consumer Confidence 04-28",
@@ -83,19 +101,7 @@
       "severity": "low",
       "text": "Also scheduled: Consumer Confidence 03-31, ISM Manufacturing 04-01, JOLTS Job Openings 04-01",
       "date": "2026-03-30"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Core PCE 03-27",
-      "date": "2026-03-25"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Initial Jobless Claims 03-26, Consumer Confidence 03-31, ISM Manufacturing 04-01",
-      "date": "2026-03-25"
     }
   ],
-  "exportedAt": "2026-04-21T16:30:34.016674"
+  "exportedAt": "2026-04-23T16:30:16.769318"
 }

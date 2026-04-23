@@ -1,16 +1,16 @@
 {
-  "date": "2026-04-21",
-  "composite": 0.1257265737590985,
-  "signal": "LEAN_LONG",
-  "confidence": 0.251453147518197,
-  "spyPrice": 704.08,
-  "spyChange": -4.64,
+  "date": "2026-04-23",
+  "composite": 0.08046101003846157,
+  "signal": "NEUTRAL",
+  "confidence": 0.16092202007692313,
+  "spyPrice": 708.45,
+  "spyChange": -2.76,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
-      "score": -0.11010140352634089,
+      "score": -0.19523411197281088,
       "weight": 0.3,
-      "weighted": -0.033,
+      "weighted": -0.0586,
       "label": "Options Flow",
       "signals": [
         {
@@ -21,29 +21,29 @@
         },
         {
           "name": "Iv Term Structure",
-          "value": 0.9066,
+          "value": 0.899,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Put Skew 25D",
-          "value": 0.1631,
+          "value": 0.0718,
           "zScore": 0,
-          "interpretation": "Steep skew (fear)"
+          "interpretation": "Normal skew"
         },
         {
           "name": "Zero Dte Share",
-          "value": 0.7184,
+          "value": null,
           "zScore": 0,
-          "interpretation": "High 0DTE (>60%)"
+          "interpretation": "Moderate 0DTE"
         }
       ],
-      "lastUpdated": "2026-04-21 21:30:33"
+      "lastUpdated": "2026-04-23 21:30:16"
     },
     "macro": {
-      "score": -0.08936518933625617,
+      "score": -0.09162391012409499,
       "weight": 0.2,
-      "weighted": -0.0179,
+      "weighted": -0.0183,
       "label": "Macro",
       "signals": [
         {
@@ -54,29 +54,29 @@
         },
         {
           "name": "Macro Surprise",
-          "value": 8.8,
+          "value": 11.9,
           "zScore": 0,
           "interpretation": "In-line"
         },
         {
           "name": "Vix Vix3M Ratio",
-          "value": 0.9066,
+          "value": 0.899,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Yield Curve 2S10S",
-          "value": -1.5547,
+          "value": -1.6562,
           "zScore": 0,
           "interpretation": "Inverted (recession signal)"
         }
       ],
-      "lastUpdated": "2026-04-21 21:30:33"
+      "lastUpdated": "2026-04-23 21:30:16"
     },
     "microstructure": {
-      "score": 0.4165197396106439,
+      "score": 0.3322958577859724,
       "weight": 0.2,
-      "weighted": 0.0833,
+      "weighted": 0.0665,
       "label": "Microstructure",
       "signals": [
         {
@@ -93,7 +93,7 @@
         },
         {
           "name": "Finra Adf Off Exchange Pct",
-          "value": 0.4027,
+          "value": 0.3935,
           "zScore": 0,
           "interpretation": "High ADF volume (>15%)"
         },
@@ -104,12 +104,12 @@
           "interpretation": "Below average"
         }
       ],
-      "lastUpdated": "2026-04-21 21:30:33"
+      "lastUpdated": "2026-04-23 21:30:16"
     },
     "flows": {
-      "score": 0.029016637759388914,
+      "score": 0.030405111433758337,
       "weight": 0.15,
-      "weighted": 0.0044,
+      "weighted": 0.0046,
       "label": "Systematic Flows",
       "signals": [
         {
@@ -132,81 +132,91 @@
         },
         {
           "name": "Vol Target Alloc",
-          "value": 0.8223,
+          "value": 0.815,
           "zScore": 0,
           "interpretation": "Low alloc \u2192 room to add"
         }
       ],
-      "lastUpdated": "2026-04-21 21:30:33"
+      "lastUpdated": "2026-04-23 21:30:16"
     },
     "technical": {
-      "score": 0.5931572606547657,
+      "score": 0.5755739158857707,
       "weight": 0.15,
-      "weighted": 0.089,
+      "weighted": 0.0863,
       "label": "Technical",
       "signals": [
         {
           "name": "Price Vs 20Dma",
-          "value": 4.7645,
+          "value": 4.5617,
           "zScore": 0,
           "interpretation": "Above 20D (bullish)"
         },
         {
           "name": "Price Vs 50Dma",
-          "value": 4.1719,
+          "value": 4.7144,
           "zScore": 0,
           "interpretation": "Above 50D (bullish)"
         },
         {
           "name": "Rsi 14",
-          "value": 90.25,
+          "value": 86.97,
           "zScore": 0,
           "interpretation": "Overbought"
         },
         {
           "name": "Volume Ratio",
-          "value": 0.7897,
+          "value": 0.7516,
           "zScore": 0,
           "interpretation": "Below avg volume"
         }
       ],
-      "lastUpdated": "2026-04-21 21:30:33"
+      "lastUpdated": "2026-04-23 21:30:16"
     },
     "sentiment": {
-      "score": -0.15490267371657437,
+      "score": 0.1174076805410521,
       "weight": 0.0,
-      "weighted": -0.0,
+      "weighted": 0.0,
       "label": "Sentiment",
       "signals": [
         {
           "name": "Aaii Bull Bear",
-          "value": -11.06,
+          "value": 11.63,
           "zScore": 0,
-          "interpretation": "Bearish spread"
+          "interpretation": "Bullish spread"
         },
         {
           "name": "Naaim Exposure",
-          "value": 79.49,
+          "value": 94.15,
           "zScore": 0,
-          "interpretation": "Moderate"
+          "interpretation": "High exposure (contrarian bear)"
         },
         {
           "name": "News Sentiment",
-          "value": 0.0587,
+          "value": -0.0023,
           "zScore": 0,
-          "interpretation": "Slightly positive"
+          "interpretation": "Neutral"
         }
       ],
-      "lastUpdated": "2026-04-21 21:30:33"
+      "lastUpdated": "2026-04-23 21:30:16"
     }
   },
   "alerts": [
+    {
+      "type": "warning",
+      "severity": "medium",
+      "text": "NAAIM exposure at 94.2 \u2014 near extremes (contrarian bearish)"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Core PCE 04-30"
+    },
     {
       "type": "calendar",
       "severity": "low",
       "text": "Also scheduled: Initial Jobless Claims 04-23, New Home Sales 04-23, Consumer Confidence 04-28"
     }
   ],
-  "lastUpdate": "2026-04-21 21:30:33",
-  "exportedAt": "2026-04-21T16:30:34.005475"
+  "lastUpdate": "2026-04-23 21:30:16",
+  "exportedAt": "2026-04-23T16:30:16.763085"
 }
