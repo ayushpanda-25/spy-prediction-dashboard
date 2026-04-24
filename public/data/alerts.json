@@ -4,6 +4,24 @@
       "type": "warning",
       "severity": "medium",
       "text": "NAAIM exposure at 94.2 \u2014 near extremes (contrarian bearish)",
+      "date": "2026-04-24"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Core PCE 04-30",
+      "date": "2026-04-24"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Consumer Confidence 04-28, JOLTS Job Openings 04-29, Initial Jobless Claims 04-30",
+      "date": "2026-04-24"
+    },
+    {
+      "type": "warning",
+      "severity": "medium",
+      "text": "NAAIM exposure at 94.2 \u2014 near extremes (contrarian bearish)",
       "date": "2026-04-23"
     },
     {
@@ -77,31 +95,7 @@
       "severity": "low",
       "text": "Also scheduled: Consumer Confidence 03-31, ISM Manufacturing 04-01, JOLTS Job Openings 04-01",
       "date": "2026-03-31"
-    },
-    {
-      "type": "signal",
-      "severity": "high",
-      "text": "Flows factor at extreme bearish level (-0.75)",
-      "date": "2026-03-30"
-    },
-    {
-      "type": "signal",
-      "severity": "high",
-      "text": "Technical factor at extreme bearish level (-0.78)",
-      "date": "2026-03-30"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03",
-      "date": "2026-03-30"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Consumer Confidence 03-31, ISM Manufacturing 04-01, JOLTS Job Openings 04-01",
-      "date": "2026-03-30"
     }
   ],
-  "exportedAt": "2026-04-23T16:30:16.769318"
+  "exportedAt": "2026-04-24T16:39:27.297708"
 }

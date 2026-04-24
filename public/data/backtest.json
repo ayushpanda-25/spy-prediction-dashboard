@@ -6,9 +6,9 @@
       "count": 187
     },
     "3d": {
-      "hitRate": 61.6,
-      "avgReturn": 0.174,
-      "count": 185
+      "hitRate": 61.8,
+      "avgReturn": 0.177,
+      "count": 186
     },
     "5d": {
       "hitRate": 61.4,
@@ -21,9 +21,9 @@
       "count": 126
     },
     "3d_long": {
-      "hitRate": 67.7,
-      "avgReturn": 0.381,
-      "count": 124
+      "hitRate": 68.0,
+      "avgReturn": 0.384,
+      "count": 125
     },
     "5d_long": {
       "hitRate": 67.5,
@@ -68,22 +68,8 @@
       "count": 2
     }
   },
-  "totalSignals": 187,
+  "totalSignals": 188,
   "records": [
-    {
-      "date": "2025-12-25",
-      "signal": "LEAN_LONG",
-      "composite": 0.1245,
-      "signalDir": 1,
-      "spyPrice": 684.83,
-      "regime": "RISK_ON_BULL",
-      "return_1d": 0.8,
-      "hit_1d": 1,
-      "return_3d": 0.32,
-      "hit_3d": 1,
-      "return_5d": 0.44,
-      "hit_5d": 1
-    },
     {
       "date": "2025-12-31",
       "signal": "NEUTRAL",
@@ -471,8 +457,8 @@
       "regime": "RISK_OFF_BEAR",
       "return_1d": -0.65,
       "hit_1d": 0,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": 0.74,
+      "hit_3d": 1,
       "return_5d": null,
       "hit_5d": null
     },
@@ -489,7 +475,21 @@
       "hit_3d": null,
       "return_5d": null,
       "hit_5d": null
+    },
+    {
+      "date": "2026-04-24",
+      "signal": "BUY",
+      "composite": 0.2386,
+      "signalDir": 1,
+      "spyPrice": 713.94,
+      "regime": "RISK_OFF_BEAR",
+      "return_1d": null,
+      "hit_1d": null,
+      "return_3d": null,
+      "hit_3d": null,
+      "return_5d": null,
+      "hit_5d": null
     }
   ],
-  "exportedAt": "2026-04-23T16:30:16.820743"
+  "exportedAt": "2026-04-24T16:39:27.477821"
 }
