@@ -1,12 +1,12 @@
 {
   "status": "ok",
   "streamActive": false,
-  "latestDate": "2026-04-24",
-  "latestUpdate": "2026-04-24 21:39:24",
-  "totalRecords": 295,
-  "liveRecords": 31,
+  "latestDate": "2026-05-18",
+  "latestUpdate": "2026-05-18 20:30:33",
+  "totalRecords": 296,
+  "liveRecords": 32,
   "backfilledRecords": 264,
   "firstLiveDate": "2026-02-09",
-  "serverTime": "2026-04-24T16:39:27.474676",
-  "exportedAt": "2026-04-24T16:39:27.474678"
+  "serverTime": "2026-05-18T16:30:34.444235",
+  "exportedAt": "2026-05-18T16:30:34.444236"
 }

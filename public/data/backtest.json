@@ -1,34 +1,34 @@
 {
   "hitRate": {
     "1d": {
-      "hitRate": 46.5,
-      "avgReturn": 0.063,
-      "count": 187
+      "hitRate": 46.8,
+      "avgReturn": 0.081,
+      "count": 188
     },
     "3d": {
-      "hitRate": 61.8,
-      "avgReturn": 0.177,
-      "count": 186
+      "hitRate": 62.0,
+      "avgReturn": 0.202,
+      "count": 187
     },
     "5d": {
-      "hitRate": 61.4,
-      "avgReturn": 0.261,
-      "count": 184
+      "hitRate": 61.6,
+      "avgReturn": 0.328,
+      "count": 185
     },
     "1d_long": {
-      "hitRate": 47.6,
-      "avgReturn": 0.154,
-      "count": 126
+      "hitRate": 48.0,
+      "avgReturn": 0.18,
+      "count": 127
     },
     "3d_long": {
-      "hitRate": 68.0,
-      "avgReturn": 0.384,
-      "count": 125
+      "hitRate": 68.3,
+      "avgReturn": 0.42,
+      "count": 126
     },
     "5d_long": {
-      "hitRate": 67.5,
-      "avgReturn": 0.436,
-      "count": 123
+      "hitRate": 67.7,
+      "avgReturn": 0.534,
+      "count": 124
     },
     "1d_short": {
       "hitRate": 44.3,
@@ -48,9 +48,9 @@
   },
   "regimeHitRate": {
     "RISK_OFF_BEAR": {
-      "hitRate": 20.0,
-      "avgReturn": 0.242,
-      "count": 10
+      "hitRate": 27.3,
+      "avgReturn": 0.535,
+      "count": 11
     },
     "TRANSITION": {
       "hitRate": 53.6,
@@ -68,22 +68,8 @@
       "count": 2
     }
   },
-  "totalSignals": 188,
+  "totalSignals": 189,
   "records": [
-    {
-      "date": "2025-12-31",
-      "signal": "NEUTRAL",
-      "composite": -0.1264,
-      "signalDir": -1,
-      "spyPrice": 681.92,
-      "regime": "RISK_ON_BULL",
-      "return_1d": 0.87,
-      "hit_1d": 0,
-      "return_3d": 0.85,
-      "hit_3d": 0,
-      "return_5d": 1.12,
-      "hit_5d": 0
-    },
     {
       "date": "2026-01-02",
       "signal": "NEUTRAL",
@@ -445,8 +431,8 @@
       "hit_1d": 1,
       "return_3d": 8.02,
       "hit_3d": 1,
-      "return_5d": null,
-      "hit_5d": null
+      "return_5d": 12.63,
+      "hit_5d": 1
     },
     {
       "date": "2026-04-20",
@@ -471,8 +457,8 @@
       "regime": "RISK_OFF_BEAR",
       "return_1d": 0.62,
       "hit_1d": 1,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": 4.91,
+      "hit_3d": 1,
       "return_5d": null,
       "hit_5d": null
     },
@@ -483,6 +469,20 @@
       "signalDir": 1,
       "spyPrice": 713.94,
       "regime": "RISK_OFF_BEAR",
+      "return_1d": 3.46,
+      "hit_1d": 1,
+      "return_3d": null,
+      "hit_3d": null,
+      "return_5d": null,
+      "hit_5d": null
+    },
+    {
+      "date": "2026-05-18",
+      "signal": "BUY",
+      "composite": 0.2295,
+      "signalDir": 1,
+      "spyPrice": 738.65,
+      "regime": "RISK_OFF_BEAR",
       "return_1d": null,
       "hit_1d": null,
       "return_3d": null,
@@ -491,5 +491,5 @@
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-04-24T16:39:27.477821"
+  "exportedAt": "2026-05-18T16:30:34.447713"
 }

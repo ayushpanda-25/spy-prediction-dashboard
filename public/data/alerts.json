@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "type": "signal",
+      "severity": "high",
+      "text": "Microstructure factor at extreme bullish level (+1.00)",
+      "date": "2026-05-18"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Empire State Mfg 05-21, Initial Jobless Claims 05-21, Philly Fed Mfg 05-21",
+      "date": "2026-05-18"
+    },
+    {
       "type": "warning",
       "severity": "medium",
       "text": "NAAIM exposure at 94.2 \u2014 near extremes (contrarian bearish)",
@@ -77,25 +89,7 @@
       "severity": "low",
       "text": "Also scheduled: ISM Manufacturing 04-01, JOLTS Job Openings 04-01, Initial Jobless Claims 04-02",
       "date": "2026-04-01"
-    },
-    {
-      "type": "signal",
-      "severity": "high",
-      "text": "Flows factor at extreme bearish level (-0.78)",
-      "date": "2026-03-31"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03",
-      "date": "2026-03-31"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Consumer Confidence 03-31, ISM Manufacturing 04-01, JOLTS Job Openings 04-01",
-      "date": "2026-03-31"
     }
   ],
-  "exportedAt": "2026-04-24T16:39:27.297708"
+  "exportedAt": "2026-05-18T16:30:34.380482"
 }
