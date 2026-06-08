@@ -1,9 +1,9 @@
 {
   "hitRate": {
     "1d": {
-      "hitRate": 46.8,
+      "hitRate": 47.1,
       "avgReturn": 0.081,
-      "count": 188
+      "count": 189
     },
     "3d": {
       "hitRate": 62.0,
@@ -11,14 +11,14 @@
       "count": 187
     },
     "5d": {
-      "hitRate": 61.6,
-      "avgReturn": 0.328,
-      "count": 185
+      "hitRate": 61.8,
+      "avgReturn": 0.349,
+      "count": 186
     },
     "1d_long": {
-      "hitRate": 48.0,
+      "hitRate": 48.4,
       "avgReturn": 0.18,
-      "count": 127
+      "count": 128
     },
     "3d_long": {
       "hitRate": 68.3,
@@ -26,9 +26,9 @@
       "count": 126
     },
     "5d_long": {
-      "hitRate": 67.7,
-      "avgReturn": 0.534,
-      "count": 124
+      "hitRate": 68.0,
+      "avgReturn": 0.564,
+      "count": 125
     },
     "1d_short": {
       "hitRate": 44.3,
@@ -48,9 +48,9 @@
   },
   "regimeHitRate": {
     "RISK_OFF_BEAR": {
-      "hitRate": 27.3,
-      "avgReturn": 0.535,
-      "count": 11
+      "hitRate": 33.3,
+      "avgReturn": 0.497,
+      "count": 12
     },
     "TRANSITION": {
       "hitRate": 53.6,
@@ -445,8 +445,8 @@
       "hit_1d": 0,
       "return_3d": 0.74,
       "hit_3d": 1,
-      "return_5d": null,
-      "hit_5d": null
+      "return_5d": 4.3,
+      "hit_5d": 1
     },
     {
       "date": "2026-04-21",
@@ -483,13 +483,13 @@
       "signalDir": 1,
       "spyPrice": 738.65,
       "regime": "RISK_OFF_BEAR",
-      "return_1d": null,
-      "hit_1d": null,
+      "return_1d": 0.08,
+      "hit_1d": 1,
       "return_3d": null,
       "hit_3d": null,
       "return_5d": null,
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-05-25T16:35:58.756083"
+  "exportedAt": "2026-06-08T17:30:37.216163"
 }

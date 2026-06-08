@@ -1,6 +1,76 @@
 {
   "entries": [
     {
+      "time": "2026-06-08 17:30:36",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 19/23 signals captured",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-05 18:20:25",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Error code -1 | Cannot prepare connection OMMStreamConnection\n\t\tname             : ThreadOMMSTREAMING_PRICING_0.7\n\t\tstate            : StreamCxnState.Disposed\n\t\tsubprotocol      : tr_json2\n\t\tis_auto_reconnect: True\n\t\tcan_reconnect    : False\n\t\tnum_attempt      : 0",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-04 17:40:10",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Error code -1 | Cannot prepare connection OMMStreamConnection\n\t\tname             : ThreadOMMSTREAMING_PRICING_0.7\n\t\tstate            : StreamCxnState.Disposed\n\t\tsubprotocol      : tr_json2\n\t\tis_auto_reconnect: True\n\t\tcan_reconnect    : False\n\t\tnum_attempt      : 0",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-03 17:30:09",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-02 17:41:37",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-01 17:30:10",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-05-29 17:36:20",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-05-28 16:30:06",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-05-27 16:32:47",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-05-26 15:44:26",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
       "time": "2026-05-22 16:50:01",
       "type": "eod",
       "status": "error",
@@ -279,77 +349,7 @@
       "status": "error",
       "message": "EOD collection failed: Session is not opened. Can't send any request",
       "duration": ""
-    },
-    {
-      "time": "2026-03-12 16:30:45",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 14/21 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-11 16:30:20",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 19/23 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-10 16:30:22",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 19/23 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-09 16:30:19",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 19/23 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-06 18:03:10",
-      "type": "eod",
-      "status": "error",
-      "message": "EOD collection failed: Session is not opened. Can't send any request",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-05 17:32:16",
-      "type": "eod",
-      "status": "error",
-      "message": "EOD collection failed: Session is not opened. Can't send any request",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-04 16:47:54",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 11/21 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-03 16:30:22",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 19/23 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-02 16:30:22",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 19/23 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-02-27 16:30:32",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 19/23 signals captured",
-      "duration": ""
     }
   ],
-  "exportedAt": "2026-05-25T16:35:58.753298"
+  "exportedAt": "2026-06-08T17:30:37.213036"
 }

@@ -1,8 +1,8 @@
 {
   "events": [
     {
-      "event": "Consumer Confidence",
-      "date": "2026-05-26",
+      "event": "Existing Home Sales",
+      "date": "2026-06-09",
       "time": "10:00 AM ET",
       "impact": "medium",
       "actual": null,
@@ -10,26 +10,53 @@
       "previous": null
     },
     {
-      "event": "FOMC Minutes",
-      "date": "2026-05-27",
+      "event": "CPI",
+      "date": "2026-06-10",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Initial Jobless Claims",
+      "date": "2026-06-11",
+      "time": "8:30 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "PPI",
+      "date": "2026-06-11",
+      "time": "8:30 AM ET",
+      "impact": "high",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "Industrial Production",
+      "date": "2026-06-15",
+      "time": "9:15 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
+    },
+    {
+      "event": "FOMC Rate Decision",
+      "date": "2026-06-17",
       "time": "2:00 PM ET",
-      "impact": "medium",
+      "impact": "high",
       "actual": null,
       "estimate": null,
       "previous": null
     },
     {
-      "event": "New Home Sales",
-      "date": "2026-05-27",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "Core PCE",
-      "date": "2026-05-28",
+      "event": "Retail Sales",
+      "date": "2026-06-17",
       "time": "8:30 AM ET",
       "impact": "high",
       "actual": null,
@@ -37,36 +64,9 @@
       "previous": null
     },
     {
-      "event": "Initial Jobless Claims",
-      "date": "2026-05-28",
+      "event": "Empire State Mfg",
+      "date": "2026-06-18",
       "time": "8:30 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "ISM Manufacturing",
-      "date": "2026-06-01",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "ISM Services",
-      "date": "2026-06-03",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
-      "event": "JOLTS Job Openings",
-      "date": "2026-06-03",
-      "time": "10:00 AM ET",
       "impact": "medium",
       "actual": null,
       "estimate": null,
@@ -74,7 +74,7 @@
     },
     {
       "event": "Initial Jobless Claims",
-      "date": "2026-06-04",
+      "date": "2026-06-18",
       "time": "8:30 AM ET",
       "impact": "medium",
       "actual": null,
@@ -82,15 +82,15 @@
       "previous": null
     },
     {
-      "event": "Nonfarm Payrolls",
-      "date": "2026-06-05",
+      "event": "Philly Fed Mfg",
+      "date": "2026-06-18",
       "time": "8:30 AM ET",
-      "impact": "high",
+      "impact": "medium",
       "actual": null,
       "estimate": null,
       "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-05-25T16:35:58.750812"
+  "exportedAt": "2026-06-08T17:30:37.210526"
 }

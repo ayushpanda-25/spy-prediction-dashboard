@@ -1,16 +1,16 @@
 {
-  "date": "2026-05-18",
-  "composite": 0.2294603809036114,
-  "signal": "BUY",
-  "confidence": 0.4589207618072228,
-  "spyPrice": 738.65,
-  "spyChange": -0.52,
+  "date": "2026-06-08",
+  "composite": 0.08771440522386514,
+  "signal": "NEUTRAL",
+  "confidence": 0.1754288104477303,
+  "spyPrice": 739.22,
+  "spyChange": 1.67,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
-      "score": -0.2623307795289996,
+      "score": -0.020996552147564757,
       "weight": 0.3,
-      "weighted": -0.0787,
+      "weighted": -0.0063,
       "label": "Options Flow",
       "signals": [
         {
@@ -21,62 +21,62 @@
         },
         {
           "name": "Iv Term Structure",
-          "value": 0.8518,
+          "value": 0.9101,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Put Skew 25D",
-          "value": 0.0256,
+          "value": 0.0663,
           "zScore": 0,
-          "interpretation": "Flat skew (calm)"
+          "interpretation": "Normal skew"
         },
         {
           "name": "Zero Dte Share",
-          "value": 0.9767,
+          "value": 0.9836,
           "zScore": 0,
           "interpretation": "High 0DTE (>60%)"
         }
       ],
-      "lastUpdated": "2026-05-18 20:30:33"
+      "lastUpdated": "2026-06-08 21:30:36"
     },
     "macro": {
-      "score": -0.08124819407048514,
+      "score": 0.06052024879866308,
       "weight": 0.2,
-      "weighted": -0.0162,
+      "weighted": 0.0121,
       "label": "Macro",
       "signals": [
         {
           "name": "Hy Credit Spread",
-          "value": -0.7487,
+          "value": -0.9588,
           "zScore": 0,
           "interpretation": "Widening (risk-off)"
         },
         {
           "name": "Macro Surprise",
-          "value": 45.1,
+          "value": 62.5,
           "zScore": 0,
           "interpretation": "Beating expectations"
         },
         {
           "name": "Vix Vix3M Ratio",
-          "value": 0.8518,
+          "value": 0.9101,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Yield Curve 2S10S",
-          "value": -1.1289,
+          "value": -1.2188,
           "zScore": 0,
           "interpretation": "Inverted (recession signal)"
         }
       ],
-      "lastUpdated": "2026-05-18 20:30:33"
+      "lastUpdated": "2026-06-08 21:30:36"
     },
     "microstructure": {
-      "score": 1.0,
+      "score": 0.2796264112218813,
       "weight": 0.2,
-      "weighted": 0.2,
+      "weighted": 0.0559,
       "label": "Microstructure",
       "signals": [
         {
@@ -93,7 +93,7 @@
         },
         {
           "name": "Finra Adf Off Exchange Pct",
-          "value": 0.5126,
+          "value": 0.4036,
           "zScore": 0,
           "interpretation": "High ADF volume (>15%)"
         },
@@ -104,17 +104,17 @@
           "interpretation": "Below average"
         }
       ],
-      "lastUpdated": "2026-05-18 20:30:33"
+      "lastUpdated": "2026-06-08 21:30:36"
     },
     "flows": {
-      "score": 0.3583757332482787,
+      "score": 0.10304377640333978,
       "weight": 0.15,
-      "weighted": 0.0538,
+      "weighted": 0.0155,
       "label": "Systematic Flows",
       "signals": [
         {
           "name": "Cftc Net Spec",
-          "value": 1054872.0,
+          "value": 981859.0,
           "zScore": 0,
           "interpretation": "Net long"
         },
@@ -132,86 +132,86 @@
         },
         {
           "name": "Vol Target Alloc",
-          "value": 1.4035,
+          "value": 1.1699,
           "zScore": 0,
-          "interpretation": "Near max \u2192 vulnerable"
+          "interpretation": "Low alloc \u2192 room to add"
         }
       ],
-      "lastUpdated": "2026-05-18 20:30:33"
+      "lastUpdated": "2026-06-08 21:30:36"
     },
     "technical": {
-      "score": 0.47101929059444325,
+      "score": 0.07018314935683147,
       "weight": 0.15,
-      "weighted": 0.0707,
+      "weighted": 0.0105,
       "label": "Technical",
       "signals": [
         {
           "name": "Price Vs 20Dma",
-          "value": 1.8405,
+          "value": -0.9584,
           "zScore": 0,
-          "interpretation": "Above 20D (bullish)"
+          "interpretation": "Below 20D (bearish)"
         },
         {
           "name": "Price Vs 50Dma",
-          "value": 6.8393,
+          "value": 3.3304,
           "zScore": 0,
           "interpretation": "Above 50D (bullish)"
         },
         {
           "name": "Rsi 14",
-          "value": 73.15,
+          "value": 50.47,
           "zScore": 0,
-          "interpretation": "Overbought"
+          "interpretation": "Mid-range (neutral)"
         },
         {
           "name": "Volume Ratio",
-          "value": 1.096,
+          "value": 1.0844,
           "zScore": 0,
           "interpretation": "Below avg volume"
         }
       ],
-      "lastUpdated": "2026-05-18 20:30:33"
+      "lastUpdated": "2026-06-08 21:30:36"
     },
     "sentiment": {
-      "score": -0.19850110727961826,
+      "score": -0.12212289572980667,
       "weight": 0.0,
       "weighted": -0.0,
       "label": "Sentiment",
       "signals": [
         {
           "name": "Aaii Bull Bear",
-          "value": 2.71,
+          "value": -0.73,
           "zScore": 0,
           "interpretation": "Balanced"
         },
         {
           "name": "Naaim Exposure",
-          "value": 77.34,
+          "value": 86.82,
           "zScore": 0,
-          "interpretation": "Moderate"
+          "interpretation": "High exposure (contrarian bear)"
         },
         {
           "name": "News Sentiment",
-          "value": -0.0525,
+          "value": -0.0521,
           "zScore": 0,
           "interpretation": "Slightly negative"
         }
       ],
-      "lastUpdated": "2026-05-18 20:30:33"
+      "lastUpdated": "2026-06-08 21:30:36"
     }
   },
   "alerts": [
     {
-      "type": "signal",
-      "severity": "high",
-      "text": "Microstructure factor at extreme bullish level (+1.00)"
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: CPI 06-10, PPI 06-11"
     },
     {
       "type": "calendar",
       "severity": "low",
-      "text": "Also scheduled: Empire State Mfg 05-21, Initial Jobless Claims 05-21, Philly Fed Mfg 05-21"
+      "text": "Also scheduled: Existing Home Sales 06-09, Initial Jobless Claims 06-11, Industrial Production 06-15"
     }
   ],
-  "lastUpdate": "2026-05-18 20:30:33",
-  "exportedAt": "2026-05-25T16:35:58.704824"
+  "lastUpdate": "2026-06-08 21:30:36",
+  "exportedAt": "2026-06-08T17:30:37.155201"
 }

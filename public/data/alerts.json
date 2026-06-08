@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: CPI 06-10, PPI 06-11",
+      "date": "2026-06-08"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Existing Home Sales 06-09, Initial Jobless Claims 06-11, Industrial Production 06-15",
+      "date": "2026-06-08"
+    },
+    {
       "type": "signal",
       "severity": "high",
       "text": "Microstructure factor at extreme bullish level (+1.00)",
@@ -77,19 +89,7 @@
       "severity": "low",
       "text": "Also scheduled: Initial Jobless Claims 04-02, ISM Services 04-03, FOMC Minutes 04-08",
       "date": "2026-04-02"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03",
-      "date": "2026-04-01"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: ISM Manufacturing 04-01, JOLTS Job Openings 04-01, Initial Jobless Claims 04-02",
-      "date": "2026-04-01"
     }
   ],
-  "exportedAt": "2026-05-25T16:35:58.719791"
+  "exportedAt": "2026-06-08T17:30:37.166332"
 }
