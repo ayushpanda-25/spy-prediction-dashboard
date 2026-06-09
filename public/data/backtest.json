@@ -6,14 +6,14 @@
       "count": 189
     },
     "3d": {
-      "hitRate": 62.0,
-      "avgReturn": 0.202,
-      "count": 187
+      "hitRate": 62.2,
+      "avgReturn": 0.218,
+      "count": 188
     },
     "5d": {
-      "hitRate": 61.8,
-      "avgReturn": 0.349,
-      "count": 186
+      "hitRate": 62.0,
+      "avgReturn": 0.372,
+      "count": 187
     },
     "1d_long": {
       "hitRate": 48.4,
@@ -21,14 +21,14 @@
       "count": 128
     },
     "3d_long": {
-      "hitRate": 68.3,
-      "avgReturn": 0.42,
-      "count": 126
+      "hitRate": 68.5,
+      "avgReturn": 0.442,
+      "count": 127
     },
     "5d_long": {
-      "hitRate": 68.0,
-      "avgReturn": 0.564,
-      "count": 125
+      "hitRate": 68.3,
+      "avgReturn": 0.597,
+      "count": 126
     },
     "1d_short": {
       "hitRate": 44.3,
@@ -459,8 +459,8 @@
       "hit_1d": 1,
       "return_3d": 4.91,
       "hit_3d": 1,
-      "return_5d": null,
-      "hit_5d": null
+      "return_5d": 4.68,
+      "hit_5d": 1
     },
     {
       "date": "2026-04-24",
@@ -471,8 +471,8 @@
       "regime": "RISK_OFF_BEAR",
       "return_1d": 3.46,
       "hit_1d": 1,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": 3.24,
+      "hit_3d": 1,
       "return_5d": null,
       "hit_5d": null
     },
@@ -491,5 +491,5 @@
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-06-08T17:30:37.216163"
+  "exportedAt": "2026-06-09T17:30:44.412847"
 }

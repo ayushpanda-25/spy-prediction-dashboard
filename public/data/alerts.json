@@ -4,6 +4,18 @@
       "type": "calendar",
       "severity": "medium",
       "text": "Upcoming high-impact: CPI 06-10, PPI 06-11",
+      "date": "2026-06-09"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Existing Home Sales 06-09, Initial Jobless Claims 06-11, Industrial Production 06-15",
+      "date": "2026-06-09"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: CPI 06-10, PPI 06-11",
       "date": "2026-06-08"
     },
     {
@@ -77,19 +89,7 @@
       "severity": "low",
       "text": "Also scheduled: Initial Jobless Claims 04-23, New Home Sales 04-23",
       "date": "2026-04-20"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Nonfarm Payrolls 04-03, GDP (Third Estimate) 04-09",
-      "date": "2026-04-02"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Initial Jobless Claims 04-02, ISM Services 04-03, FOMC Minutes 04-08",
-      "date": "2026-04-02"
     }
   ],
-  "exportedAt": "2026-06-08T17:30:37.166332"
+  "exportedAt": "2026-06-09T17:30:44.351801"
 }
