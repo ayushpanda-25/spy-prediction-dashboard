@@ -1,15 +1,6 @@
 {
   "events": [
     {
-      "event": "Existing Home Sales",
-      "date": "2026-06-09",
-      "time": "10:00 AM ET",
-      "impact": "medium",
-      "actual": null,
-      "estimate": null,
-      "previous": null
-    },
-    {
       "event": "CPI",
       "date": "2026-06-10",
       "time": "8:30 AM ET",
@@ -89,8 +80,17 @@
       "actual": null,
       "estimate": null,
       "previous": null
+    },
+    {
+      "event": "New Home Sales",
+      "date": "2026-06-24",
+      "time": "10:00 AM ET",
+      "impact": "medium",
+      "actual": null,
+      "estimate": null,
+      "previous": null
     }
   ],
   "source": "hardcoded",
-  "exportedAt": "2026-06-09T17:30:44.407032"
+  "exportedAt": "2026-06-10T17:30:47.961045"
 }

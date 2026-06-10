@@ -1,5 +1,5 @@
 {
-  "count": 298,
+  "count": 299,
   "data": [
     {
       "date": "2025-02-03",
@@ -5364,7 +5364,25 @@
         "sentiment": 0.03601423183326076
       },
       "regime": "RISK_OFF_BEAR"
+    },
+    {
+      "date": "2026-06-10",
+      "composite": 0.0561454643256882,
+      "signal": "NEUTRAL",
+      "confidence": 0.1122909286513764,
+      "spyPrice": 725.43,
+      "spyChange": -11.62,
+      "spyChangePct": 0.0,
+      "factorScores": {
+        "options": -0.02140397469775489,
+        "macro": 0.20121678324251963,
+        "microstructure": 0.17157583049075806,
+        "flows": 0.06613616090594718,
+        "technical": -0.14608193431688632,
+        "sentiment": 0.06726458254895888
+      },
+      "regime": "RISK_OFF_BEAR"
     }
   ],
-  "exportedAt": "2026-06-09T17:30:44.351735"
+  "exportedAt": "2026-06-10T17:30:47.902677"
 }

@@ -3,6 +3,18 @@
     {
       "type": "calendar",
       "severity": "medium",
+      "text": "Upcoming high-impact: CPI 06-10, PPI 06-11, FOMC Rate Decision 06-17, Retail Sales 06-17",
+      "date": "2026-06-10"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Initial Jobless Claims 06-11, Industrial Production 06-15",
+      "date": "2026-06-10"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
       "text": "Upcoming high-impact: CPI 06-10, PPI 06-11",
       "date": "2026-06-09"
     },
@@ -77,19 +89,7 @@
       "severity": "low",
       "text": "Also scheduled: Initial Jobless Claims 04-23, New Home Sales 04-23, Consumer Confidence 04-28",
       "date": "2026-04-21"
-    },
-    {
-      "type": "signal",
-      "severity": "high",
-      "text": "Microstructure factor at extreme bullish level (+1.00)",
-      "date": "2026-04-20"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Initial Jobless Claims 04-23, New Home Sales 04-23",
-      "date": "2026-04-20"
     }
   ],
-  "exportedAt": "2026-06-09T17:30:44.351801"
+  "exportedAt": "2026-06-10T17:30:47.902969"
 }

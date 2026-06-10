@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "time": "2026-06-10 17:30:47",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 19/23 signals captured",
+      "duration": ""
+    },
+    {
       "time": "2026-06-09 17:30:44",
       "type": "eod",
       "status": "ok",
@@ -342,14 +349,7 @@
       "status": "error",
       "message": "EOD collection failed: single positional indexer is out-of-bounds",
       "duration": ""
-    },
-    {
-      "time": "2026-03-16 16:31:35",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 14/21 signals captured",
-      "duration": ""
     }
   ],
-  "exportedAt": "2026-06-09T17:30:44.409613"
+  "exportedAt": "2026-06-10T17:30:47.965672"
 }

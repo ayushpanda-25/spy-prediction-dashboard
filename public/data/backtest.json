@@ -6,9 +6,9 @@
       "count": 189
     },
     "3d": {
-      "hitRate": 62.2,
-      "avgReturn": 0.218,
-      "count": 188
+      "hitRate": 61.9,
+      "avgReturn": 0.208,
+      "count": 189
     },
     "5d": {
       "hitRate": 62.0,
@@ -21,9 +21,9 @@
       "count": 128
     },
     "3d_long": {
-      "hitRate": 68.5,
-      "avgReturn": 0.442,
-      "count": 127
+      "hitRate": 68.0,
+      "avgReturn": 0.424,
+      "count": 128
     },
     "5d_long": {
       "hitRate": 68.3,
@@ -485,11 +485,11 @@
       "regime": "RISK_OFF_BEAR",
       "return_1d": 0.08,
       "hit_1d": 1,
-      "return_3d": null,
-      "hit_3d": null,
+      "return_3d": -1.79,
+      "hit_3d": 0,
       "return_5d": null,
       "hit_5d": null
     }
   ],
-  "exportedAt": "2026-06-09T17:30:44.412847"
+  "exportedAt": "2026-06-10T17:30:47.969335"
 }
