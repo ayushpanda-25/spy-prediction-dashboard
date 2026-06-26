@@ -1,6 +1,41 @@
 {
   "entries": [
     {
+      "time": "2026-06-26 16:30:18",
+      "type": "eod",
+      "status": "ok",
+      "message": "EOD collection complete \u2014 18/23 signals captured",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-25 16:30:11",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-24 16:30:13",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-23 16:30:13",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
+      "time": "2026-06-22 16:30:10",
+      "type": "eod",
+      "status": "error",
+      "message": "EOD collection failed: Session is not opened. Can't send any request",
+      "duration": ""
+    },
+    {
       "time": "2026-06-18 16:30:35",
       "type": "eod",
       "status": "error",
@@ -314,42 +349,7 @@
       "status": "ok",
       "message": "EOD collection complete \u2014 18/23 signals captured",
       "duration": ""
-    },
-    {
-      "time": "2026-03-31 16:30:29",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 18/23 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-30 16:58:20",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 14/21 signals captured",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-27 16:35:20",
-      "type": "eod",
-      "status": "error",
-      "message": "EOD collection failed: Session is not opened. Can't send any request",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-26 16:30:11",
-      "type": "eod",
-      "status": "error",
-      "message": "EOD collection failed: Session is not opened. Can't send any request",
-      "duration": ""
-    },
-    {
-      "time": "2026-03-25 16:30:22",
-      "type": "eod",
-      "status": "ok",
-      "message": "EOD collection complete \u2014 19/23 signals captured",
-      "duration": ""
     }
   ],
-  "exportedAt": "2026-06-19T16:30:05.621485"
+  "exportedAt": "2026-06-26T16:30:19.273787"
 }
