@@ -1,16 +1,16 @@
 {
-  "date": "2026-06-26",
-  "composite": 0.14965698899416113,
-  "signal": "LEAN_LONG",
-  "confidence": 0.29931397798832227,
-  "spyPrice": 728.99,
-  "spyChange": -5.31,
+  "date": "2026-06-29",
+  "composite": 0.20178470296073026,
+  "signal": "BUY",
+  "confidence": 0.4035694059214605,
+  "spyPrice": 741.0,
+  "spyChange": 12.01,
   "spyChangePct": 0.0,
   "factors": {
     "options": {
-      "score": 0.19777665140748876,
+      "score": 0.1540599726583005,
       "weight": 0.3,
-      "weighted": 0.0593,
+      "weighted": 0.0462,
       "label": "Options Flow",
       "signals": [
         {
@@ -21,7 +21,7 @@
         },
         {
           "name": "Iv Term Structure",
-          "value": 0.9146,
+          "value": 0.9037,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
@@ -38,45 +38,45 @@
           "interpretation": "High 0DTE (>60%)"
         }
       ],
-      "lastUpdated": "2026-06-26 21:30:18"
+      "lastUpdated": "2026-06-29 21:30:30"
     },
     "macro": {
-      "score": 0.2624142213904981,
+      "score": 0.28668344214885155,
       "weight": 0.2,
-      "weighted": 0.0525,
+      "weighted": 0.0573,
       "label": "Macro",
       "signals": [
         {
           "name": "Hy Credit Spread",
-          "value": -0.2499,
+          "value": 0.0876,
           "zScore": 0,
-          "interpretation": "Widening (risk-off)"
+          "interpretation": "Tight (risk-on)"
         },
         {
           "name": "Macro Surprise",
-          "value": 60.4,
+          "value": 57.4,
           "zScore": 0,
           "interpretation": "Beating expectations"
         },
         {
           "name": "Vix Vix3M Ratio",
-          "value": 0.9146,
+          "value": 0.9037,
           "zScore": 0,
           "interpretation": "Contango (calm)"
         },
         {
           "name": "Yield Curve 2S10S",
-          "value": -0.0703,
+          "value": -0.0664,
           "zScore": 0,
           "interpretation": "Inverted (recession signal)"
         }
       ],
-      "lastUpdated": "2026-06-26 21:30:18"
+      "lastUpdated": "2026-06-29 21:30:30"
     },
     "microstructure": {
-      "score": 0.4896680866457889,
+      "score": 0.6451856835343025,
       "weight": 0.2,
-      "weighted": 0.0979,
+      "weighted": 0.129,
       "label": "Microstructure",
       "signals": [
         {
@@ -93,7 +93,7 @@
         },
         {
           "name": "Finra Adf Off Exchange Pct",
-          "value": 0.442,
+          "value": 0.4724,
           "zScore": 0,
           "interpretation": "High ADF volume (>15%)"
         },
@@ -104,12 +104,12 @@
           "interpretation": "Below average"
         }
       ],
-      "lastUpdated": "2026-06-26 21:30:18"
+      "lastUpdated": "2026-06-29 21:30:30"
     },
     "flows": {
-      "score": -0.2673720095344153,
+      "score": -0.156712461023831,
       "weight": 0.15,
-      "weighted": -0.0401,
+      "weighted": -0.0235,
       "label": "Systematic Flows",
       "signals": [
         {
@@ -120,9 +120,9 @@
         },
         {
           "name": "Cta Momentum",
-          "value": 0.5,
+          "value": 1.0,
           "zScore": 0,
-          "interpretation": "Trend down"
+          "interpretation": "Following trend up"
         },
         {
           "name": "Month End Rebal",
@@ -132,48 +132,48 @@
         },
         {
           "name": "Vol Target Alloc",
-          "value": 0.897,
+          "value": 0.8389,
           "zScore": 0,
           "interpretation": "Low alloc \u2192 room to add"
         }
       ],
-      "lastUpdated": "2026-06-26 21:30:18"
+      "lastUpdated": "2026-06-29 21:30:30"
     },
     "technical": {
-      "score": -0.13324444403453736,
+      "score": -0.04866829879877385,
       "weight": 0.15,
-      "weighted": -0.02,
+      "weighted": -0.0073,
       "label": "Technical",
       "signals": [
         {
           "name": "Price Vs 20Dma",
-          "value": -1.965,
+          "value": -0.2461,
           "zScore": 0,
           "interpretation": "Below 20D (bearish)"
         },
         {
           "name": "Price Vs 50Dma",
-          "value": -0.7301,
+          "value": 0.7974,
           "zScore": 0,
-          "interpretation": "Below 50D (bearish)"
+          "interpretation": "Above 50D (bullish)"
         },
         {
           "name": "Rsi 14",
-          "value": 44.93,
+          "value": 50.94,
           "zScore": 0,
           "interpretation": "Mid-range (neutral)"
         },
         {
           "name": "Volume Ratio",
-          "value": 1.1171,
+          "value": 0.8594,
           "zScore": 0,
           "interpretation": "Below avg volume"
         }
       ],
-      "lastUpdated": "2026-06-26 21:30:18"
+      "lastUpdated": "2026-06-29 21:30:30"
     },
     "sentiment": {
-      "score": 0.3308676875794492,
+      "score": 0.4291587911470411,
       "weight": 0.0,
       "weighted": 0.0,
       "label": "Sentiment",
@@ -192,12 +192,12 @@
         },
         {
           "name": "News Sentiment",
-          "value": 0.1377,
+          "value": 0.2199,
           "zScore": 0,
           "interpretation": "Slightly positive"
         }
       ],
-      "lastUpdated": "2026-06-26 21:30:18"
+      "lastUpdated": "2026-06-29 21:30:30"
     }
   },
   "alerts": [
@@ -217,6 +217,6 @@
       "text": "Also scheduled: Consumer Confidence 06-30, ISM Manufacturing 07-01, JOLTS Job Openings 07-01"
     }
   ],
-  "lastUpdate": "2026-06-26 21:30:18",
-  "exportedAt": "2026-06-26T16:30:19.217958"
+  "lastUpdate": "2026-06-29 21:30:30",
+  "exportedAt": "2026-06-29T16:30:30.577052"
 }
