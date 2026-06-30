@@ -4,6 +4,24 @@
       "type": "warning",
       "severity": "medium",
       "text": "NAAIM exposure at 98.6 \u2014 near extremes (contrarian bearish)",
+      "date": "2026-06-30"
+    },
+    {
+      "type": "calendar",
+      "severity": "medium",
+      "text": "Upcoming high-impact: Nonfarm Payrolls 07-02",
+      "date": "2026-06-30"
+    },
+    {
+      "type": "calendar",
+      "severity": "low",
+      "text": "Also scheduled: Consumer Confidence 06-30, ISM Manufacturing 07-01, JOLTS Job Openings 07-01",
+      "date": "2026-06-30"
+    },
+    {
+      "type": "warning",
+      "severity": "medium",
+      "text": "NAAIM exposure at 98.6 \u2014 near extremes (contrarian bearish)",
       "date": "2026-06-29"
     },
     {
@@ -83,25 +101,7 @@
       "severity": "low",
       "text": "Also scheduled: Empire State Mfg 05-21, Initial Jobless Claims 05-21, Philly Fed Mfg 05-21",
       "date": "2026-05-18"
-    },
-    {
-      "type": "warning",
-      "severity": "medium",
-      "text": "NAAIM exposure at 94.2 \u2014 near extremes (contrarian bearish)",
-      "date": "2026-04-24"
-    },
-    {
-      "type": "calendar",
-      "severity": "medium",
-      "text": "Upcoming high-impact: Core PCE 04-30",
-      "date": "2026-04-24"
-    },
-    {
-      "type": "calendar",
-      "severity": "low",
-      "text": "Also scheduled: Consumer Confidence 04-28, JOLTS Job Openings 04-29, Initial Jobless Claims 04-30",
-      "date": "2026-04-24"
     }
   ],
-  "exportedAt": "2026-06-29T16:30:30.586007"
+  "exportedAt": "2026-06-30T16:30:28.369805"
 }
